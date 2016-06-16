@@ -1,0 +1,1599 @@
+  0blayout           1.0.0        available  melpa-s... Layout grouping with ease
+  abc-mode           20140225.944 available  melpa-s... Major mode for editing abc music files
+  abyss-theme        0.5          available  melpa-s... A dark theme with contrasting colours.
+  ac-alchemist       0.1          available  melpa-s... auto-complete source for alchemist
+  ac-anaconda        0.1.0        available  melpa-s... Anaconda sources for auto-complete-mode
+  ac-cake            1.0.0        available  melpa-s... CakePHP Minor Mode auto-complete.el source
+  ac-cake2           1.0.1        available  melpa-s... CakePHP 2 Minor Mode auto-complete.el source
+  ac-capf            0.1          available  melpa-s... auto-complete source with completion-at-point
+  ac-cider           0.2.1        available  melpa-s... Clojure auto-complete sources using CIDER
+  ac-clang           1.6.0        available  melpa-s... Auto Completion source by libclang for GNU Emacs
+  ac-dcd             0.4          available  melpa-s... Auto Completion source for dcd for GNU Emacs
+  ac-emoji           0.2          available  melpa-s... auto-complete source of Emoji
+  ac-etags           0.6          available  melpa-s... etags/ctags completion source for auto-complete
+  ac-geiser          0.1          available  melpa-s... Auto-complete backend for geiser
+  ac-haskell-process 0.7          available  melpa-s... Haskell auto-complete source which uses the current haskell process
+  ac-helm            2.1          available  melpa-s... Auto Complete with Helm
+  ac-html            0.31         available  melpa-s... auto complete source for html tags and attributes
+  ac-html-bootstrap  0.9.3        available  melpa-s... auto complete bootstrap3/fontawesome classes for `ac-html' and `company-web'
+  ac-html-csswatcher 0.1.7        available  melpa-s... css/less class/id completion with `ac-html' or `company-web'
+  ac-inf-ruby        0.4          available  melpa-s... Enable auto-complete in inf-ruby sessions
+  ac-ispell          0.7          available  melpa-s... ispell completion source for auto-complete
+  ac-mozc            0.0.4        available  melpa-s... auto-complete sources for Japanese input using Mozc
+  ac-octave          0.4          available  melpa-s... An auto-complete source for Octave
+  ac-php             1.7.3        available  melpa-s... auto-completion and company  source for php for GNU Emacs
+  ac-racer           0.1          available  melpa-s... auto-complete source of racer
+  ac-slime           0.8          available  melpa-s... An auto-complete source using slime completions
+  ace-flyspell       0.1.2        available  melpa-s... Jump to and correct spelling errors using `ace-jump-mode' and flyspell
+  ace-isearch        0.1.4        available  melpa-s... A seamless bridge between isearch, ace-jump-mode, avy and helm-swoop
+  ace-jump-buffer    0.3.1        available  melpa-s... fast buffer switching extension to `ace-jump-mode'
+  ace-jump-helm-line 0.4.0        available  melpa-s... Ace-jump to a candidate in helm window
+  ace-jump-zap       0.1.1        available  melpa-s... Character zapping, `ace-jump-mode` style
+  ace-link           0.3.0        available  melpa-s... Quickly follow links using `ace-jump-mode'
+  ace-pinyin         0.2.5        available  melpa-s... Jump to Chinese characters using ace-jump-mode or avy
+  ace-popup-menu     0.2.0        available  melpa-s... Replace GUI popup menu in Emacs with something more efficient
+  ace-window         0.9.0        available  gnu        Quickly switch windows.
+  ace-window         0.9.0        available  melpa-s... Quickly switch windows.
+  ack                1.5          available  gnu        interface to ack-like tools
+  actionscript-mode  7.2.2        available  melpa-s... A simple mode for editing Actionscript 3 files
+  ada-mode           5.1.9        available  gnu        major-mode for editing Ada sources
+  ada-ref-man        2012.0       available  gnu        Ada Reference Manual 2012
+  adaptive-wrap      0.5          available  gnu        Smart line-wrapping with wrap-prefix
+  adjust-parens      3.0          available  gnu        Indent and dedent Lisp code, automatically adjust close parens
+  adoc-mode          0.6.6        available  melpa-s... a major-mode for editing AsciiDoc files in Emacs
+  aes                0.8          available  melpa-s... Implementation of AES
+  ag                 0.47         available  melpa-s... A front-end for ag ('the silver searcher'), the C ack replacement.
+  aggressive-indent  1.7          available  gnu        Minor mode to aggressively keep your code always indented
+  aggressive-indent  1.7          available  melpa-s... Minor mode to aggressively keep your code always indented
+  ahk-mode           1.5.6        available  melpa-s... Major mode for editing AHK (AutoHotkey and AutoHotkey_L)
+  ahungry-theme      1.1.0        available  gnu        Ahungry color theme for Emacs.  Make sure to (load-theme 'ahungry).
+  airline-themes     1.4          available  melpa-s... vim-airline themes for emacs powerline
+  alchemist          1.8.0        available  melpa-s... Elixir tooling integration into Emacs
+  alect-themes       0.7          available  melpa-s... Configurable light, dark and black themes for Emacs 24 or later
+  alert              1.2          available  melpa-s... Growl-style notification system for Emacs
+  all                1.0          available  gnu        Edit all lines matching a given regexp
+  amd-mode           1.0          available  melpa-s... Minor mode for handling JavaScript AMD module requirements.
+  ampc               0.2          available  gnu        Asynchronous Music Player Controller
+  anaconda-mode      0.1.1        available  melpa-s... Code navigation, documentation lookup and completion for Python
+  anaphora           1.0.0        available  melpa-s... anaphoric macros providing implicit temp variables
+  android-mode       0.4.0        available  melpa-s... Minor mode for Android application development
+  angular-mode       1.0          available  melpa-s... No description available.
+  angular-snippets   0.2.3        available  melpa-s... Yasnippets for AngularJS
+  annotate           0.4.4        available  melpa-s... annotate files without changing them
+  annoying-arrows... 0.1.0        available  melpa-s... Ring the bell if using arrows too much
+  ansi               0.4.1        available  melpa-s... Turn string into ansi strings
+  ansible            0.1.0        available  melpa-s... Ansible minor mode
+  ansible-doc        0.3          available  melpa-s... Ansible documentation Minor Mode
+  anti-zenburn-theme 2.4          available  melpa-s... Low-contrast Zenburn-inverted theme
+  anyins             0.1.1        available  melpa-s... Insert content at multiple places from shell command or kill-ring
+  anything           1.3.9        available  melpa-s... open anything / QuickSilver-like candidate-selection framework
+  anything-exuber... 0.1.2        available  melpa-s... Exuberant ctags anything.el interface
+  anything-replac... 0.9.2        available  melpa-s... `replace-string' and `query-replace' `anything.el' interface
+  anything-sage      0.0.1        available  melpa-s... An anything extension for sage-shell-mode.
+  anzu               0.60         available  melpa-s... Show number of matches in mode-line while searching
+  apples-mode        0.0.2        available  melpa-s... Major mode for editing and executing AppleScript code
+  aproject           0.3          available  melpa-s... Basic project framework for Emacs
+  arbitools          0.71         available  gnu        Package for chess tournaments administration
+  artbollocks-mode   1.1.2        available  melpa-s... Improve your writing (especially about art)
+  arview             1.2          available  melpa-s... extract and view archives in the temporary directory
+  ascii-art-to-un... 1.9          available  gnu        a small artist adjunct
+  asilea             0.2.1        available  melpa-s... Find best compiler options using simulated annealing
+  async              1.6          available  gnu        Asynchronous processing in Emacs
+  async              1.9          available  melpa-s... Asynchronous processing in Emacs
+  auctex             11.89.3      available  gnu        Integrated environment for *TeX*
+  aumix-mode         7            available  gnu        run the aumix program in a buffer
+  aurel              0.8          available  melpa-s... Search, get info, vote and download AUR packages
+  aurora-config-mode 0.0.2        available  melpa-s... Major mode for Apache Aurora configuration files
+  auth-password-s... 1.0.4        available  melpa-s... Integrate auth-source with password-store
+  auto-compile       1.3.1        available  melpa-s... automatically compile Emacs Lisp libraries
+  auto-complete      1.5.1        available  melpa-s... Auto Completion for GNU Emacs
+  auto-complete-c... 0.5          available  melpa-s... Auto Completion source for clang for GNU Emacs
+  auto-complete-e... 0.0.7        available  melpa-s... Exuberant ctags auto-complete.el source
+  auto-complete-nxml 0.5.0        available  melpa-s... do completion by auto-complete.el on nXML-mode
+  auto-complete-pcmp 0.0.2        available  melpa-s... Provide auto-complete sources using pcomplete results
+  auto-complete-sage 0.0.5        available  melpa-s... An auto-complete source for sage-shell-mode.
+  auto-dictionary    1.1          available  melpa-s... automatic dictionary switcher for flyspell
+  auto-indent-mode   0.126        available  melpa-s... Auto indent Minor mode
+  auto-overlays      0.10.9       available  gnu        Automatic regexp-delimited overlays
+  auto-package-up... 1.6.1        available  melpa-s... Automatically update Emacs packages.
+  auto-shell-command 1.0.2        available  melpa-s... Run the shell command asynchronously that you specified when you save the file.
+  auto-yasnippet     0.3.0        available  melpa-s... Quickly create disposable yasnippets
+  autodisass-java... 1.3          available  melpa-s... Automatically disassemble Java bytecode
+  autodisass-llvm... 1.1          available  melpa-s... Automatically disassemble LLVM bitcode
+  autopair           0.6.1        available  melpa-s... Automagically pair braces and quotes like TextMate
+  avy                0.4.0        available  gnu        tree-based completion
+  avy                0.4.0        available  melpa-s... tree-based completion
+  avy-menu           0.1.0        available  melpa-s... Library providing avy-powered popup menu
+  avy-migemo         0.3.2        available  melpa-s... avy with migemo
+  avy-zap            0.1.4        available  melpa-s... Zap to char using `avy'
+  babel              1.4          available  melpa-s... interface to web translation services such as Babelfish
+  back-button        0.6.6        available  melpa-s... Visual navigation through mark rings
+  badwolf-theme      1.2          available  melpa-s... Bad Wolf color theme
+  bash-completion    2.0.0        available  melpa-s... BASH completion for the shell buffer
+  bbcode-mode        2.0.0        available  melpa-s... Major mode for writing BBCode markup
+  bbdb-              0.0.2        available  melpa-s... provide interface for more easily search/choice than BBDB.
+  bbdb-vcard         0.3          available  melpa-s... vCard import/export for BBDB
+  bbdb2erc           0.1.3        available  melpa-s... make bbdb show if pal is online with ERC, click i to chat
+  beacon             1.3.0        available  gnu        Highlight the cursor whenever the window scrolls
+  beeminder          1.0.0        available  melpa-s... Emacs interface for Beeminder
+  beginend           1.0.0        available  melpa-s... Redefine M-< and M-> for some modes
+  biblio             0.1          available  melpa-s... Browse and import bibliographic references from CrossRef, arXiv, DBLP, and doi.org
+  biblio-core        0.1          available  melpa-s... A framework for looking up and displaying bibliographic entries
+  bind-key           2.1          available  melpa-s... A simple way to manage personal keybindings
+  bind-map           1.0.4        available  melpa-s... Bind personal keymaps in multiple locations
+  bing-dict          0.2.2        available  melpa-s... Minimalists' English-Chinese Bing dictionary
+  birds-of-paradi... 0.1.1        available  melpa-s... A brown/orange light-on-dark theme for Emacs 24 (deftheme).
+  bog                1.1.0        available  melpa-s... Extensions for research notes in Org mode
+  bongo              1.0          available  melpa-s... play music with Emacs
+  boon               0.3          available  melpa-s... Ergonomic Command Mode for Emacs.
+  boxquote           1.22         available  melpa-s... Quote text with a semi-box.
+  browse-kill-ring   2.0.0        available  melpa-s... interactively insert items from kill-ring
+  browse-url-dwim    0.6.8        available  melpa-s... Context-sensitive external browse URL or Internet search
+  buffer-flip        1.1          available  melpa-s... Use key-chord to cycle through buffers like Alt-Tab in Windows
+  buffer-move        0.6.2        available  melpa-s... 
+  buffer-utils       0.1.0        available  melpa-s... Buffer-manipulation utility functions
+  bufshow            0.1.0        available  melpa-s... No description available.
+  bug-hunter         1.3.1        available  gnu        Hunt down errors by bisecting elisp files
+  bug-reference-g... 0.2.0        available  melpa-s... Automatically set `bug-reference-url-format' in Github repositories.
+  bundler            1.1.0        available  melpa-s... Interact with Bundler from Emacs
+  bury-successful... 0.1          available  melpa-s... Bury the *compilation* buffer after successful compilation
+  butler             0.2.4        available  melpa-s... Emacs client for Jenkins
+  buttercup          1.5          available  melpa-s... Behavior-Driven Emacs Lisp Testing
+  button-lock        1.0.2        available  melpa-s... Clickable text defined by regular expression
+  cacoo              2.1.2        available  melpa-s... Minor mode for Cacoo : http://cacoo.com
+  cake               1.4.3        available  melpa-s... CakePHP Minor Mode
+  cake-inflector     1.1.1        available  melpa-s... Lazy porting CakePHP infrector.php to el
+  cake2              2.1.0        available  melpa-s... CakePHP2 Minor Mode
+  calfw              1.5          available  melpa-s... Calendar view framework on Emacs
+  camcorder          0.2          available  melpa-s... Record screencasts in gif or other formats.
+  caps-lock          1.0          available  gnu        Caps-lock as a minor mode
+  cargo              0.2.0        available  melpa-s... Emacs Minor Mode for Cargo, Rust's Package Manager.
+  caseformat         0.1.0        available  melpa-s... Format based letter case converter
+  cask               0.7.4        available  melpa-s... Cask: Project management for Emacs package development
+  cask-mode          0.1          available  melpa-s... major mode for editing Cask files
+  cask-package-to... 0.9.1        available  melpa-s... Toolsettize your package
+  caskxy             0.0.5        available  melpa-s... Control Cask in Emacs
+  cbm                0.3          available  melpa-s... Switch to "similiar" buffers.
+  cdlatex            4.7          available  melpa-s... Fast input methods for LaTeX environments and math
+  celery             0.0.3        available  melpa-s... a minor mode to draw stats from celery and more?
+  cerbere            0.1.0        available  melpa-s... Unit testing in Emacs for several programming languages
+  cfengine-code-s... 3.9.0.2.1    available  melpa-s... C code style for CFEngine project.
+  chapel-mode        1.0.0        available  melpa-s... a CC Mode for Chapel derived from derived-mode-ex.el
+  char-menu          0.1.0        available  melpa-s... Create your own menu for fast insertion of arbitrary symbols
+  charmap            0.0.1        available  melpa-s... Unicode table for Emacs
+  checkbox           0.2.1        available  melpa-s... Quick manipulation of textual checkboxes
+  chess              2.0.4        available  gnu        Play chess in GNU Emacs
+  chinese-word-at... 0.2.3        available  melpa-s... Add `chinese-word' thing to `thing-at-point'
+  cider              0.12.0       available  melpa-s... Clojure Interactive Development Environment that Rocks
+  cider-eval-sexp-fu 1.0          available  melpa-s... Briefly highlights an evaluated sexps.
+  cil-mode           0.3          available  melpa-s... Common Intermediate Language mode
+  circe              2.2          available  melpa-s... Client for IRC in Emacs
+  cl-format          1.1          available  melpa-s... CL format routine.
+  cl-generic         0.2          available  gnu        Forward cl-generic compatibility for Emacs<25
+  cl-lib-highlight   1.0.0        available  melpa-s... full cl-lib font-lock highlighting
+  click-mode         0.0.4        available  melpa-s... Major mode for the Click Modular Router Project
+  cliphist           0.3.1        available  melpa-s... Read clipboard history from Parcellite on Linux and Flycut on OS X
+  clips-mode         0.7          available  melpa-s... Major mode for editing CLIPS code and REPL
+  clj-refactor       2.2.0        available  melpa-s... A collection of clojure refactoring functions
+  cljr-helm          0.7          available  melpa-s... Wraps clojure refactor commands with helm
+  clocker            0.0.11       available  melpa-s... Note taker and clock-in enforcer
+  clojure-cheatsheet 0.4.0        available  melpa-s... The Clojure Cheatsheet for Emacs
+  clojure-mode-ex... 5.3.0        available  melpa-s... Extra font-locking for Clojure mode
+  clojure-quick-r... 0.1.0        available  melpa-s... Quickly create Clojure and ClojureScript repls for a project.
+  clojure-snippets   1.0.0        available  melpa-s... Yasnippets for clojure
+  closql             0.1.0        available  melpa-s... store EIEIO objects using EmacSQL
+  cm-mode            1.2          available  melpa-s... Minor mode for CriticMarkup
+  cmake-ide          0.3          available  melpa-s... Calls CMake to find out include paths and other compiler flags
+  cmake-mode         3.5.2        available  melpa-s... major-mode for editing CMake sources
+  cmake-project      0.7          available  melpa-s... Integrates CMake build process with Emacs
+  codic              0.3          available  melpa-s... Search Codic (codic.jp) naming dictionaries
+  coffee-mode        0.4.1.1      available  gnu        Major mode for CoffeeScript files
+  coffee-mode        0.6.3        available  melpa-s... Major mode for CoffeeScript code
+  color-theme-modern 0.0.2        available  melpa-s... Reimplement colortheme with Emacs 24 theme framework.
+  color-theme-san... 2.29         available  melpa-s... A version of Ethan Schoonover's Solarized themes
+  color-theme-san... 1.16         available  melpa-s... A version of Chris Kempson's various Tomorrow themes
+  colorsarenice-t... 1.0.20       available  melpa-s... A colorful color theme.
+  commander          0.7.0        available  melpa-s... Emacs command line parser
+  comment-dwim-2     1.2.2        available  melpa-s... An all-in-one comment command to rule them all
+  commenter          0.5.2        available  melpa-s... multiline-comment support package
+  common-lisp-sni... 0.1.1        available  melpa-s... Yasnippets for Common Lisp
+  company            0.8.12       available  gnu        Modular text completion framework
+  company            0.8.12       available  melpa-s... Modular text completion framework
+  company-anaconda   0.1.0        available  melpa-s... Anaconda backend for company-mode
+  company-ansible    0.1.1        available  melpa-s... A company back-end for ansible
+  company-cabal      0.1.1        available  melpa-s... company-mode cabal backend
+  company-coq        1.0          available  melpa-s... A collection of extensions for Proof General's Coq mode
+  company-emoji      2.3.0        available  melpa-s... company-mode backend for emoji
+  company-ghc        1.1.0        available  melpa-s... company-mode ghc-mod backend
+  company-go         20150303     available  melpa-s... company-mode backend for Go (using gocode)
+  company-irony      0.1.1        available  melpa-s... company-mode completion back-end for irony-mode
+  company-jedi       0.4          available  melpa-s... company-mode completion back-end for Python JEDI
+  company-math       1.1          available  gnu        Completion backends for unicode math symbols and latex tags
+  company-math       1.1          available  melpa-s... Completion backends for unicode math symbols and latex tags
+  company-ngram      0.6.5        available  melpa-s... N-gram based completion
+  company-nixos-o... 0.0.1        available  melpa-s... Company Backend for nixos-options
+  company-quickhelp  1.3.0        available  melpa-s... Popup documentation for completion candidates
+  company-restclient 0.1.0        available  melpa-s... company-mode completion back-end for restclient-mode
+  company-sourcekit  0.1.7        available  melpa-s... company-mode completion backend for SourceKit
+  company-statistics 0.2.2        available  gnu        Sort candidates using completion history
+  company-tern       0.2.0        available  melpa-s... Tern backend for company-mode
+  company-web        0.9          available  melpa-s... Company version of ac-html, complete for web,html,emmet,jade,slim modes
+  company-ycmd       0.9          available  melpa-s... company-mode backend for ycmd
+  composable         0.0.1        available  melpa-s... composable editing
+  concurrent         0.4.0        available  melpa-s... Concurrent utility functions for emacs lisp
+  conkeror-minor-... 1.6.2        available  melpa-s... Mode for editing conkeror javascript files.
+  connection         1.10         available  melpa-s... No description available.
+  context-coloring   7.2.1        available  gnu        Highlight by scope
+  contextual         1.0.1        available  melpa-s... Contextual profile management system
+  corral             0.3          available  melpa-s... Quickly surround text with delimiters
+  counsel            0.8.0        available  melpa-s... Various completion functions using Ivy
+  coverage           0.2          available  melpa-s... Code coverage line highlighting
+  coverlay           0.4.0        available  melpa-s... Test coverage overlay for Emacs
+  cpputils-cmake     5.5          available  melpa-s... Easy real time C++ syntax check and intellisense if you use CMake
+  creds              0.0.6.1      available  melpa-s... A parser credentials file library (not limited to credentials entries)
+  crisp              1.3.4        available  gnu        CRiSP/Brief Emacs emulator
+  crm-custom         0.5          available  melpa-s... Alternate `completing-read-multiple' that uses `completing-read'
+  crux               0.2.0        available  melpa-s... No description available.
+  cryptol-mode       0.1.0        available  melpa-s... Cryptol major mode for Emacs
+  csharp-mode        0.8.12       available  melpa-s... C# mode derived mode
+  csv-mode           1.6          available  gnu        Major mode for editing comma/char separated values
+  ctable             0.1.2        available  melpa-s... Table component for Emacs Lisp
+  ctags              1.1.1        available  melpa-s... No description available.
+  ctags-update       0.2.0        available  melpa-s... (auto) update TAGS in parent directory using exuberant-ctags
+  ctxmenu            0.3.0        available  melpa-s... Provide a context menu like right-click.
+  cuda-mode          1.0.0        available  melpa-s... NVIDIA CUDA Major Mode
+  cyberpunk-theme    1.17         available  melpa-s... Cyberpunk Color Theme
+  cyphejor           0.1.0        available  melpa-s... Shorten major mode names using user-defined rules
+  cython-mode        0.24.1.0     available  melpa-s... Major mode for editing Cython files
+  d-mode             2.0.8        available  melpa-s... D Programming Language major mode for (X)Emacs
+  darcsum            1.3          available  melpa-s... a pcl-cvs like interface for managing darcs patches
+  darcula-theme      1.0          available  melpa-s... Inspired by IntelliJ's Darcula theme
+  darkroom           0.1          available  gnu        Remove visual distractions and focus on writing
+  darktooth-theme    0.1.37       available  melpa-s... Color theme for Emacs, when soothe and gruvbox collide
+  dart-mode          0.14         available  melpa-s... Major mode for editing Dart files
+  dash               2.12.0       available  gnu        A modern list library for Emacs
+  dash               2.12.1       available  melpa-s... A modern list library for Emacs
+  dash-functional    2.12.1       available  melpa-s... Collection of useful combinators for Emacs Lisp
+  date-at-point      0.1          available  melpa-s... Add `date' to `thing-at-point' function
+  date-field         0.0.1        available  melpa-s... Date widget
+  dbus-codegen       0.1          available  gnu        Lisp code generation for D-Bus.
+  debbugs            0.9.5        available  gnu        SOAP library to access debbugs servers
+  decide             0.5          available  melpa-s... rolling dice and other random things
+  dedicated          1.0.0        available  melpa-s... A very simple minor mode for dedicated buffers
+  default-text-scale 0.1          available  melpa-s... Easily adjust the font size in all frames
+  deferred           0.4.0        available  melpa-s... Simple asynchronous functions for emacs lisp
+  define-word        0.1.0        available  melpa-s... display the definition of word at point.
+  deft               0.7          available  melpa-s... quickly browse, filter, and edit plain text notes
+  demangle-mode      1.1          available  melpa-s... Automatically demangle C++ symbols
+  describe-number    0.3.1        available  melpa-s... Describe arbitrarily large number at point.
+  desktop+           0.1          available  melpa-s... improved sessions
+  desktop-registry   1.2.0        available  melpa-s... Keep a central registry of desktop files
+  dict-tree          0.12.8       available  gnu        Dictionary data structure
+  dictionary         1.10         available  melpa-s... No description available.
+  diff-hl            1.8.3        available  gnu        Highlight uncommitted changes using VC
+  diff-hl            1.8.3        available  melpa-s... Highlight uncommitted changes using VC
+  diffview           1.0          available  melpa-s... View diffs in side-by-side format
+  digistar-mode      0.4          available  melpa-s... major mode for Digistar scripts
+  dim                0.1          available  melpa-s... Change mode-line names of major/minor modes
+  dim-autoload       1.1.4        available  melpa-s... dim complete autoload cookie lines
+  diminish           0.45         available  melpa-s... Diminished modes are minor modes with no modeline display
+  dionysos           0.3.0        available  melpa-s... Dionysos, a music player for Emacs
+  dired-atool        1.1.0        available  melpa-s... Pack/unpack files with atool on dired.
+  dired-efap         0.8          available  melpa-s... Edit Filename At Point in a dired buffer
+  dired-fdclone      1.5.2        available  melpa-s... dired functions and settings to mimic FDclone
+  dired-imenu        0.5.0        available  melpa-s... imenu binding for dired mode
+  dired-k            0.16         available  melpa-s... highlight dired buffer by file size, modified time, git status
+  dired-quick-sort   0.1          available  melpa-s... Persistent quick sorting of dired buffers in various ways.
+  dired-single       0.1.3        available  melpa-s... Reuse the current dired buffer to visit a directory
+  direx              1.0.0        available  melpa-s... Simple Directory Explorer
+  direx-grep         0.1.0        available  melpa-s... Grep node of direx.el using incremental search like anything.el/helm.el
+  discover           0.3          available  melpa-s... discover more of Emacs
+  discover-my-major  1.0          available  melpa-s... Discover key bindings and their meaning for the current Emacs major mode
+  dismal             1.5          available  gnu        Dis Mode Ain't Lotus: Spreadsheet program Emacs
+  dispass            1.1.2        available  melpa-s... Emacs wrapper for DisPass
+  dix                0.2.1        available  melpa-s... minor mode for editing Apertium XML dictionary files
+  djvu               0.5          available  gnu        Edit and view Djvu files via djvused
+  docbook            0.1          available  gnu        Info-like viewer for DocBook
+  docker             0.4.0        available  melpa-s... Emacs interface to Docker
+  dockerfile-mode    1.2          available  melpa-s... Major mode for editing Docker's Dockerfiles
+  doom               1.3          available  melpa-s... DOM implementation and manipulation library
+  downplay-mode      0.1          available  melpa-s... focus attention on a region of the buffer
+  dracula-theme      1.2.5        available  melpa-s... Dracula Theme
+  draft-mode         0.1.1        available  melpa-s... Rough drafting for Emacs.
+  drag-stuff         0.2.0        available  melpa-s... Drag stuff (lines, words, region, etc...) around
+  drupal-mode        0.7.0        available  melpa-s... Advanced minor mode for Drupal development
+  drupal-spell       0.2.2        available  melpa-s... Aspell extra dictionary for Drupal
+  dts-mode           0.1.0        available  gnu        Major mode for Device Tree source files
+  ducpel             0.1          available  melpa-s... Logic game with sokoban elements
+  dumb-jump          0.3.9        available  melpa-s... jump to definition for multiple languages without configuration.
+  dummy-h-mode       1.0.1        available  melpa-s... switch major mode to c-/c++-/objc-mode on .h file
+  dyalog-mode        0.3          available  melpa-s... Major mode for editing Dyalog APL source code
+  dynamic-fonts      0.6.4        available  melpa-s... Set faces based on available fonts
+  dynamic-ruler      0.1.4        available  melpa-s... Displays a dynamic ruler at point.
+  e2wm               1.3          available  melpa-s... simple window manager for emacs
+  e2wm-R             0.4          available  melpa-s... some e2wm plugin and perspective for GNU R
+  e2wm-direx         0.0.5        available  melpa-s... Plugin of e2wm.el for direx.el
+  e2wm-pkgex4pl      0.0.1        available  melpa-s... Plugin of e2wm.el for package explorer of Perl
+  e2wm-sww           0.0.2        available  melpa-s... Plugin of e2wm.el to switch plugin quickly
+  e2wm-term          0.0.5        available  melpa-s... Perspective of e2wm.el for work in terminal
+  easy-kill          0.9.3        available  gnu        kill & mark things easily
+  easy-kill          0.9.3        available  melpa-s... kill & mark things easily
+  easy-kill-extras   0.9.4        available  melpa-s... Extra functions for easy-kill.
+  easy-repeat        0.2          available  melpa-s... Repeat easily
+  ebal               0.2.0        available  melpa-s... Emacs interface to Cabal and Stack
+  ebf                1.0.0        available  melpa-s... brainfuck language transpiler to Emacs Lisp
+  ebib               2.5.4        available  melpa-s... a BibTeX database manager
+  ecb                2.24         available  melpa-s... a code browser for Emacs
+  ecukes             0.6.15       available  melpa-s... Cucumber for Emacs.
+  edbi               0.1.2        available  melpa-s... Emacs Database Interface
+  ediprolog          1.1          available  gnu        Emacs Does Interactive Prolog
+  edit-indirect      0.1.2        available  melpa-s... Edit regions in separate buffers
+  edit-list          0.3          available  melpa-s... edit a single list
+  edit-server        1.13         available  melpa-s... server that responds to edit requests from Chrome
+  editorconfig       0.7.6        available  melpa-s... EditorConfig Emacs Plugin
+  edn                1.1.2        available  melpa-s... Support for reading and writing the edn data format from elisp
+  edts               0.1.0        available  melpa-s... No description available.
+  egg                1.0.9        available  melpa-s... Emacs Got Git - Emacs interface to Git
+  egison-mode        3.6.0        available  melpa-s... Egison editing mode
+  eide               2.1.1        available  melpa-s... IDE interface
+  ein                0.8.1        available  melpa-s... Emacs IPython Notebook
+  eink-theme         1.0.0        available  melpa-s... E Ink color theme
+  el-autoyas         0.5          available  melpa-s... Automatically create Emacs-Lisp Yasnippets
+  el-get             5.1          available  melpa-s... Manage the external elisp bits and pieces you depend upon
+  el-init            0.2.0        available  melpa-s... A loader inspired by init-loader
+  el-init-viewer     0.1.0        available  melpa-s... Record viewer for el-init
+  el-mock            1.25.1       available  melpa-s... Tiny Mock and Stub framework in Emacs Lisp
+  el-search          0.1.3        available  gnu        Expression based incremental search for emacs-lisp-mode
+  el-spice           0.2.2        available  melpa-s... Extra spice for emacs lisp programming
+  el-x               0.3.1        available  melpa-s... main entry point for el-x package
+  elang              0.0.1        available  melpa-s... A Python-like language for the Emacs VM
+  eldoc-eval         0.1          available  gnu        Enable eldoc support when minibuffer is in use.
+  eldoc-eval         1.1          available  melpa-s... Enable eldoc support when minibuffer is in use.
+  electric-operator  0.2          available  melpa-s... Automatically add spaces around operators
+  electric-spacing   5.0          available  gnu        Insert operators with surrounding spaces smartly
+  elfeed             1.4.0        available  melpa-s... an Emacs Atom/RSS feed reader
+  elfeed-web         1.4.0        available  melpa-s... web interface to Elfeed
+  elisp-format       0.5.7        available  melpa-s... Format elisp code
+  elisp-slime-nav    0.8          available  melpa-s... Make M-. and M-, work in elisp like they do in slime
+  elixir-mode        2.3.1        available  melpa-s... Major mode for editing Elixir files
+  elixir-yasnippets  0.0.1        available  melpa-s... Yasnippets for Elixir
+  elm-mode           0.13.2       available  melpa-s... Major mode for Elm
+  elmacro            0.3.0        available  melpa-s... Convert keyboard macros to elisp
+  elmine             0.3          available  melpa-s... No description available.
+  elpa-audit         0.4          available  melpa-s... Handy functions for inspecting and comparing package archives
+  elpa-mirror        1.2.2        available  melpa-s... Create local package repository
+  elpy               1.12.0       available  melpa-s... Emacs Python Development Environment
+  elscreen-mew       1.0.2        available  melpa-s... ElScreen Add-On for Mew
+  elscreen-persist   0.2.0        available  melpa-s... persist the elscreen across sessions
+  elwm               0.0.2        available  melpa-s... Minimalistic window manager for emacs
+  elx                0.10.1       available  melpa-s... extract information from Emacs Lisp libraries
+  emacs-eclim        0.3          available  melpa-s... An interface to the Eclipse IDE.
+  emacs-setup        1.0          available  melpa-s... Package for maintaining your emacs configuration. Clean up your .emacs!
+  emacsagist         1.0.0        available  melpa-s... Search Packagist.org packages without leaving Emacs
+  emacsc             1.2.20131027 available  melpa-s... helper for emacsc(1)
+  emacsql            2.0.1        available  melpa-s... high-level SQL database front-end
+  emacsql-mysql      2.0.1        available  melpa-s... EmacSQL back-end for MySQL
+  emacsql-psql       2.0.1        available  melpa-s... EmacSQL back-end for PostgreSQL via psql and pg
+  emacsql-sqlite     2.0.1        available  melpa-s... EmacSQL back-end for SQLite
+  emacsshot          0.4          available  melpa-s... Snapshot a frame or window from within Emacs
+  emamux             0.13         available  melpa-s... Interact with tmux
+  embrace            0.1.2        available  melpa-s... Add/Change/Delete pairs based on `expand-region'
+  emmet-mode         1.0.8        available  melpa-s... Unofficial Emmet's support for emacs
+  emms-mode-line-... 0.2.5        available  melpa-s... Display the emms mode line as a ticker
+  emms-player-mpv    0.0.8        available  melpa-s... mpv support for EMMS
+  emms-player-sim... 0.3.0        available  melpa-s... An extension of emms-player-simple.el for mpv JSON IPC
+  emms-state         0.2          available  melpa-s... Display track description and playing time in the mode line
+  emoji-cheat-she... 1.2.1        available  melpa-s... emoji-cheat-sheet for emacs
+  emoji-fontset      0.1.0        available  melpa-s... Set font face for Emoji.
+  emojify            0.3          available  melpa-s... Display emojis in Emacs
+  emr                0.3.6        available  melpa-s... Emacs refactoring system.
+  engine-mode        1.0.0        available  melpa-s... Define and query search engines from within Emacs.
+  enlive             0.0.1        available  melpa-s... query html document with css selectors
+  enotify            0.1.3        available  melpa-s... No description available.
+  enwc               1.0          available  gnu        The Emacs Network Client
+  eopengrok          0.3.0        available  melpa-s... opengrok interface for emacs
+  epc                0.1.0        available  melpa-s... A RPC stack for the Emacs Lisp
+  epkg               1.0.0        available  melpa-s... browse the Emacsmirror package database
+  epl                0.8          available  melpa-s... Emacs Package Library
+  epoch-view         0.0.1        available  gnu        Minor mode to visualize epoch timestamps
+  erc-crypt          1.0          available  melpa-s... Symmetric Encryption for ERC
+  erc-hipchatify     0.1          available  melpa-s... Provide emoticons and html rendering for HipChat
+  erc-hl-nicks       1.3.2        available  melpa-s... ERC nick highlighter that ignores uniquifying chars when colorizing
+  erc-twitch         1.1          available  melpa-s... Support for Twitch emotes for ERC.
+  erc-youtube        0.1          available  melpa-s... Show info about a YouTube URL in an ERC buffer.
+  ercn               1.1.1        available  melpa-s... Flexible ERC notifications
+  erefactor          0.7.0        available  melpa-s... Emacs-Lisp refactoring utilities
+  ergoemacs-mode     5.14.7.3     available  gnu        Emacs mode based on common modern interface and ergonomics.
+  ergoemacs-mode     5.14.7.3.1   available  melpa-s... Emacs mode based on common modern interface and ergonomics.
+  erlang             18.3.3       available  melpa-s... Erlang major mode
+  ert-async          0.1.2        available  melpa-s... Async support for ERT
+  ert-junit          0.1.1        available  melpa-s... JUnit XML reports from ert results
+  ert-runner         0.7.0        available  melpa-s... Opinionated Ert testing workflow
+  es-lib             0.4          available  melpa-s... A collection of emacs utilities
+  es-mode            4.1.1        available  melpa-s... A major mode for editing Elasticsearch queries
+  es-windows         0.3          available  melpa-s... Window-management utilities
+  esa                0.8.13       available  melpa-s... Emacs integration for esa.io
+  eshell-autojump    0.2          available  melpa-s... autojump command for Eshell
+  eshell-z           0.2.1        available  melpa-s... cd to frequent directory in eshell
+  espuds             0.3.3        available  melpa-s... Ecukes step definitions
+  ess                15.9         available  melpa-s... Emacs Speaks Statistics
+  ess-R-data-view    1.0          available  melpa-s... Data viewer for GNU R
+  ess-R-object-popup 1.0          available  melpa-s... popup description of R object
+  ess-smart-under... 0.79         available  melpa-s... Ess Smart Underscore
+  esup               0.4          available  melpa-s... the Emacs StartUp Profiler (ESUP)
+  esxml              0.3.1        available  melpa-s... Library for working with xml via esxml and sxml
+  eval-in-repl       0.9.2        available  melpa-s... Consistent ESS-like eval interface for various REPLs
+  eval-sexp-fu       0.4.0        available  melpa-s... Tiny functionality enhancements for evaluating sexps.
+  evalator           1.0.0        available  melpa-s... Package for interactive transformation of data with helm
+  evil               1.2.12       available  melpa-s... Extensible Vi layer for Emacs.
+  evil-anzu          0.3          available  melpa-s... anzu for evil-mode
+  evil-args          1.0          available  melpa-s... Motions and text objects for delimited arguments in Evil.
+  evil-commentary    2.0.0        available  melpa-s... Comment stuff out. A port of vim-commentary.
+  evil-escape        3.12         available  melpa-s... Escape from anything with a customizable key sequence
+  evil-iedit-state   1.1          available  melpa-s... Evil states to interface iedit mode.
+  evil-leader        0.4.3        available  melpa-s... let there be <leader>
+  evil-lisp-state    8.2          available  melpa-s... An evil state to edit Lisp code
+  evil-magit         0.3          available  melpa-s... evil-based key bindings for magit
+  evil-mark-replace  0.0.4        available  melpa-s... replace the thing in marked area
+  evil-matchit       2.1.3        available  melpa-s... Vim matchit ported into Emacs (requires EVIL)
+  evil-multiedit     1.2.4        available  melpa-s... multiple cursors for evil-mode
+  evil-nerd-comme... 2.3          available  melpa-s... Comment/uncomment lines efficiently. Like Nerd Commenter in Vim
+  evil-numbers       0.4          available  melpa-s... increment/decrement numbers like in vim
+  evil-org           0.1.1        available  melpa-s... evil keybindings for org-mode
+  evil-quickscope    0.1.4        available  melpa-s... Highlight unique characters in words for f,F,t,T navigation
+  evil-rsi           2.0.0        available  melpa-s... Use emacs motion keys in evil, inspired by vim-rsi
+  evil-search-hig... 1.8          available  melpa-s... Persistent highlights after search
+  evil-smartparens   0.3.0        available  melpa-s... Evil support for smartparens
+  evil-snipe         2.0.1        available  melpa-s... emulate vim-sneak & vim-seek
+  evil-space         0.0.6        available  melpa-s... Repeat motion in Evil. Correct the behaviour of what SPC should do.
+  evil-textobj-an... 0.1          available  melpa-s... Textobject for the closest user-defined blocks.
+  evil-tutor         1.0          available  melpa-s... Vimtutor adapted to Evil and wrapped in a major-mode
+  evil-visual-mar... 0.0.3        available  melpa-s... Display evil marks on buffer
+  evil-visualstar    0.2.0        available  melpa-s... Starts a * or # search from the visual selection
+  evm                0.4.2        available  melpa-s... Emacs Version Manager
+  eww-lnum           1.1          available  melpa-s... Conkeror-like functionality for eww
+  excorporate        0.7.3        available  gnu        Exchange integration
+  exec-path-from-... 1.10         available  melpa-s... Get environment variables such as $PATH from the shell
+  expand-region      0.10.0       available  melpa-s... Increase selected region by semantic units.
+  express            0.6.0        available  melpa-s... Alternatives to `message'
+  extend-dnd         0.5          available  melpa-s... R drag and Drop
+  exwm               0.4          available  gnu        Emacs X Window Manager
+  eyebrowse          0.6.9        available  melpa-s... Easy window config switching
+  f                  0.18.2       available  melpa-s... Modern API for working with files and directories
+  f90-interface-b... 1.1          available  gnu        Parse and browse f90 interfaces
+  fabric             0.2.0        available  melpa-s... Launch Fabric using Emacs
+  factlog            0.0.1        available  melpa-s... File activity logger
+  fancy-battery      0.2          available  melpa-s... Fancy battery display
+  fancy-narrow       0.9.4        available  melpa-s... narrow-to-region with more eye candy.
+  fastnav            1.0.7        available  melpa-s... Fast navigation and editing routines.
+  fcitx              0.2.1        available  melpa-s... Make fcitx better in Emacs
+  feature-mode       0.4          available  melpa-s... Major mode for editing Gherkin (i.e. Cucumber) user stories
+  fill-column-ind... 1.81         available  melpa-s... Graphically indicate the fill column
+  finalize           1.0.0        available  melpa-s... finalizers for Emacs Lisp
+  find-by-pinyin-... 0.0.2        available  melpa-s... Find file by first Pinyin characters of Chinese Hanzi
+  find-file-in-pr... 4.9          available  melpa-s... Find files in a project quickly, on any OS
+  find-file-in-re... 1.2          available  melpa-s... Quickly find files in a git, mercurial or other repository
+  fiplr              0.2.4        available  melpa-s... Fuzzy Search for Files in Projects
+  firefox-controller 2.0          available  melpa-s... An improved Firefox controller
+  fireplace          1.1.1        available  melpa-s... A cozy fireplace for emacs
+  firestarter        0.2.4        available  melpa-s... Execute (shell) commands on save
+  fish-mode          0.1.2        available  melpa-s... Major mode for fish shell scripts
+  fix-input          0.1.0        available  melpa-s... Make input methods play nicely with alternative keyboard layout on OS level
+  fix-word           0.1.1        available  melpa-s... Convenient word transformation
+  fixmee             0.8.6        available  melpa-s... Quickly navigate to FIXME notices in code
+  floobits           1.7.0        available  melpa-s... Floobits plugin for real-time collaborative editing
+  flx                0.6.1        available  melpa-s... fuzzy matching with good sorting
+  flx-ido            0.6.1        available  melpa-s... flx integration for ido
+  flycheck           27           available  melpa-s... On-the-fly syntax checking
+  flycheck-apertium  0.2          available  melpa-s... Apertium checkers in flycheck
+  flycheck-cask      0.3          available  melpa-s... Cask support in Flycheck
+  flycheck-checkb... 1.5          available  melpa-s... checkbashisms checker for flycheck
+  flycheck-clojure   0.1.3        available  melpa-s... Flycheck: Clojure support
+  flycheck-color-... 0.3          available  melpa-s... Change mode line color with Flycheck status
+  flycheck-dmd-dub   0.9          available  melpa-s... Sets flycheck-dmd-include-paths from dub package information
+  flycheck-gometa... 0.1.3        available  melpa-s... flycheck checker for gometalinter
+  flycheck-haskell   0.7.2        available  melpa-s... Flycheck: Cabal projects and sandboxes
+  flycheck-hdevtools 0.3          available  melpa-s... A flycheck checker for Haskell using hdevtools
+  flycheck-irony     0.1.0        available  melpa-s... Flycheck: C/C++ support via Irony
+  flycheck-ledger    0.4          available  melpa-s... Flycheck integration for ledger files
+  flycheck-ocaml     0.3          available  melpa-s... Flycheck: OCaml support
+  flycheck-package   0.8          available  melpa-s... A Flycheck checker for elisp package authors
+  flycheck-pony      0.2.1        available  melpa-s... Pony support in Flycheck
+  flycheck-pos-tip   0.1          available  melpa-s... Display Flycheck errors in GUI tooltips
+  flycheck-status... 1.2.1        available  melpa-s... Show flycheck status using cute, compact emoji
+  flycheck-tip       0.5.0        available  melpa-s... Show flycheck/flymake errors by tooltip
+  flycheck-ycmd      0.9          available  melpa-s... flycheck integration for ycmd
+  flylisp            0.2          available  gnu        Color unbalanced parentheses and parentheses inconsistent with indentation
+  flymake-coffee     0.12         available  melpa-s... A flymake handler for coffee script
+  flymake-css        0.3          available  melpa-s... Flymake support for css using csslint
+  flymake-easy       0.10         available  melpa-s... Helpers for easily building flymake checkers
+  flymake-gjshint    0.0.6        available  melpa-s... A flymake handler for javascript using both jshint and gjslint
+  flymake-haml       0.8          available  melpa-s... A flymake handler for haml files
+  flymake-haskell... 0.3          available  melpa-s... Syntax-check haskell-mode using both ghc and hlint
+  flymake-hlint      0.2          available  melpa-s... A flymake handler for haskell-mode files using hlint
+  flymake-jslint     0.23         available  melpa-s... Flymake support for javascript using jslint
+  flymake-json       0.1          available  melpa-s... A flymake handler for json using jsonlint
+  flymake-less       0.3          available  melpa-s... Flymake handler for LESS stylesheets (lesscss.org)
+  flymake-perlcritic 1.0.3        available  melpa-s... Flymake handler for Perl to invoke Perl::Critic
+  flymake-php        0.5          available  melpa-s... A flymake handler for php-mode files
+  flymake-python-... 0.9          available  melpa-s... A flymake handler for python-mode files using pyflakes (or flake8)
+  flymake-ruby       0.8          available  melpa-s... A flymake handler for ruby-mode files
+  flymake-sass       0.6          available  melpa-s... Flymake handler for sass files
+  flymake-shell      0.8          available  melpa-s... A flymake syntax-checker for shell scripts
+  flyspell-lazy      0.6.10       available  melpa-s... Improve flyspell responsiveness using idle timers
+  flyspell-popup     0.2          available  melpa-s... Correcting words with Flyspell in popup menus
+  fm                 1.0          available  melpa-s... follow mode for compilation/output buffers
+  focus              0.1.0        available  melpa-s... Dim the font color of text in surrounding sections
+  fold-dwim          1.2          available  melpa-s... No description available.
+  fold-dwim-org      0.6          available  melpa-s... Fold DWIM bound to org key-strokes.
+  fold-this          0.3.0        available  melpa-s... Just fold this region please
+  font-utils         0.7.8        available  melpa-s... Utility functions for working with fonts
+  fontawesome        0.3          available  melpa-s... fontawesome utility
+  forecast           0.4.1        available  melpa-s... Display a forecast.io weather report in a buffer
+  foreman-mode       0.0.1        available  melpa-s... View and manage Procfile-based applications
+  form-feed          0.2.2        available  melpa-s... Display ^L glyphs as horizontal lines
+  format-sql         0.4          available  melpa-s... Use format-sql to make your SQL readable in directly Emacs.
+  fountain-mode      2.0.1        available  melpa-s... Major mode for screenwriting in Fountain markup
+  frame-restore      0.5          available  melpa-s... Restore Emacs frame
+  fringe-helper      1.0.1        available  melpa-s... helper functions for fringe bitmaps
+  fsharp-mode        1.8.1        available  melpa-s... F# mode for Emacs
+  fsm                0.2          available  gnu        state machine library
+  fuel               0.96         available  melpa-s... No description available.
+  full-ack           1.0          available  melpa-s... a front-end for ack
+  fullframe          0.4.0        available  melpa-s... Generalized automatic execution in a single frame
+  function-args      0.5.1        available  melpa-s... C++ completion for GNU Emacs
+  fuzzy              0.1          available  melpa-s... Fuzzy Matching
+  fvwm-mode          1.6.4        available  melpa-s... major mode for editing Fvwm configuration files
+  fwb-cmds           0.4.0        available  melpa-s... misc frame, window and buffer commands
+  fxrd-mode          0.6          available  melpa-s... Major mode for editing fixed field width files
+  fzf                0.1          available  melpa-s... A front-end for fzf.
+  gams-mode          6.1          available  melpa-s... Major mode for editing GAMS (General Algebraic Modeling System) files.
+  gather             1.1.0        available  melpa-s... Gather string in buffer.
+  geiser             0.8.1        available  melpa-s... GNU Emacs and Scheme talk to each other
+  genrnc             0.1.0        available  melpa-s... generate RELAX NG Compact Schema from RELAX NG Schema, XML Schema and DTD.
+  german-holidays    0.2.0        available  melpa-s... German holidays for Emacs calendar
+  ggo-mode           20130521     available  melpa-s... Gengetopt major mode
+  ggtags             0.8.11       available  gnu        emacs frontend to GNU Global source code tagging system
+  ggtags             0.8.11       available  melpa-s... emacs frontend to GNU Global source code tagging system
+  ghc                5.5.0.0      available  melpa-s... Sub mode for Haskell mode
+  ghc-imported-from  0.1.2        available  melpa-s... Haskell documentation lookup with ghc-imported-from
+  gist               1.3.1        available  melpa-s... Emacs integration for gist.github.com
+  git                0.1.1        available  melpa-s... An Elisp API for programmatically using Git
+  git-auto-commit... 4.4.0        available  melpa-s... Emacs Minor mode to automatically commit and push
+  git-command        0.2.0        available  melpa-s... Yet another Git interface
+  git-commit         2.6.2        available  melpa-s... Edit Git commit messages
+  git-gutter         0.87         available  melpa-s... Port of Sublime Text plugin GitGutter
+  git-gutter+        0.4          available  melpa-s... Manage Git hunks straight from the buffer
+  git-gutter-fringe  0.22         available  melpa-s... Fringe version of git-gutter.el
+  git-gutter-fringe+ 0.1          available  melpa-s... Fringe version of git-gutter+.el
+  git-lens           0.4.1        available  melpa-s... Show new, deleted or modified files in branch
+  git-link           0.4.1        available  melpa-s... Get the GitHub/Bitbucket/GitLab URL for a buffer location
+  git-messenger      0.16         available  melpa-s... Pop up last commit information of current line
+  git-ps1-mode       0.2.2        available  melpa-s... Global minor-mode to print __git_ps1
+  git-timemachine    3.0          available  melpa-s... Walk through git revisions of a file
+  git-wip-timemac... 1.0          available  melpa-s... Walk through git-wip revisions of a file
+  gitattributes-mode 1.2.2        available  melpa-s... Major mode for editing .gitattributes files
+  gitconfig          1.0.0        available  melpa-s... Emacs lisp interface to work with git-config variables
+  gitconfig-mode     1.2.2        available  melpa-s... Major mode for editing .gitconfig files
+  github-browse-file 0.5.0        available  melpa-s... View the file you're editing on GitHub
+  github-clone       0.2          available  melpa-s... Fork and clone github repos
+  gitignore-mode     1.2.2        available  melpa-s... Major mode for editing .gitignore files
+  gitlab             0.7.0        available  melpa-s... Emacs client for Gitlab
+  gmail-message-mode 1.3.2        available  melpa-s... A major-mode for editing gmail messages using markdown syntax.
+  gmail2bbdb         0.0.4        available  melpa-s... import email and name into bbdb from vcard.
+  gmpl-mode          0.1.0        available  melpa-s... Major mode for editing GMPL(MathProg) files
+  gnome-c-style      0.1          available  gnu        minor mode for editing GNOME-style C source code
+  gnome-calendar     0.2          available  melpa-s... Integration with the GNOME Shell calendar
+  gnorb              1.1.2        available  gnu        Glue code between Gnus, Org, and BBDB
+  gntp               0.1          available  melpa-s... Growl Notification Protocol for Emacs
+  gnugo              3.0.0        available  gnu        play GNU Go in a buffer
+  gnuplot            0.7.0        available  melpa-s... drive gnuplot from within emacs
+  gnus-desktop-no... 1.4          available  melpa-s... Gnus Desktop Notification global minor mode
+  gnus-x-gm-raw      0.0.1        available  melpa-s... Search mail of Gmail using X-GM-RAW as web interface
+  go-autocomplete    20150303     available  melpa-s... auto-complete-mode backend for go-mode
+  go-direx           0.4          available  melpa-s... Tree style source code viewer for Go language
+  go-eldoc           0.27         available  melpa-s... eldoc for go-mode
+  go-errcheck        1.1.2        available  melpa-s... errcheck integration for go-mode
+  go-impl            0.0.1        available  melpa-s... impl integration for go-mode
+  go-mode            1.4.0        available  melpa-s... Major mode for the Go programming language
+  go-scratch         0.0.1        available  melpa-s... *scratch* buffer for Go
+  golden-ratio       1.0          available  melpa-s... Automatic resizing of Emacs windows to the golden ratio
+  google-this        1.10         available  melpa-s... A set of functions and bindings to google under point.
+  google-translate   0.11.10      available  melpa-s... Emacs interface to Google Translate.
+  goose-theme        1.0.0        available  melpa-s... A gray color theme for Emacs.
+  gotest             0.12.0       available  melpa-s... Launch GO unit tests
+  gotham-theme       1.1.6        available  melpa-s... A very dark Emacs color theme.
+  goto-gem           1.2          available  melpa-s... Open dired in gem directory
+  goto-last-change   1.2.1        available  melpa-s... Move point through buffer-undo-list positions
+  govc               0.6.2        available  melpa-s... Interface to govc for managing VMware ESXi and vCenter
+  gradle-mode        0.5.5        available  melpa-s... Gradle integration with Emacs' compile
+  grails             0.4.1        available  melpa-s... Minor mode for Grails projects
+  grails-mode        1.0.1        available  melpa-s... minor-mode that adds some Grails project management to a grails project
+  grails-projecti... 1.1.2        available  melpa-s... Grails mode with Projectile for projects management.
+  grandshell-theme   1.0          available  melpa-s... Dark color theme for Emacs > 24 with intensive colors.
+  graphene           0.9.5        available  melpa-s... Friendly Emacs defaults
+  graphene-meta-t... 0.0.2        available  melpa-s... Integrated theming for common packages
+  graphviz-dot-mode  0.4          available  melpa-s... Mode for the dot-language used by graphviz (att).
+  grapnel            0.5.3        available  melpa-s... HTTP request lib with flexible callback dispatch
+  grass-mode         0.1          available  melpa-s... Provides Emacs modes for interacting with the GRASS GIS program
+  grin               1.0          available  melpa-s... run grin and grind (python replacements for grep and find) putting hits in a grep buffer
+  grizzl             0.1.1        available  melpa-s... Fuzzy Search Library & Completing Read
+  groovy-mode        1.0.1        available  melpa-s... Major mode for Groovy source files
+  gruber-darker-t... 0.6          available  melpa-s... Gruber Darker color theme for Emacs 24.
+  grunt              1.3.2        available  melpa-s... Some glue to stick Emacs and Gruntfiles together
+  gscholar-bibtex    0.3.1        available  melpa-s... Retrieve BibTeX from Google Scholar and other online sources(ACM, IEEE, DBLP)
+  guide-key          1.2.5        available  melpa-s... Guide the following key bindings automatically and dynamically
+  guide-key-tip      0.0.1        available  melpa-s... Show guide-key.el hints using pos-tip.el
+  guru-mode          0.2          available  melpa-s... Become an Emacs guru
+  hackernews         0.3.1        available  melpa-s... Access the hackernews aggregator from Emacs
+  ham-mode           1.1.2        available  melpa-s... Html As Markdown. Transparently edit an html file using markdown
+  haml-mode          3.1.9        available  melpa-s... Major mode for editing Haml files
+  hardcore-mode      0.1.0        available  melpa-s... Disable arrow keys + optionally backspace and return
+  hardhat            0.4.6        available  melpa-s... Protect against clobbering user-writable files
+  harvest            0.3.8        available  melpa-s... Harvest integration
+  haskell-emacs      3.1.2        available  melpa-s... Write emacs extensions in haskell
+  haskell-emacs-base 3.1.2        available  melpa-s... Haskell functions from Prelude
+  haskell-emacs-text 3.1.2        available  melpa-s... Haskell functions from Data.Text
+  haskell-mode       13.20        available  melpa-s... A Haskell editing mode
+  haskell-snippets   0.1.0        available  melpa-s... Yasnippets for Haskell
+  haskell-tab-indent 0.1.0        available  melpa-s... tab-based indentation for haskell-mode
+  haxor-mode         0.2.0        available  melpa-s... Major mode for exiting .hax files
+  hcl-mode           0.2          available  melpa-s... Major mode for Hashicorp
+  heap               0.3          available  gnu        Heap (a.k.a. priority queue) data structure
+  helm               1.9.5        available  melpa-s... Helm is an Emacs incremental and narrowing framework
+  helm-ack           0.13         available  melpa-s... Ack command with helm interface
+  helm-ag            0.55         available  melpa-s... the silver searcher with helm interface
+  helm-aws           1.0.0        available  melpa-s... Manage AWS EC2 server instances directly from Emacs
+  helm-backup        0.2.1        available  melpa-s... Backup each file change using git
+  helm-bm            0.3          available  melpa-s... helm sources for bm.el
+  helm-bundle-show   1.1.5        available  melpa-s... bundle show with helm interface
+  helm-c-yasnippet   0.6.7        available  melpa-s... helm source for yasnippet.el
+  helm-circe         0.4          available  melpa-s... helm circe buffer management.
+  helm-commandlinefu 0.3          available  melpa-s... Search and browse commandlinefu.com from helm
+  helm-core          1.9.5        available  melpa-s... Development files for Helm
+  helm-cscope        0.1.1        available  melpa-s... Helm interface for xcscope.el.
+  helm-dash          1.2.0        available  melpa-s... Offline documentation browser for +150 APIs using Dash docsets.
+  helm-descbinds     1.8          available  melpa-s... Yet Another `describe-bindings' with `helm'.
+  helm-firefox       1.1          available  melpa-s... Firefox bookmarks
+  helm-flycheck      0.3          available  melpa-s... Show flycheck errors with helm
+  helm-ghc           0.1.0        available  melpa-s... A Helm datasource for ghc-mod errors
+  helm-ghq           1.6.0        available  melpa-s... ghq with helm interface
+  helm-git-grep      0.7.1        available  melpa-s... helm for git grep, an incremental git-grep(1)
+  helm-github-stars  1.3.2        available  melpa-s... Helm integration for your starred repositories on github
+  helm-gitlab        0.7.0        available  melpa-s... Helm interface to Gitlab
+  helm-go-package    0.1          available  melpa-s... helm sources for Go programming language's package
+  helm-gtags         1.5.6        available  melpa-s... GNU GLOBAL helm interface
+  helm-hatena-boo... 2.2.0        available  melpa-s... Hatena::Bookmark with helm interface
+  helm-hayoo         0.0.5        available  melpa-s... Source and configured helm for searching hayoo
+  helm-ispell        0.1          available  melpa-s... ispell-complete-word with helm interface
+  helm-ls-git        1.8.0        available  melpa-s... list git files.
+  helm-ls-hg         1.7.8        available  melpa-s... List hg files in hg project.
+  helm-make          0.1.0        available  melpa-s... Select a Makefile target with helm
+  helm-migemo        1.22         available  melpa-s... Migemo plug-in for helm
+  helm-mode-manager  1.0.0        available  melpa-s... Select and toggle major and minor modes with helm
+  helm-mt            0.6          available  melpa-s... helm multi-term management.
+  helm-nixos-options 0.0.1        available  melpa-s... Helm Interface for nixos-options
+  helm-open-github   0.14         available  melpa-s... Utilities of Opening Github Page
+  helm-org-rifle     1.2.0        available  melpa-s... Rifle through your Org files
+  helm-orgcard       0.2          available  melpa-s... browse the orgcard by helm
+  helm-package       0.3          available  melpa-s... Listing ELPA packages with helm interface
+  helm-pages         0.1.1        available  melpa-s... Pages in current buffer as Helm datasource
+  helm-perldoc       0.7          available  melpa-s... perldoc with helm interface
+  helm-proc          0.0.5        available  melpa-s... Helm interface for managing system processes
+  helm-project-pe... 1.0.0        available  melpa-s... Helm integration for project-persist package
+  helm-pt            0.2          available  melpa-s... Helm interface to the platinum searcher
+  helm-purpose       0.1          available  melpa-s... Helm Interface for Purpose
+  helm-pydoc         0.7          available  melpa-s... pydoc with helm interface
+  helm-qiita         0.1.1        available  melpa-s... Qiita with helm interface
+  helm-recoll        0.4          available  melpa-s... helm interface for the recoll desktop search tool.
+  helm-robe          0.2          available  melpa-s... completing read function for robe
+  helm-rubygems-org  0.0.1        available  melpa-s... Use helm to search rubygems.org
+  helm-sage          0.0.4        available  melpa-s... A helm extension for sage-shell-mode.
+  helm-spaces        0.3          available  melpa-s... helm sources for spaces
+  helm-swoop         1.5.1        available  melpa-s... Efficiently hopping squeezed lines powered by helm interface
+  helm-themes        0.5          available  melpa-s... Color theme selection with helm interface
+  helm-unicode       0.0.2        available  melpa-s... Helm command for unicode characters.
+  helm-w32-launcher  0.1.6        available  melpa-s... Start Menu entry launcher using Helm
+  helm-zhihu-daily   0.2          available  melpa-s... Helm interface for 知乎日报 (http://daily.zhihu.com)
+  hfst-mode          0.3.0        available  melpa-s... major mode for editing HFST files
+  hi2                1.0          available  melpa-s... indentation module for Haskell Mode
+  highlight-blocks   0.1.16       available  melpa-s... Highlight the blocks point is in
+  highlight-defined  0.1.5        available  melpa-s... Syntax highlighting of known Elisp symbols
+  highlight-inden... 0.7.0        available  melpa-s... Minor modes for highlighting indentation
+  highlight-numbers  0.2.1        available  melpa-s... Highlight numbers in source code
+  highlight-paren... 1.1.0        available  melpa-s... highlight surrounding parentheses
+  highlight-quoted   0.1          available  melpa-s... Highlight Lisp quotes and quoted symbols
+  highlight-symbol   1.3          available  melpa-s... automatic and manual symbol highlighting
+  hindent            5.4.3        available  melpa-s... Indent haskell code using the "hindent" program
+  hippie-expand-s... 0.1          available  melpa-s... Hook slime's completion into hippie-expand
+  hippie-namespace   0.5.8        available  melpa-s... Special treatment for namespace prefixes in hippie-expand
+  history            1.0.0        available  melpa-s... History utility for source code navigation
+  historyf           0.0.9        available  melpa-s... file history library like browser
+  hl-anything        0.0.9        available  melpa-s... Highlight symbols, selections, enclosing parens and more.
+  hl-sentence        3            available  melpa-s... highlight a sentence based on customizable face
+  hl-sexp            1.0.0        available  melpa-s... highlight the current sexp
+  hl-todo            1.5.0        available  melpa-s... highlight TODO keywords
+  hoa-pp-mode        0.3.0        available  melpa-s... Major mode for Hoa PP grammars
+  homebrew-mode      1.3.5        available  melpa-s... minor mode for editing Homebrew formulae
+  hookify            0.2.1        available  melpa-s... Interactive commands to create temporary hooks
+  ht                 2.0          available  melpa-s... The missing hash table library for Emacs
+  html-to-markdown   1.5.1        available  melpa-s... HTML to Markdown converter written in Emacs-lisp.
+  html5-schema       0.1          available  gnu        Add HTML5 schemas for use by nXML
+  httpcode           0.1          available  melpa-s... explains the meaning of an HTTP status code
+  httprepl           1.1          available  melpa-s... An HTTP REPL
+  hyai               1.0.0        available  melpa-s... Haskell Yet Another Indentation
+  hyde               0.2          available  melpa-s... No description available.
+  hydra              0.13.3       available  melpa-s... Make bindings that stick around.
+  hydra              0.13.5       available  gnu        Make bindings that stick around.
+  ibuffer-projectile 0.2          available  melpa-s... Group ibuffer's list by projectile root
+  ibuffer-vc         0.10         available  melpa-s... Group ibuffer's list by VC project, or show VC status
+  identica-mode      1.3.1        available  melpa-s... Major mode API client for status.net open microblogging
+  idle-highlight-... 1.1.3        available  melpa-s... highlight the word the point is on
+  ido-at-point       1.0.0        available  melpa-s... ido-style completion-at-point
+  ido-complete-sp... 1.1          available  melpa-s... No description available.
+  ido-completing-... 3.12         available  melpa-s... A completing-read-function using ido
+  ido-describe-bi... 0.0.9        available  melpa-s... Yet another `describe-bindings' with `ido'.
+  ido-grid-mode      1.1.5        available  melpa-s... Display ido-prospects in the minibuffer in a grid.
+  ido-load-library   0.2.0        available  melpa-s... Load-library alternative using ido-completing-read
+  ido-occur          0.1.4        available  melpa-s... Yet another `occur' with `ido'.
+  ido-ubiquitous     3.12         available  melpa-s... Use ido (nearly) everywhere.
+  ido-vertical-mode  0.1.6        available  melpa-s... Makes ido-mode display vertically.
+  ido-yes-or-no      1.4          available  melpa-s... Use Ido to answer yes-or-no questions
+  idomenu            0.1          available  melpa-s... imenu tag selection with ido
+  idris-mode         0.9.19       available  melpa-s... Major mode for editing Idris code
+  iedit              0.9.9        available  melpa-s... Edit multiple regions in the same way simultaneously.
+  iflipb             1.3          available  melpa-s... interactively flip between recently visited buffers
+  ignoramus          0.7.4        available  melpa-s... Ignore backups, build files, et al.
+  image+             0.6.2        available  melpa-s... Image manipulate extensions for Emacs
+  image-archive      0.0.7        available  melpa-s... Image thumbnails in archive file with non-blocking
+  image-dired+       0.7.2        available  melpa-s... Image-dired extensions
+  imapfilter         1.0.1        available  melpa-s... run the imapfilter executable
+  imenu-anywhere     0.9.0        available  melpa-s... ido/helm imenu tag selection across all buffers with the same mode
+  imenu-list         0.5          available  melpa-s... Show imenu entries in a seperate buffer
+  imenus             0.2          available  melpa-s... Imenu for multiple buffers and without subgroups
+  imgix              1.0.0        available  melpa-s... Major mode for editing images in emacs via imgix
+  immutant-server    1.2.0        available  melpa-s... Run your Immutant server in Emacs
+  import-js          0.6.0        available  melpa-s... Import Javascript dependencies
+  import-popwin      0.9          available  melpa-s... popwin buffer near by import statements with popwin
+  inf-clojure        1.4.0        available  melpa-s... Run an external Clojure process in an Emacs buffer
+  inf-ruby           2.4.0        available  melpa-s... Run a Ruby process in a buffer
+  inflections        2.3          available  melpa-s... convert english words between singular and plural
+  init-loader        0.2          available  melpa-s... Loader for configuration files
+  init-open-recentf  0.0.2        available  melpa-s... Open recentf immediately after Emacs is started
+  initsplit          1.6          available  melpa-s... No description available.
+  inline-crypt       0.1.4        available  melpa-s... Simple inline encryption via openssl
+  inlineR            1.0          available  melpa-s... insert Tag for inline image of R graphics
+  insert-shebang     0.9.4        available  melpa-s... Insert shebang line automatically.
+  instapaper         0.9.5        available  melpa-s... No description available.
+  interleave         1.1.0        available  melpa-s... Interleaving text books since 2015
+  ioccur             2.4          available  gnu        Incremental occur
+  iplayer            0.1          available  melpa-s... Browse and download BBC TV/radio shows
+  ir-black-theme     1.0.1        available  melpa-s... Port of ir-black theme
+  irony              0.2.0        available  melpa-s... C/C++ minor mode powered by libclang
+  isgd               1.1          available  melpa-s... Shorten URLs using the isgd.com shortener service
+  iterators          0.1          available  gnu        Functions for working with iterators
+  ivy                0.8.0        available  gnu        Incremental Vertical completYon
+  ivy                0.8.0        available  melpa-s... Incremental Vertical completYon
+  ix                 0.7          available  melpa-s... Emacs client for http://ix.io pastebin
+  iy-go-to-char      3.2.1        available  melpa-s... Go to next CHAR which is similar to "f" and "t" in vim
+  j-mode             1.1.1        available  melpa-s... Major mode for editing J programs
+  jabber             0.8.92       available  melpa-s... A Jabber client for Emacs.
+  jade-mode          1.0.0        available  melpa-s... Major mode for editing .jade files
+  jammer             0.1.1        available  melpa-s... Punish yourself for using Emacs inefficiently
+  japanlaw           0.9.1        available  melpa-s... Japan law from law.e-gov.go.jp
+  java-imports       0.1.0        available  melpa-s... Code for dealing with Java imports
+  javadoc-lookup     1.1.0        available  melpa-s... Javadoc Emacs integration with Maven
+  javaimp            0.6          available  gnu        Add and reorder Java import statements in Maven projects
+  jedi               0.2.7        available  melpa-s... a Python auto-completion for Emacs
+  jedi-core          0.2.7        available  melpa-s... Common code of jedi.el and company-jedi.el
+  jgraph-mode        1.1          available  gnu        Major mode for Jgraph files
+  jq-mode            0.1.0        available  melpa-s... Edit jq scripts.
+  js-comint          0.0.4        available  melpa-s... Run a JavaScript interpreter in an inferior process window.
+  js2-closure        1.4          available  melpa-s... Google Closure dependency manager
+  js2-highlight-vars 0.1.0        available  melpa-s... highlight occurrences of the variable under cursor
+  js2-mode           20150909     available  gnu        Improved JavaScript editing mode
+  js2-mode           20150909     available  melpa-s... Improved JavaScript editing mode
+  js2-refactor       0.7.1        available  melpa-s... A JavaScript refactoring library for emacs.
+  js3-mode           1.1.0        available  melpa-s... An improved JavaScript editing mode
+  jsfmt              0.2.0        available  melpa-s... No description available.
+  json-mode          1.6.0        available  melpa-s... Major mode for editing JSON files
+  json-reformat      0.0.6        available  melpa-s... Reformatting tool for JSON
+  json-snatcher      1.0.0        available  melpa-s... Grabs the path to JSON values in a JSON file
+  jsx-mode           0.1.10       available  melpa-s... major mode for JSX
+  julia-mode         0.4.5        available  melpa-s... Major mode for editing Julia source code
+  jump               2.3          available  melpa-s... build functions which contextually jump between files
+  jump-to-line       0.2.0        available  melpa-s... Jump to line number at point.
+  jumpc              3.0          available  gnu        jump to previous insertion points
+  jvm-mode           0.2.0        available  melpa-s... Monitor and manage your JVMs
+  kaesar             0.9.0        available  melpa-s... Another AES algorithm encrypt/decrypt string with password.
+  kaesar-file        0.9.0        available  melpa-s... Encrypt/Decrypt file by AES with password.
+  kaesar-mode        0.9.0        available  melpa-s... Encrypt/Decrypt buffer by AES with password.
+  kakapo-mode        1.2          available  melpa-s... TABS (hard or soft) for indentation (leading whitespace), and SPACES for alignment.
+  karma              0.1.0        available  melpa-s... Karma Test Runner Emacs Integration
+  key-combo          1.6          available  melpa-s... map key sequence to commands
+  key-seq            1.0.1        available  melpa-s... map pairs of sequentially pressed keys to commands
+  keychain-enviro... 2.3.0        available  melpa-s... load keychain environment variables
+  keydef             1.15         available  melpa-s... a simpler way to define keys, with kbd syntax
+  keyfreq            1.8          available  melpa-s... track command frequencies
+  keymap-utils       0.6.0        available  melpa-s... keymap utilities
+  keyset             0.1.2        available  melpa-s... A small library for structuring key bindings.
+  kibit-helper       0.1.1        available  melpa-s... Conveniently use the Kibit Leiningen plugin from Emacs
+  kill-or-bury-alive 0.1.2        available  melpa-s... Precise control over buffer killing in Emacs
+  kill-ring-search   1.1          available  melpa-s... incremental search for the kill ring
+  killer             0.2.2        available  melpa-s... kill and delete text
+  kivy-mode          1.9.1        available  melpa-s... Emacs major mode for editing Kivy files
+  know-your-http-... 0.5.0        available  melpa-s... Look up the meaning of HTTP headers, methods, relations, status codes
+  ksp-cfg-mode       0.2          available  melpa-s... major mode for editing KSP CFG files
+  kurecolor          1.2.2        available  melpa-s... color editing goodies for Emacs
+  landmark           1.0          available  gnu        Neural-network robot that learns landmarks
+  langtool           1.5.1        available  melpa-s... Grammar check utility using LanguageTool
+  latex-extra        1.13         available  melpa-s... Adds several useful functionalities to LaTeX-mode.
+  latex-math-preview 0.7.2        available  melpa-s... preview LaTeX mathematical expressions.
+  latex-unicode-m... 0.2.5        available  melpa-s... Input method for Unicode math symbols
+  ledger-mode        3.1.1        available  melpa-s... Helper code for use with the "ledger" command-line tool
+  lentic             0.11         available  melpa-s... One buffer as a view of another
+  less-css-mode      0.20         available  melpa-s... Major mode for editing LESS CSS files (lesscss.org)
+  let-alist          1.0.4        available  gnu        Easily let-bind values of an assoc-list by their names
+  letcheck           0.4          available  melpa-s... Check the erroneous assignments in let forms
+  lex                1.1          available  gnu        Lexical analyser construction
+  lfe-mode           1.0.2        available  melpa-s... Lisp Flavoured Erlang mode
+  lice               0.2          available  melpa-s... License And Header Template
+  lingr              0.2          available  melpa-s... Lingr Client for GNU Emacs
+  link               1.10         available  melpa-s... No description available.
+  linum-relative     0.4          available  melpa-s... display relative line number in emacs.
+  lispy              0.26.0       available  melpa-s... vi-like Paredit
+  lispyscript-mode   0.3.5        available  melpa-s... Major mode for LispyScript code.
+  list-packages-ext  0.1.0        available  melpa-s... Extras for list-packages
+  list-unicode-di... 0.1          available  melpa-s... Search for and list unicode characters by name
+  list-utils         0.4.4        available  melpa-s... List-manipulation utility functions
+  lit-mode           0.1.1        available  melpa-s... Major mode for lit
+  literate-coffee... 0.4          available  melpa-s... major-mode for Literate CoffeeScript
+  live-code-talks    0.2.1        available  melpa-s... Support for slides with live code in them
+  live-py-mode       2.11.0       available  melpa-s... Live Coding in Python
+  lmc                1.3          available  gnu        Little Man Computer in Elisp
+  load-dir           0.0.3        available  gnu        Load all Emacs Lisp files in a given directory
+  load-relative      1.0          available  melpa-s... relative file load (within a multi-file Emacs package)
+  load-relative      1.2          available  gnu        relative file load (within a multi-file Emacs package)
+  loc-changes        1.1          available  melpa-s... Helps users and programs keep track of positions even after buffer changes.
+  loc-changes        1.2          available  gnu        keep track of positions even after buffer changes
+  loccur             1.2.2        available  gnu        Perform an occur-like folding in current buffer
+  log4e              0.3.0        available  melpa-s... provide logging framework for elisp
+  log4j-mode         1.3          available  melpa-s... major mode for viewing log files
+  logalimacs         1.0.0        available  melpa-s... Front-end to logaling-command for Ruby gems
+  logito             0.1          available  melpa-s... logging library for Emacs
+  logview            0.4.2        available  melpa-s... Major mode for viewing log files
+  loop               1.1          available  melpa-s... friendly imperative loop structures
+  love-minor-mode    1.1          available  melpa-s... Minor mode for working on LÖVE projects
+  lua-mode           20151025     available  melpa-s... a major-mode for editing Lua scripts
+  m-buffer           0.13         available  melpa-s... List-Oriented, Functional Buffer Manipulation
+  macro-math         1.0          available  melpa-s... in-buffer mathematical operations
+  macrostep          0.9          available  melpa-s... interactive macro expander
+  magic-filetype     0.1.3        available  melpa-s... Enhance filetype major mode
+  magit              2.6.2        available  melpa-s... A Git porcelain inside Emacs
+  magit-annex        1.2.0        available  melpa-s... Control git-annex from Magit
+  magit-filenotify   0.1          available  melpa-s... Refresh status buffer when git tree changes
+  magit-find-file    2.1.0        available  melpa-s... completing-read over all files in Git
+  magit-gerrit       0.3          available  melpa-s... Magit plugin for Gerrit Code Review
+  magit-gh-pulls     0.5.2        available  melpa-s... GitHub pull requests extension for Magit
+  magit-gitflow      2.0.2        available  melpa-s... gitflow extension for magit
+  magit-popup        2.6.2        available  melpa-s... Define prefix-infix-suffix command combos
+  magit-rockstar     1.0.3        available  melpa-s... commit like a rockstar
+  magit-stgit        2.1.2        available  melpa-s... StGit extension for Magit
+  magit-svn          2.1.1        available  melpa-s... Git-Svn extension for Magit
+  magit-topgit       2.1.1        available  melpa-s... TopGit extension for Magit
+  make-color         0.4          available  melpa-s... Alternative to picking color - update fg/bg color by pressing r/g/b/... keys
+  makey              0.3          available  melpa-s... interactive commandline mode
+  malabar-mode       20140303.946 available  melpa-s... A better Java mode for Emacs
+  malinka            0.3.1        available  melpa-s... A C/C++ project configuration package for Emacs
+  mallard-mode       0.3.0        available  melpa-s... Major mode for editing Mallard files
+  map-progress       0.5.0        available  melpa-s... mapping macros that report progress
+  map-regexp         0.3.0        available  melpa-s... map over matches of a regular expression
+  marcopolo          0.3.0        available  melpa-s... Emacs client for Docker API
+  mark-tools         0.3          available  melpa-s... Some simple tools to access the mark-ring in Emacs
+  markchars          0.2.0        available  gnu        Mark chars fitting certain characteristics
+  markdown-mode      2.1          available  melpa-s... Emacs Major mode for Markdown-formatted text files
+  markdown-mode+     0.8          available  melpa-s... extra functions for markdown-mode
+  markdown-previe... 0.3          available  melpa-s... markdown realtime preview minor mode.
+  markdown-toc       0.1.0        available  melpa-s... A simple TOC generator for markdown file
+  markup-faces       1.0.0        available  melpa-s... collection of faces for markup language modes
+  marmalade          0.0.4        available  melpa-s... Elisp interface for the Emacs Lisp package server.
+  marshal            0.5.3        available  melpa-s... eieio extension for automatic (un)marshalling
+  math-symbol-lists  1.1          available  gnu        Lists of Unicode math symbols and latex commands
+  math-symbol-lists  1.1          available  melpa-s... Lists of Unicode math symbols and latex commands
+  matrix-client      1.0.1        available  melpa-s... A minimal chat client for the Matrix.org RPC
+  maven-test-mode    0.1.5        available  melpa-s... Utilities for navigating test files and running maven test tasks.
+  maxframe           0.5          available  melpa-s... No description available.
+  mb-url             0.0.6        available  melpa-s... Multiple Backends for Emacs URL package.
+  mbe                0.1          available  melpa-s... Macros by Example
+  mc-extras          1.2.1        available  melpa-s... Extra functions for multiple-cursors mode.
+  mediawiki          2.2.5        available  melpa-s... mediawiki frontend
+  melpa-upstream-... 1.0.0        available  melpa-s... A set of kludges to visit a melpa-hosted package's homepage
+  memory-usage       0.2          available  gnu        Analyze the memory usage of Emacs in various ways
+  mentor             0.1          available  melpa-s... Control rtorrent from GNU Emacs
+  merlin             2.3.1        available  melpa-s... Mode for Merlin, an assistant for OCaml.
+  metafmt            0.0.3        available  melpa-s... Run metafmt on buffers when saving them
+  metar              0.2          available  gnu        Retrieve and decode METAR weather information
+  metaweblog         0.1.1        available  melpa-s... An emacs library to access metaweblog based weblogs
+  mew                6.7          available  melpa-s... Messaging in the Emacs World
+  mhc                1.1.1        available  melpa-s... Message Harmonized Calendaring system.
+  mic-paren          3.10         available  melpa-s... advanced highlighting of matching parentheses
+  midi-kbd           0.2          available  gnu        Create keyboard events from Midi input
+  migemo             1.9.1        available  melpa-s... Japanese incremental search through dynamic pattern expansion
+  milkode            0.4          available  melpa-s... Command line search and direct jump with Milkode
+  minibuffer-comp... 1.25.2013... available  melpa-s... Cycle through the *Completions* buffer
+  minibuffer-cua     1.0.0        available  melpa-s... Make CUA mode's S-up/S-down work in minibuffer
+  minibuffer-line    0.1          available  gnu        Display status info in the minibuffer window
+  miniedit           2.0          available  melpa-s... Enhanced editing for minibuffer fields.
+  minimal-session... 0.6.2        available  melpa-s... Very lean session saver
+  minimap            1.2          available  gnu        Sidebar showing a "mini-map" of a buffer
+  minitest           0.8.0        available  melpa-s... An Emacs mode for ruby minitest files
+  mmm-mako           1.1          available  melpa-s... MMM submode class for Mako Templates
+  mmm-mode           0.5.4        available  melpa-s... Allow Multiple Major Modes in a buffer
+  mmt                0.1.1        available  melpa-s... Missing macro tools for Emacs Lisp
+  mocha              1.1          available  melpa-s... Run Mocha or Jasmine tests
+  mocker             0.3.1        available  melpa-s... mocking framework for emacs
+  modalka            0.1.2        available  melpa-s... Easily introduce native modal editing of your own design
+  mode-icons         0.4.0        available  melpa-s... Show icons for modes
+  mode-line-debug    1.2.2        available  melpa-s... show status of `debug-on-error' in the mode-line
+  monokai-theme      2.0.1        available  melpa-s... A fruity color theme for Emacs.
+  monroe             0.2.0        available  melpa-s... Yet another client for nREPL
+  morlock            0.5.0        available  melpa-s... more font-lock keywords for elisp
+  move-dup           0.2.1        available  melpa-s... Eclipse-like moving and duplicating lines or rectangles.
+  mowedline          0.2.8        available  melpa-s... elisp utilities for using mowedline
+  moz                1.1.0        available  melpa-s... Lets current buffer interact with inferior mozilla.
+  moz-controller     1.0          available  melpa-s... Control Firefox from Emacs
+  mozc-temp          1.0.0        available  melpa-s... Use mozc temporarily
+  mpv                0.1.0        available  melpa-s... control mpv for easy note-taking
+  msvc               1.2.2        available  melpa-s... Microsoft Visual C/C++ mode
+  mu4e-alert         0.3          available  melpa-s... Desktop notification for mu4e
+  mu4e-maildirs-e... 0.8          available  melpa-s... Show mu4e maildirs summary in mu4e-main-view
+  multi              2.0.1        available  melpa-s... Clojure-style multi-methods for emacs lisp
+  multi-web-mode     0.2.1        available  melpa-s... multiple major mode support for web editing
+  multiple-cursors   1.3.0        available  melpa-s... Multiple cursors for Emacs.
+  multishell         1.1.5        available  gnu        Easily use multiple shell buffers, local and remote.
+  muse               3.20         available  gnu        Authoring and publishing tool for Emacs
+  mustache-mode      1.3          available  melpa-s... A major mode for editing Mustache files.
+  mwim               0.2          available  melpa-s... Move to the beginning/end of line or code
+  mykie              0.3.1        available  melpa-s... Command multiplexer: Register multiple functions to a keybind
+  name-this-color    0.3.0        available  melpa-s... Match RGB codes to names easily and precisely
+  nameless           1.0.1        available  gnu        Hide package namespace in your emacs-lisp code
+  names              20151201.0   available  gnu        Namespaces for emacs-lisp. Avoid name clobbering without hiding symbols.
+  names              20151201.0   available  melpa-s... Namespaces for emacs-lisp. Avoid name clobbering without hiding symbols.
+  narrow-reindent    0.2.0        available  melpa-s... Defines a minor mode to left-align narrowed regions.
+  narrowed-page-n... 0.1.0        available  melpa-s... A minor mode for showing one page at a time
+  nasm-mode          1.0.1        available  melpa-s... NASM x86 assembly major mode
+  nav-flash          1.1.0        available  melpa-s... Briefly highlight the current line
+  navi-mode          2.0          available  melpa-s... major-mode for easy buffer-navigation
+  navorski           0.2.7        available  melpa-s... Helping you live in the terminal, like Viktor did.
+  ncl-mode           0.99.1       available  melpa-s... Major Mode for editing NCL scripts and other goodies
+  nemerle            1.2          available  melpa-s... major mode for editing nemerle programs
+  neotree            0.2.1        available  melpa-s... A tree plugin like NerdTree for Vim
+  nginx-mode         1.1.4        available  melpa-s... major mode for editing nginx config files
+  nhexl-mode         0.1          available  gnu        Minor mode to edit files via hex-dump format
+  niceify-info       1.0.1        available  melpa-s... improve usability of Info pages
+  ninja-mode         1.7.1        available  melpa-s... Major mode for editing .ninja files
+  nix-mode           1.11.2       available  melpa-s... Major mode for editing Nix expressions
+  nixos-options      0.0.1        available  melpa-s... Interface for browsing and completing NixOS options.
+  nlinum             1.6          available  gnu        Show line numbers in the margin
+  noccur             0.2          available  melpa-s... Run multi-occur on project/dired files
+  nodejs-repl        0.1.0        available  melpa-s... Run Node.js REPL
+  nose               0.1.1        available  melpa-s... Easy Python test running in Emacs
+  notes-mode         1.30         available  gnu        Indexing system for on-line note-taking
+  notmuch            0.22         available  melpa-s... run notmuch within emacs
+  notmuch-labeler    0.1          available  melpa-s... Improve notmuch way of displaying labels
+  nrepl-sync         0.3.1        available  melpa-s... connect to nrepl port and eval .sync.clj.
+  nsis-mode          0.44         available  melpa-s... NSIS-mode
+  ntlm               2.0.0        available  gnu        NTLM (NT LanManager) authentication support
+  num3-mode          1.2          available  gnu        highlight groups of digits in long numbers
+  nvm                0.2.0        available  melpa-s... Manage Node versions within Emacs
+  nyan-mode          1.1.1        available  melpa-s... Nyan Cat shows position in current buffer in mode-line.
+  nyan-prompt        0.2.0        available  melpa-s... Nyan Cat on the eshell prompt.
+  o-blog             2.0          available  melpa-s... 
+  oauth2             0.10         available  gnu        OAuth 2.0 Authorization Protocol
+  ob-http            0.0.4        available  melpa-s... http request in org-mode babel
+  ob-sagemath        0.2.2        available  melpa-s... org-babel functions for SageMath evaluation
+  ob-sml             0.2          available  melpa-s... org-babel functions for template evaluation
+  ob-translate       0.1.2        available  melpa-s... Translation of text blocks in org-mode.
+  ocodo-svg-model... 0.1.4        available  melpa-s... A collection of beautiful SVG modelines
+  ocp-indent         1.5.2        available  melpa-s... automatic indentation with ocp-indent
+  octicons           0.1          available  melpa-s... octicons utility
+  offlineimap        1            available  melpa-s... Run OfflineIMAP from Emacs
+  olivetti           1.4.0        available  melpa-s... Minor mode for a nice writing environment
+  omn-mode           1.2          available  gnu        Support for OWL Manchester Notation
+  omni-kill          0.2.3        available  melpa-s... Kill all the things
+  omni-log           0.1.2        available  melpa-s... Logging utilities
+  omni-scratch       0.1.1        available  melpa-s... Easy and mode-specific draft buffers
+  omni-tags          0.1.2        available  melpa-s... Highlight and Actions for 'Tags'
+  omnisharp          3.9          available  melpa-s... Omnicompletion (intellisense) and more for C#
+  on-screen          1.3.2        available  gnu        guide your eyes while scrolling
+  opam               0.1          available  melpa-s... OPAM tools
+  opencl-mode        1.0          available  melpa-s... Syntax coloring for opencl kernels
+  operate-on-number  1.1.0        available  melpa-s... Operate on number at point with arithmetic functions
+  org                20160509     available  gnu        Outline-based notes management and organizer
+  org-ac             0.0.2        available  melpa-s... Some auto-complete sources for org-mode
+  org-agenda-prop... 1.3.1        available  melpa-s... Display org properties in the agenda buffer.
+  org-autolist       0.13         available  melpa-s... Improved list management in org-mode
+  org-bookmark-he... 1.0.0        available  melpa-s... Emacs bookmark support for org-mode
+  org-bullets        0.2.4        available  melpa-s... Show bullets in org-mode as UTF-8 characters
+  org-dp             1            available  melpa-s... Declarative Local Programming with Org Elements
+  org-elisp-help     0.1.0        available  melpa-s... org links to emacs-lisp documentation
+  org-gcal           0.2          available  melpa-s... Org sync with Google Calendar
+  org-gnome          0.3          available  melpa-s... Orgmode integration with the GNOME desktop
+  org-if             0.2.0        available  melpa-s... Interactive Fiction Authoring System for Org-Mode.
+  org-journal        1.11.0       available  melpa-s... a simple org-mode based journaling mode
+  org-link-travis    0.0.1        available  melpa-s... Insert/Export the link of Travis CI on org-mode
+  org-linkany        0.0.2        available  melpa-s... Insert link using anything.el/helm.el on org-mode
+  org-mac-iCal       7.9.3.5      available  melpa-s... Imports events from iCal.app to the Emacs diary
+  org-multiple-ke... 0.2          available  melpa-s... Set keymap to elements, such as timestamp and priority.
+  org-outlook        0.11         available  melpa-s... Outlook org
+  org-page           0.41         available  melpa-s... a static site generator based on org mode
+  org-pdfview        0.3          available  melpa-s... Support for links to documents in pdfview mode
+  org-pomodoro       2.0.3        available  melpa-s... Pomodoro implementation for org-mode.
+  org-projectile     0.2.0        available  melpa-s... Repository todo management for org-mode
+  org-protocol-je... 0.1          available  melpa-s... Jekyll's handler for org-protocol
+  org-random-todo    0.4.1        available  melpa-s... notify of random TODO's
+  org-readme         20130322.926 available  melpa-s... Integrates Readme.org and Commentary/Change-logs.
+  org-ref            0.8.1        available  melpa-s... citations, cross-references and bibliographies in org-mode
+  org-repo-todo      0.0.2        available  melpa-s... Simple repository todo management with org-mode
+  org-sync           0.3.0        available  melpa-s... Synchronize Org documents with External Issue Trackers
+  org-table-comment  0.2.0        available  melpa-s... Org table comment modes.
+  org-tfl            0.3.3        available  melpa-s... Transport for London meets Orgmode
+  org-themis         0.4.1        available  melpa-s... Experimental project management mode for org-mode
+  org-time-budgets   1.0.1        available  melpa-s... Define time budgets and display clocked time.
+  org-toodledo       2.1.0        available  melpa-s... No description available.
+  org-tracktable     0.3          available  melpa-s... Track your writing progress in an org-table
+  org-transform-t... 0.1.2        available  melpa-s... Transform org-mode tree with properties to a table, and the other way around
+  org-tree-slide     2.8.4        available  melpa-s... A presentation tool for org-mode
+  org-trello         0.7.8        available  melpa-s... Minor mode to synchronize org-mode buffer and trello board
+  org-vcard          0.1.0        available  melpa-s... org-mode support for vCard export and import.
+  org2blog           0.9.2        available  melpa-s... Blog from Org mode to wordpress
+  org2jekyll         0.1.9        available  melpa-s... Minor mode to publish org-mode post to jekyll without specific yaml
+  orgbox             0.5.0        available  melpa-s... Mailbox-like task scheduling Org.
+  orgit              1.1.0        available  melpa-s... support for Org links to Magit buffers
+  orglink            0.2.4        available  melpa-s... use Org Mode links in other modes
+  osc                0.1          available  gnu        Open Sound Control protocol library
+  osx-browse         0.8.8        available  melpa-s... Web browsing helpers for OS X
+  osx-clipboard      0.1          available  melpa-s... Use the OS X clipboard from terminal Emacs
+  osx-dictionary     0.2.1        available  melpa-s... Interface for OSX Dictionary.app
+  osx-location       0.4          available  melpa-s... Watch and respond to changes in geographical location on OS X
+  osx-plist          1.0.0        available  melpa-s... Apple plist file parser
+  osx-trash          0.1.1        available  melpa-s... System trash for OS X
+  other-frame-window 1.0.2        available  gnu        Minor mode to enable global prefix keys for other frame/window buffer placement
+  outorg             2.0          available  melpa-s... Org-style comment editing
+  outshine           2.0          available  melpa-s... outline with outshine outshines outline
+  ov                 1.0.6        available  melpa-s... Overlay library for Emacs Lisp
+  overseer           0.3.0        available  melpa-s... Ert-runner Integration Into Emacs
+  owdriver           0.0.6        available  melpa-s... Quickly perform various actions on other windows
+  ox-ioslide         0.2          available  melpa-s... Export org-mode to Google I/O HTML5 slide.
+  ox-pandoc          1.150707     available  melpa-s... org exporter for pandoc.
+  ox-twbs            1.0.7        available  melpa-s... Bootstrap compatible HTML Back-End for Org
+  pabbrev            4.1          available  melpa-s... Predictive abbreviation expansion
+  pabbrev            4.2.1        available  gnu        Predictive abbreviation expansion
+  package+           1.1.0        available  melpa-s... Extensions for the package library.
+  package-safe-de... 0.1.7        available  melpa-s... Safely delete package.el packages
+  package-utils      0.4.0        available  melpa-s... No description available.
+  packed             0.5.3        available  melpa-s... package manager agnostic Emacs Lisp package utilities
+  page-break-lines   0.10         available  melpa-s... Display ugly ^L page breaks as tidy horizontal lines
+  pallet             0.9.2        available  melpa-s... A package management tool for Emacs, using Cask.
+  pandoc-mode        2.17.2       available  melpa-s... Minor mode for interacting with Pandoc
+  pangu-spacing      0.4          available  melpa-s... Minor-mode to add space between Chinese and English characters.
+  paper-theme        1.0.0        available  melpa-s... A minimal Emacs colour theme.
+  paradox            2.4          available  melpa-s... A modern Packages Menu. Colored, with package ratings, and customizable.
+  paredit            24           available  melpa-s... minor mode for editing parentheses
+  paredit-everywhere 0.4          available  melpa-s... Enable some paredit features in non-lisp buffers
+  paren-face         0.2.1        available  melpa-s... a face for parentheses in lisp modes
+  parent-mode        2.3          available  melpa-s... get major mode's parent modes
+  parsebib           1.0.5        available  melpa-s... A library for parsing bib files
+  pass               1.1          available  melpa-s... Major mode for password-store.el
+  passthword         1.4          available  melpa-s... Simple password manager
+  password-store     1.6.5        available  melpa-s... Password store (pass) support
+  pastehub           0.5.2        available  melpa-s... A client for the PasteHub cloud service
+  pastelmac-theme    1.0          available  melpa-s... a soothing theme with a pastel color palette
+  pathify            0.1          available  melpa-s... Symlink your scripts into a PATH directory
+  paxedit            1.1.7        available  melpa-s... Structured, Context Driven LISP Editing and Refactoring
+  pcache             0.3.2        available  melpa-s... persistent caching for Emacs.
+  pcomplete-exten... 1.0          available  melpa-s... additional completion for pcomplete
+  pcre2el            1.8          available  melpa-s... regexp syntax converter
+  pcsv               1.3.6        available  melpa-s... Parser of csv
+  pdf-tools          0.70         available  melpa-s... Support library for PDF documents.
+  peg                0.6          available  melpa-s... Parsing Expression Grammars in Emacs Lisp
+  per-buffer-theme   1.5          available  melpa-s... Change theme according to buffer name or major mode.
+  persistent-scratch 0.2.5        available  melpa-s... Preserve the scratch buffer across Emacs sessions
+  persistent-soft    0.8.10       available  melpa-s... Persistent storage, returning nil on failure
+  persp-mode         1.2.6        available  melpa-s... "perspectives" shared among frames + save/load - bugs.
+  perspective        1.12         available  melpa-s... switch between named "perspectives" of the editor
+  ph                 0.1.0        available  melpa-s... A global minor mode for managing multiple projects.
+  phi-search-mc      2.2.1        available  melpa-s... multiple-cursors extension for phi-search
+  php-auto-yasnip... 2.3.1        available  melpa-s... Creates snippets for PHP functions
+  php-mode           1.17.0       available  melpa-s... Major mode for editing PHP code
+  phpcbf             0.9.2        available  melpa-s... Format PHP code in Emacs using PHP_CodeSniffer's phpcbf
+  phpunit            0.8.0        available  melpa-s... Launch PHP unit tests using phpunit
+  pinentry           0.1          available  gnu        GnuPG Pinentry server implementation
+  pinyin-search      1.1.0        available  melpa-s... Search Chinese by Pinyin
+  pinyinlib          0.1.0        available  melpa-s... Library for converting first letter of Pinyin to Simplified/Traditional Chinese characters
+  pip-requirements   0.4          available  melpa-s... A major mode for editing pip requirements files.
+  pixiv-novel-mode   0.0.3        available  melpa-s... Major mode for pixiv novel
+  pkg-info           0.6          available  melpa-s... Information about packages
+  pkgbuild-mode      0.14         available  melpa-s... Interface to the ArchLinux package manager
+  platformio-mode    0.2.2        available  melpa-s... PlatformIO integration
+  play-routes-mode   1.0          available  melpa-s... Play Framework Routes File Support
+  plenv              0.32         available  melpa-s... A plenv wrapper for Emacs
+  plsense            0.4.7        available  melpa-s... provide interface for PlSense that is a development tool for Perl.
+  plsense-direx      0.2.0        available  melpa-s... Perl Package Explorer
+  plur               0.1          available  melpa-s... Easily search and replace multiple variants of a word
+  poker              0.1          available  gnu        Texas hold'em poker
+  pony-snippets      0.0.1        available  melpa-s... Yasnippets for Pony
+  ponylang-mode      0.0.7        available  melpa-s... Major mode for Pony code
+  pophint            0.9.3        available  melpa-s... Provide navigation using pop-up tips, like Firefox's Vimperator Hint Mode
+  popup              0.5.3        available  melpa-s... Visual Popup User Interface
+  popup-complete     0.2          available  melpa-s... completion with popup
+  popup-imenu        0.5          available  melpa-s... imenu index popup
+  popwin             1.0.0        available  melpa-s... Popup Window Manager.
+  pos-tip            0.4.6        available  melpa-s... Show tooltip at point
+  powerline          2.2          available  melpa-s... Rewrite of Powerline
+  powershell         0.1          available  melpa-s... No description available.
+  ppd-sr-speedbar    0.0.6        available  melpa-s... Sr Speedbar adaptor for project-persist-drawer.
+  pretty-mode        2.0.3        available  melpa-s... Redisplay parts of the buffer as pretty symbols.
+  processing-mode    1.0          available  melpa-s... Major mode for Processing 2.0
+  prodigy            0.6.0        available  melpa-s... Manage external services from within Emacs
+  project-explorer   0.14.3       available  melpa-s... A project explorer sidebar
+  project-persist... 0.0.4        available  melpa-s... Use a project drawer with project-persist.
+  project-root       0.7          available  melpa-s... Define a project root and take actions based upon it.
+  projectile         0.13.0       available  melpa-s... Manage and navigate projects in Emacs easily
+  projectile-rails   0.9.1        available  melpa-s... Minor mode for Rails projects based on projectile-mode
+  projectile-sift    0.2.0        available  melpa-s... Run a sift with Projectile
+  projekt            0.1          available  melpa-s... some kind of staging for CVS
+  prompt-text        0.1.0        available  melpa-s... Various information in minibuffer prompt
+  prop-menu          0.1.2        available  melpa-s... Create and display a context menu based on text and overlay properties
+  protobuf-mode      2.6.1        available  melpa-s... major mode for editing protocol buffers.
+  psci               0.0.6        available  melpa-s... Major mode for purescript repl psci
+  psession           1.1          available  melpa-s... Persistent save of elisp objects.
+  psysh              0.0.2        available  melpa-s... PsySH, PHP interactive shell (REPL)
+  pt                 0.0.3        available  melpa-s... A front-end for pt, The Platinum Searcher.
+  puml-mode          0.6.5        available  melpa-s... Major mode for PlantUML
+  punctuality-logger 0.8          available  melpa-s... Punctuality logger for Emacs
+  pungi              1.1          available  melpa-s... Integrates jedi with virtualenv and buildout python environments
+  puppet-mode        0.3          available  melpa-s... Major mode for Puppet manifests
+  purescript-mode    13.10        available  melpa-s... No description available.
+  pushbullet         0.5.2        available  melpa-s... Emacs client for the PushBullet Android app
+  py-autopep8        0.7.0        available  melpa-s... Use autopep8 to beautify a Python buffer
+  py-isort           0.8          available  melpa-s... Use isort to sort the imports in a Python buffer
+  py-yapf            0.3          available  melpa-s... Use yapf to beautify a Python buffer
+  pycarddavel        1.0.1        available  melpa-s... Integrate pycarddav
+  pyenv-mode         0.1.0        available  melpa-s... Integrate pyenv with python-mode
+  python             0.25.1       available  gnu        Python's flying circus support for Emacs
+  python-environment 0.0.2        available  melpa-s... virtualenv API for Emacs Lisp
+  python-x           1.0          available  melpa-s... python.el extras for interactive evaluation
+  pythonic           0.1.0        available  melpa-s... Utility functions for writing pythonic emacs package.
+  pyvenv             1.9          available  melpa-s... Python virtual environment interface
+  qiita              0.0.1        available  melpa-s... No description available.
+  qml-mode           0.3          available  melpa-s... Major mode for editing QT Declarative (QML) code.
+  quarter-plane      0.1          available  gnu        Minor mode for quarter-plane style editing
+  quasi-monochrom... 1.0          available  melpa-s... High contrast quasi monochrome color theme
+  queue              0.1.1        available  gnu        Queue data structure
+  quickrun           2.2.7        available  melpa-s... Run commands quickly
+  r-autoyas          0.28         available  melpa-s... Provides automatically created yasnippets for R function argument lists.
+  racer              1.0.2        available  melpa-s... Rust completion and code navigation via racer
+  rainbow-blocks     1.0.0        available  melpa-s... Block syntax highlighting for lisp code
+  rainbow-delimiters 2.1.3        available  melpa-s... Highlight brackets according to their depth
+  rainbow-identif... 0.2.2        available  melpa-s... Highlight identifiers according to their names
+  rainbow-mode       0.12         available  gnu        Colorize color names in buffers
+  rake               0.4.0        available  melpa-s... Run rake commands
+  ranger             0.9.8.1      available  melpa-s... Make dired more like ranger
+  rase               1.1          available  melpa-s... Run At Sun Event daemon
+  rats               0.2.0        available  melpa-s... Rapid testing suite for Go
+  rbenv              0.0.3        available  melpa-s... Emacs integration for rbenv
+  rcirc-styles       1.3.2        available  melpa-s... support mIRC-style color and attribute codes
+  rdf-prefix         1.4          available  melpa-s... Prefix lookup for RDF
+  real-auto-save     0.4          available  melpa-s... enable real auto save
+  realgud            1.2          available  melpa-s... A modular front-end for interacting with external debuggers
+  recover-buffers    1.0          available  melpa-s... revisit all buffers from an auto-save file
+  rect+              1.0.10       available  melpa-s... Extensions to rect.el
+  rectangle-utils    1.0          available  melpa-s... Some useful rectangle functions.
+  redpen-paragraph   0.41         available  melpa-s... RedPen interface.
+  redtick            0.1.1        available  melpa-s... Smallest pomodoro timer (1 char)
+  register-list      0.1          available  gnu        Interactively list/edit registers
+  relative-line-n... 0.3.2        available  melpa-s... Display relative line numbers on the margin
+  relax              0.2          available  melpa-s... For browsing and interacting with CouchDB
+  repeatable-motion  0.2          available  melpa-s... Make repeatable versions of motions
+  repl-toggle        0.3.3        available  melpa-s... Switch to/from repl buffer for current major-mode
+  replace-symbol     1.0          available  melpa-s... Rename symbols in expressions or buffers
+  repo               0.1.2        available  melpa-s... Running repo from Emacs
+  req-package        0.9          available  melpa-s... A use-package wrapper for package runtime dependencies management
+  request            0.2.0        available  melpa-s... Compatible layer for URL request in Emacs
+  request-deferred   0.2.0        available  melpa-s... Wrap request.el by deferred
+  requirejs          1.1          available  melpa-s... Requirejs import manipulation and source traversal.
+  resize-window      0.2.0        available  melpa-s... easily resize windows
+  restart-emacs      0.1.1        available  melpa-s... Restart emacs from within emacs
+  reveal-in-osx-f... 0.3.3        available  melpa-s... Reveal file associated with buffer in OS X Finder
+  reverse-theme      0.3          available  melpa-s... Reverse theme for Emacs
+  rich-minority      1.0.1        available  gnu        Clean-up and Beautify the list of minor-modes.
+  rich-minority      1.0.1        available  melpa-s... Clean-up and Beautify the list of minor-modes.
+  rigid-tabs         1.0          available  melpa-s... Rigidify and adjust the visual alignment of TABs
+  rinari             2.11         available  melpa-s... Rinari Is Not A Rails IDE
+  rnc-mode           0.1          available  gnu        Emacs mode to edit Relax-NG Compact files
+  rnc-mode           1.0.6        available  melpa-s... A major mode for editing RELAX NG Compact syntax.
+  robe               0.7.9        available  melpa-s... Code navigation, documentation lookup and completion for Ruby
+  robots-txt-mode    0.0.1        available  melpa-s... Major mode for editing robots.txt
+  roguel-ike         0.1.1        available  melpa-s... A coffee-break roguelike
+  rope-read-mode     0.3.1        available  melpa-s... Rearrange lines to read text smoothly
+  rsense             0.3          available  melpa-s... RSense client for Emacs
+  rspec-mode         1.11         available  melpa-s... Enhance ruby-mode for RSpec
+  rtags              2.3          available  melpa-s... A front-end for rtags
+  rubocop            0.4.0        available  melpa-s... An Emacs interface for RuboCop
+  ruby-compilation   2.11         available  melpa-s... run a ruby process in a compilation buffer
+  ruby-end           0.4.1        available  melpa-s... Automatic insertion of end blocks for Ruby
+  ruby-hash-syntax   0.4          available  melpa-s... Toggle ruby hash syntax between classic and 1.9 styles
+  ruby-test-mode     1.0          available  melpa-s... Minor mode for Behaviour and Test Driven
+  ruby-tools         0.1.2        available  melpa-s... Collection of handy functions for ruby-mode.
+  rudel              0.3          available  gnu        A collaborative editing framework for Emacs
+  rvm                1.4.0        available  melpa-s... Emacs integration for rvm
+  s                  1.11.0       available  melpa-s... The long lost Emacs string manipulation library.
+  sackspace          0.8.2        available  melpa-s... A better backspace
+  sage-shell-mode    0.1.0        available  melpa-s... A front-end for Sage Math
+  sass-mode          3.0.18       available  melpa-s... Major mode for editing Sass files
+  sauron             0.10         available  melpa-s... Track (erc/org/dbus/...) events and react to them.
+  say-what-im-doing  0.2          available  melpa-s... dictate what you're doing with text to speech
+  sbt-mode           0.1          available  melpa-s... Major mode for sbt >= 0.12 with scala >= 2.9
+  scala-mode2        0.22         available  melpa-s... Major mode for editing Scala >= 2.9
+  scala-outline-p... 0.4          available  melpa-s... scala file summary popup
+  scpaste            0.6.5        available  melpa-s... Paste to the web via scp.
+  scroll-restore     1.0          available  gnu        restore original position after scrolling
+  scss-mode          0.5.0        available  melpa-s... Major mode for editing SCSS files
+  search-web         1.1          available  melpa-s... Post web search queries using `browse-url'.
+  sed-mode           1.0          available  gnu        Major mode to edit sed scripts
+  sekka              1.6.4        available  melpa-s... A client for Sekka IME server
+  select-themes      0.1.4        available  melpa-s... Color theme selection with completing-read
+  selectric-mode     1.1          available  melpa-s... IBM Selectric mode for Emacs
+  seq                2.15         available  gnu        Sequence manipulation functions
+  servant            0.3.0        available  melpa-s... ELPA server written in Emacs Lisp
+  serverspec         0.0.7        available  melpa-s... Serverspec minor mode
+  session            2.3.1        available  melpa-s... use variables, registers and buffer places across sessions
+  sexp-move          0.2.6        available  melpa-s... Improved S-Expression Movement
+  shackle            0.9.0        available  melpa-s... Enforce rules for popups
+  shakespeare-mode   0.0.1        available  melpa-s... A major mode for editing Shakespearean templates.
+  shampoo            0.0.1        available  melpa-s... Shampoo, a remote Smalltalk developemnt
+  shell-pop          0.63         available  melpa-s... helps you to use shell easily on Emacs. Only one key action to work.
+  shell-split-string 0.1          available  melpa-s... Split strings using shell-like syntax
+  shell-switcher     1.0.1        available  melpa-s... Provide fast switching between shell buffers.
+  shell-toggle       1.3.1        available  melpa-s... Toggle to and from the shell buffer
+  shelldoc           0.0.5        available  melpa-s... shell command editing support with man page.
+  shelltest-mode     1.1          available  melpa-s... Major mode for shelltestrunner
+  shen-mode          0.1          available  gnu        A major mode for editing shen source code
+  shift-number       0.1          available  melpa-s... Increase/decrease the number at point
+  shm                1.0.20       available  melpa-s... Structured Haskell Mode
+  shpec-mode         0.1.0        available  melpa-s... Minor mode for shpec specification
+  shrink-whitespace  0.0.1        available  melpa-s... Whitespace removal DWIM key
+  shut-up            0.3.2        available  melpa-s... Shut up would you!
+  sift               0.2.0        available  melpa-s... Front-end for sift, a fast and powerful grep alternative
+  simple-httpd       1.4.6        available  melpa-s... pure elisp HTTP server
+  simpleclip         1.0.0        available  melpa-s... Simplified access to the system clipboard
+  simplenote2        2.2.2        available  melpa-s... Interact with simple-note.appspot.com
+  simplezen          0.1.1        available  melpa-s... A simple subset of zencoding-mode for Emacs.
+  sisu-mode          7.1.8        available  gnu        Major mode for SiSU markup text
+  skeletor           1.6.1        available  melpa-s... Provides project skeletons for Emacs
+  skewer-less        0.2          available  melpa-s... Skewer support for live LESS stylesheet updates
+  skewer-mode        1.6.2        available  melpa-s... live browser JavaScript, CSS, and HTML interaction
+  slamhound          1.5.4        available  melpa-s... Rip Clojure namespaces apart and rebuild them.
+  slideview          0.6.1        available  melpa-s... File slideshow
+  slim-mode          1.1          available  melpa-s... Major mode for editing Slim files
+  slime              2.17         available  melpa-s... Superior Lisp Interaction Mode for Emacs
+  slime-company      0.9.1        available  melpa-s... slime completion backend for company mode
+  slime-docker       0.6          available  melpa-s... Integration of SLIME with Docker containers.
+  slime-ritz         0.6.0        available  melpa-s... slime extensions for ritz
+  slime-volleyball   1.1          available  melpa-s... An SVG Slime Volleyball Game
+  sly                2.14         available  melpa-s... No description available.
+  sly-company        0.8          available  melpa-s... sly completion backend for company mode
+  smart-mode-line    2.9          available  melpa-s... A color coded smart mode-line.
+  smart-mode-line... 2.9          available  melpa-s... smart-mode-line theme that mimics the powerline appearance.
+  smart-tabs-mode    1.0          available  melpa-s... Intelligently indent with tabs, align with spaces!
+  smartparens        1.7.1        available  melpa-s... Automatic insertion, wrapping and paredit-like navigation with user defined pairs.
+  smartrep           1.0.0        available  melpa-s... Support sequential operation which omitted prefix keys.
+  smartscan          0.2          available  melpa-s... Jumps between other symbols found at point
+  smeargle           0.2          available  melpa-s... Highlighting region by last updated time
+  smex               3.0          available  melpa-s... M-x interface with Ido-style fuzzy matching.
+  sml-mode           6.7          available  gnu        Major mode for editing (Standard) ML
+  smooth-scroll      1.2          available  melpa-s... Minor mode for smooth scrolling and in-place scrolling.
+  smooth-scrolling   2.0.0        available  melpa-s... Make emacs scroll smoothly
+  snakemake-mode     0.4.0        available  melpa-s... Major mode for editing Snakemake files
+  soap-client        3.1.1        available  gnu        Access SOAP web services
+  sokoban            1.4          available  gnu        Implementation of Sokoban for Emacs.
+  solarized-theme    1.2.2        available  melpa-s... The Solarized color theme, ported to Emacs.
+  sos                0.1          available  melpa-s... StackOverflow Search
+  sotclojure         1.2          available  melpa-s... Write clojure at the speed of thought.
+  sotlisp            1.5.2        available  gnu        Write lisp at the speed of thought.
+  sotlisp            1.5.2        available  melpa-s... Write lisp at the speed of thought.
+  sound-wav          0.1          available  melpa-s... Play wav file
+  sourcekit          0.1.7        available  melpa-s... Library to interact with sourcekittendaemon
+  sourcemap          0.2          available  melpa-s... Sourcemap parser
+  sourcetalk         1.2.0        available  melpa-s... SourceTalk (http://sourcetalk.net) plugin for Emacs
+  spaceline          1.1.2        available  melpa-s... Modeline configuration library for powerline
+  sparkline          1.0.2        available  melpa-s... Make sparkline images from a list of numbers
+  sparql-mode        0.11.2       available  melpa-s... Edit and interactively evaluate SPARQL queries.
+  speech-tagger      0.0.0        available  melpa-s... No description available.
+  sphinx-doc         0.1.0        available  melpa-s... Sphinx friendly docstrings for Python functions
+  spinner            1.7.1        available  gnu        Add spinners and progress-bars to the mode-line for ongoing operations
+  splitjoin          0.1          available  melpa-s... splitjoin
+  spotify            0.3.2        available  melpa-s... Control the spotify application from emacs
+  sprintly-mode      0.0.4        available  melpa-s... Major mode for dealing with sprint.ly
+  sprunge            0.1.1        available  melpa-s... Upload pastes to sprunge.us
+  sql-impala         1.0          available  melpa-s... comint support for Cloudera Impala
+  sqlup-mode         0.5.3        available  melpa-s... Upcase SQL words for you
+  srefactor          0.5          available  melpa-s... A refactoring tool based on Semantic parser framework
+  ssh-config-mode    20160326.... available  melpa-s... Mode for fontification of ~/.ssh/config
+  stash              0.4.1        available  melpa-s... lightweight persistent caching
+  status             0.3          available  melpa-s... This package adds support for status icons to Emacs.
+  stekene-theme      1.0.15       available  melpa-s... Low-contrast (except for strings) theme, in light and dark versions.
+  stgit              0.17.1       available  melpa-s... No description available.
+  stream             2.2.0        available  gnu        Implementation of streams
+  string-edit        0.1.0        available  melpa-s... Avoid escape nightmares by editing string in separate buffer
+  string-utils       0.3.2        available  melpa-s... String-manipulation utilities
+  stripe-buffer      0.2.5        available  melpa-s... Use a different background for even and odd lines
+  stumpwm-mode       0.9.8        available  melpa-s... special lisp mode for evaluating code into running stumpwm
+  stylus-mode        1.0.0        available  melpa-s... Major mode for editing .jade files
+  subatomic-theme    1.8.1        available  melpa-s... Low contrast bluish color theme
+  subemacs           1.0          available  melpa-s... Evaluating expressions in a fresh Emacs subprocess
+  subshell-proc      0.1          available  melpa-s... Functions for working with comints
+  sudden-death       0.2          available  melpa-s... Totsuzen-no-Shi
+  suomalainen-kal... 2015.11.29   available  melpa-s... Finnish national and Christian holidays for calendar
+  super-save         0.2.0        available  melpa-s... Auto-save buffers, based on your activity.
+  svg                0.1          available  gnu        svg image creation functions
+  svg-clock          1.0          available  gnu        Analog clock using Scalable Vector Graphics
+  svg-mode-line-t... 0.1.3        available  melpa-s... SVG-based themes for mode-line
+  sweetgreen         0.5          available  melpa-s... Order Salads from sweetgreen.com
+  swift-mode         0.4.0        available  melpa-s... Major-mode for Apple's Swift programming language.
+  swiper             0.8.0        available  melpa-s... Isearch with an overview. Oh, man!
+  swiper-helm        0.1.0        available  melpa-s... Helm version of Swiper.
+  switch-window      1.0.0        available  melpa-s... A *visual* way to choose a window to switch to
+  sws-mode           1.0.0        available  melpa-s... (S)ignificant (W)hite(S)pace mode
+  sx                 0.4          available  melpa-s... StackExchange client. Ask and answer questions on Stack Overflow, Super User, and the likes
+  syndicate          1.0          available  melpa-s... evil keybindings for org-mode
+  synosaurus         0.1.0        available  melpa-s... An extensible thesaurus supporting lookup and substitution.
+  syntactic-sugar    0.9.4        available  melpa-s... Effect-free forms such as if/then/else
+  syntax-subword     0.2          available  melpa-s... make operations on words more fine-grained
+  system-specific... 0.2          available  melpa-s... Apply settings only on certain systems
+  systemd            1.4          available  melpa-s... Major mode for editing systemd units
+  tNFA               0.1.1        available  gnu        Tagged non-deterministic finite-state automata
+  ta                 1.5          available  melpa-s... A tool to deal with Chinese homophonic characters
+  tabbar-ruler       0.45         available  melpa-s... Pretty tabbar, autohide, use both tabbar/ruler
+  tablist            0.70         available  melpa-s... Extended tabulated-list-mode
+  tagedit            1.4.0        available  melpa-s... Some paredit-like features for html-mode
+  tawny-mode         1.5.0        available  melpa-s... No description available.
+  telepathy          1.0          available  melpa-s... Access Telepathy from Emacs
+  telephone-line     0.3          available  melpa-s... Rewrite of Powerline
+  temp-buffer-browse 1.4          available  gnu        temp buffer browse mode
+  ten-hundred-mode   1.0          available  melpa-s... use only the ten hundred most usual words
+  term-alert         1.0          available  melpa-s... Get notifications when commands complete in the Emacs terminal emulator
+  term-cmd           1.0          available  melpa-s... Send commands to Emacs from programs running under term.el
+  term-run           0.1.5        available  melpa-s... Run arbitrary command in terminal buffer
+  termbright-theme   1.0          available  melpa-s... a more usable theme for white-on-black terminals
+  tern               0.18.0       available  melpa-s... Tern-powered JavaScript integration
+  tern-auto-complete 0.18.0       available  melpa-s... Tern Completion by auto-complete.el
+  tern-django        0.1.0        available  melpa-s... Create tern projects for django applications.
+  terraform-mode     0.5          available  melpa-s... Major mode for terraform configuration file
+  test-case-mode     1.0          available  melpa-s... unit test front-end
+  test-kitchen       0.2.1        available  melpa-s... Run test-kitchen inside of emacs
+  test-simple        1.0          available  melpa-s... Simple Unit Test Framework for Emacs Lisp
+  test-simple        1.2.0        available  gnu        Simple Unit Test Framework for Emacs Lisp
+  tex-smart-umlauts  1.4.0        available  melpa-s... Smart umlaut conversion for TeX.
+  textmate           1            available  melpa-s... No description available.
+  textmate-to-yas    0.21         available  melpa-s... Import Textmate macros into yasnippet syntax
+  theme-changer      2.1.0        available  melpa-s... Sunrise/Sunset Theme Changer for Emacs
+  thrift             0.9.3        available  melpa-s... Major mode for Apache Thrift files
+  timer-revert       0.1          available  melpa-s... minor mode to revert buffer for a given time interval.
+  timerfunctions     1.4.2        available  gnu        Enhanced versions of some timer.el functions
+  timesheet          0.3.0        available  melpa-s... Timesheet management add-on for org-mode
+  tiny               0.1.1        available  gnu        Quickly generate linear ranges in Emacs
+  tox                0.3          available  melpa-s... Launch current python test with tox
+  toxi-theme         0.1.2        available  melpa-s... A dark color theme by toxi
+  tracking           2.2          available  melpa-s... Buffer modification tracking
+  tramp-theme        0.1.1        available  gnu        Custom theme for remote buffers
+  transcribe         1.5.0        available  gnu        Package for audio transcriptions
+  transmission       0.9          available  melpa-s... Interface to a Transmission session
+  travis             0.6.0        available  melpa-s... Emacs client for Travis
+  trie               0.2.6        available  gnu        Trie data structure
+  truthy             0.2.8        available  melpa-s... Test the content of a value
+  tss                0.6.0        available  melpa-s... provide a interface for auto-complete.el/flymake.el on typescript-mode.
+  ttrss              1.7.5        available  melpa-s... Tiny Tiny RSS elisp bindings
+  tuareg             2.0.9        available  melpa-s... OCaml mode for Emacs.
+  tumble             1.5          available  melpa-s... an Tumblr mode for Emacs
+  tup-mode           1.3.1        available  melpa-s... Major mode for editing files for Tup
+  twilight-anti-b... 0.3.0        available  melpa-s... A soothing Emacs 24 light-on-dark theme
+  twittering-mode    3.0.0        available  melpa-s... Major mode for Twitter
+  typed-clojure-mode 1.0.0        available  melpa-s... Typed Clojure minor mode for Emacs
+  typit              0.1.0        available  melpa-s... Typing game similar to tests on 10 fast fingers
+  typo               1.1          available  melpa-s... Minor mode for typographic editing
+  ubuntu-theme       4.2          available  melpa-s... A theme inspired by the default terminal colors in Ubuntu
+  ucs-utils          0.8.4        available  melpa-s... Utilities for Unicode characters
+  undercover         0.6.0        available  melpa-s... Test coverage library for Emacs
+  underwater-theme   1.1.0        available  melpa-s... A gentle, deep blue color theme
+  undo-tree          0.6.5        available  gnu        Treat undo history as a tree
+  unfill             0.1          available  melpa-s... The inverse of fill-paragraph and fill-region
+  uni-confusables    0.1          available  gnu        Unicode confusables table
+  unicode-enbox      0.1.4        available  melpa-s... Surround a string with box-drawing characters
+  unicode-fonts      0.4.8        available  melpa-s... Configure Unicode fonts
+  unicode-progres... 0.5.4        available  melpa-s... Progress-reporter with fancy characters
+  unicode-whitespace 0.2.4        available  melpa-s... teach whitespace-mode about fancy characters
+  unify-opening      1.1.0        available  melpa-s... Make everything use the same mechanism to open files
+  unkillable-scratch 0.1          available  melpa-s... Disallow buffers from being killed by regexp -- default is *scratch* buffer
+  url-http-ntlm      2.0.2        available  gnu        NTLM authentication for the url library
+  use-package        2.1          available  melpa-s... A use-package declaration for simplifying your .emacs
+  utop               1.19.2       available  melpa-s... Universal toplevel for OCaml
+  uzumaki            0.1          available  melpa-s... A simple buffer cycler
+  vagrant            0.6.1        available  melpa-s... Manage a vagrant box from emacs
+  validate           0.5          available  gnu        Schema validation for Emacs-lisp
+  vbasense           0.1.1        available  melpa-s... provide a environment like Visual Basic Editor.
+  vc-darcs           1.19         available  melpa-s... a VC backend for darcs
+  vcomp              0.3.1        available  melpa-s... compare version strings
+  vdirel             0.1.0        available  melpa-s... Manipulate vdir (i.e., vCard) repositories
+  vector-utils       0.1.2        available  melpa-s... Vector-manipulation utility functions
+  vertigo            1.0          available  melpa-s... Jump across lines using the home row.
+  vhdl-tools         4.3          available  melpa-s... Utilities for navigating vhdl sources.
+  vim-region         0.3.0        available  melpa-s... Select region as vim
+  vimgolf            0.10.0       available  melpa-s... VimGolf interface for the One True Editor
+  vimish-fold        0.2.2        available  melpa-s... Fold text like in Vim
+  visual-fill-column 1.7          available  melpa-s... fill-column for visual-line-mode
+  vlf                1.7          available  gnu        View Large Files
+  vlf                1.7          available  melpa-s... View Large Files
+  voca-builder       0.2.0        available  melpa-s... No description available.
+  volatile-highli... 1.11         available  melpa-s... Minor mode for visual feedback on some operations.
+  w3                 4.0.49       available  gnu        Fully customizable, largely undocumented web browser for Emacs
+  wacspace           0.4.2        available  melpa-s... The WACky WorkSPACE manager for emACS
+  wandbox            0.6.0        available  melpa-s... Wandbox API Library for Emacs
+  wc-goal-mode       2.1          available  melpa-s... Running word count with goals (minor mode)
+  wc-mode            1.0          available  melpa-s... No description available.
+  wcheck-mode        2016.1.30    available  gnu        General interface for text checkers
+  wcheck-mode        2016.1.30    available  melpa-s... General interface for text checkers
+  wconf              0.2.0        available  gnu        Minimal window layout manager
+  weather-metno      0.1.0        available  melpa-s... Weather data from met.no in Emacs
+  web-beautify       0.3.1        available  melpa-s... Format HTML, CSS and JavaScript/JSON by js-beautify
+  web-completion-... 0.2          available  melpa-s... Shared completion data for ac-html and company-web
+  web-mode           14           available  melpa-s... major mode for editing web templates
+  web-server         0.1.1        available  gnu        Emacs Web Server
+  weblogger          1.4.5        available  melpa-s... Weblog maintenance via XML-RPC APIs
+  websocket          1.6          available  gnu        Emacs WebSocket client and server
+  weechat            0.3.1        available  melpa-s... Chat via WeeChat's relay protocol in Emacs
+  weibo              1.0          available  melpa-s... No description available.
+  which-key          1.1.10       available  melpa-s... Display available keybindings in popup
+  whitaker           0.3          available  melpa-s... Comint interface for Whitaker's Words
+  whitespace-clea... 0.10         available  melpa-s... Intelligently call whitespace-cleanup on save
+  whole-line-or-r... 1.3.1        available  melpa-s... operate on current line if region undefined
+  widget-mvc         0.0.2        available  melpa-s... MVC framework for the emacs widgets
+  wiki-nav           1.0.2        available  melpa-s... Simple file navigation using [[WikiStrings]]
+  win-switch         1.1          available  melpa-s... fast, dynamic bindings for window-switching/resizing
+  window-end-visible 0.1.0        available  melpa-s... Find the last visible point in a window
+  window-layout      1.3          available  melpa-s... window layout manager
+  window-numbering   1.1.2        available  melpa-s... No description available.
+  window-purpose     1.5          available  melpa-s... Purpose-based window management for Emacs
+  windresize         0.1          available  gnu        Resize windows interactively
+  windsize           0.1          available  melpa-s... Simple, intuitive window resizing
+  wisi               1.1.2        available  gnu        Utilities for implementing an indentation/navigation engine using a generalized LALR parser
+  wisp-mode          0.9.0        available  melpa-s... Tools for wisp: the Whitespace-to-Lisp preprocessor
+  wispjs-mode        0.2.0        available  melpa-s... Major mode for Wisp code.
+  with-editor        2.5.1        available  melpa-s... Use the Emacsclient as $EDITOR
+  wn-mode            1.4          available  melpa-s... numeric window switching shortcuts
+  wonderland         0.1.1        available  melpa-s... declarative configuration for Emacsen
+  wordsmith-mode     1.0.0        available  melpa-s... Syntax analysis and NLP text-processing in Emacs (OSX-only)
+  worf               0.1.0        available  melpa-s... A warrior does not press so many keys! (in org-mode)
+  wpuzzle            1.1          available  gnu        find as many word in a given time
+  wrap-region        0.7.3        available  melpa-s... Wrap text with punctation or tag
+  writegood-mode     2.0.2        available  melpa-s... Polish up poor writing on the fly
+  writeroom-mode     3.2          available  melpa-s... Minor mode for distraction-free writing
+  ws-butler          0.3          available  melpa-s... Unobtrusively remove trailing whitespace.
+  wsd-mode           0.5.0        available  melpa-s... Emacs major-mode for www.websequencediagrams.com
+  wttrin             0.1.0        available  melpa-s... Emacs frontend for weather web service wttr.in
+  x86-lookup         1.0.0        available  melpa-s... jump to x86 instruction documentation
+  xbm-life           0.1.3        available  melpa-s... A XBM version of Conway's Game of Life
+  xclip              1.3          available  gnu        use xclip to copy&paste
+  xcscope            1.2          available  melpa-s... cscope interface for (X)Emacs
+  xelb               0.6          available  gnu        X protocol Emacs Lisp Binding
+  xkcd               1.1          available  melpa-s... View xkcd from Emacs
+  xml-rpc            1.6.12       available  melpa-s... An elisp implementation of clientside XML-RPC
+  xpm                1.0.3        available  gnu        edit XPM images
+  xquery-tool        0.1.8        available  melpa-s... A simple interface to saxonb's xquery.
+  xref-js2           1.3          available  melpa-s... Jump to references/definitions using ag & js2-mode's AST
+  xterm-color        1.0          available  melpa-s... ANSI & XTERM 256 color support
+  xtest              1.1.0        available  melpa-s... Simple Testing with Emacs & ERT
+  yafolding          0.1.4        available  melpa-s... Yet another folding extension for Emacs
+  yagist             0.8.12       available  melpa-s... Yet Another Emacs integration for gist.github.com
+  yaml-mode          0.0.12       available  melpa-s... Major mode for editing YAML files
+  yascroll           0.1          available  melpa-s... Yet Another Scroll Bar Mode
+  yasnippet          0.9.1        available  gnu        Yet another snippet extension for Emacs.
+  yasnippet          0.9.1        available  melpa-s... Yet another snippet extension for Emacs.
+  yatemplate         1.0          available  melpa-s... File templates with yasnippet
+  yatex              1.78         available  melpa-s... Yet Another tex-mode for emacs //野鳥//
+  yaxception         0.3.3        available  melpa-s... Provide framework about exception like Java for Elisp
+  ycmd               0.9          available  melpa-s... emacs bindings to the ycmd completion server
+  yesql-ghosts       0.1.0        available  melpa-s... Display ghostly yesql defqueries inline
+  yoshi-theme        6.1.0        available  melpa-s... Theme named after my cat
+  youdao-dictionary  0.3          available  melpa-s... Youdao Dictionary interface for Emacs
+  zenburn-theme      2.4          available  melpa-s... A low contrast color theme for Emacs.
+  zerodark-theme     1.2          available  melpa-s... A dark, medium contrast theme for Emacs
+  zombie-trellys-... 0.2.1        available  melpa-s... A minor mode for interaction with Zombie Trellys
+  zone-nyan          0.2.2        available  melpa-s... Zone out with nyan cat
+  zoom-window        0.2          available  melpa-s... Zoom window like tmux
+  zop-to-char        1.0          available  melpa-s... A replacement of zap-to-char.
+  zotelo             1.3          available  melpa-s... Manage Zotero collections from emacs
+  zotxt              0.1.34       available  melpa-s... Tools to integrate emacs with Zotero via the zotxt plugin.
+  ztree              1.0.3        available  gnu        Text mode directory tree
+  zygospore          0.0.3        available  melpa-s... reversible C-x 1 (delete-other-windows)
+  zzz-to-char        0.1.1        available  melpa-s... Fancy version of `zap-to-char' command
+  ace-jump-mode      2.0          installed             a quick cursor location minor mode for emacs
+  better-defaults    0.1.3        installed             Fixing weird quirks and poor defaults
+  clojure-mode       5.3.0        installed             Major mode for Clojure code
+  allout             2.3          built-in              extensive outline mode for use alone and with other modes
+  allout-widgets     1.0          built-in              Visually highlight allout outline structure.
+  ansi-color         3.4.2        built-in              translate ANSI escape sequences into faces
+  antlr-mode         2.2.3        built-in              major mode for ANTLR grammar files
+  artist             1.2.6        built-in              draw ascii graphics with your mouse
+  bs                 1.17         built-in              menu for selecting and displaying buffers
+  cedet              2.0          built-in              Setup CEDET environment
+  cfengine           1.3          built-in              mode for editing Cfengine files
+  chart              0.2          built-in              Draw charts (bar charts, etc)
+  checkdoc           0.6.2        built-in              check documentation strings for style requirements
+  cl-lib             1.0          built-in              Common Lisp extensions for Emacs
+  cwarn              1.3.1        built-in              highlight suspicious C and C++ constructions
+  delim-col          2.1          built-in              prettify all columns in a region or rectangle
+  dunnet             2.1          built-in              text adventure for Emacs
+  ebnf2ps            4.4          built-in              translate an EBNF to a syntactic chart on PostScript
+  ede                1.2          built-in              Emacs Development Environment gloss
+  ediff              2.81.4       built-in              a comprehensive visual interface to diff & patch
+  edmacro            2.1          built-in              keyboard macro editor
+  eieio              1.4          built-in              Enhanced Implementation of Emacs Interpreted Objects
+  eieio-core         1.4          built-in              Core implementation for eieio
+  epg                1.0.0        built-in              the EasyPG Library
+  erc                5.3          built-in              An Emacs Internet Relay Chat client
+  eshell             2.4.2        built-in              the Emacs command shell
+  feedmail           11           built-in              assist other email packages to massage outgoing messages
+  find-cmd           0.6          built-in              Build a valid find(1) command with sexps
+  finder             1.0          built-in              topic & keyword-based code finder
+  flymake            0.3          built-in              a universal on-the-fly syntax checker
+  foldout            1.10         built-in              folding extensions for outline-mode and outline-minor-mode
+  footnote           0.19         built-in              footnote support for message mode
+  gamegrid           1.2          built-in              library for implementing grid-based games on Emacs
+  gnus               5.13         built-in              a newsreader for GNU Emacs
+  hippie-exp         1.6          built-in              expand text trying various ways to find its expansion
+  htmlfontify        0.21         built-in              htmlize a buffer/source tree with optional hyperlinks
+  icalendar          0.19         built-in              iCalendar implementation
+  idlwave            6.1.22       built-in              IDL editing mode for GNU Emacs
+  image-dired        0.4.11       built-in              use dired to browse and manipulate your images
+  info-xref          3            built-in              check external references in an Info document
+  inversion          1.3          built-in              When you need something in version XX.XX
+  isearchb           1.5          built-in              a marriage between iswitchb and isearch
+  js                 9            built-in              Major mode for editing JavaScript
+  json               1.4          built-in              JavaScript Object Notation parser / generator
+  linum              0.9.24       built-in              display line numbers in the left margin
+  master             1.0.2        built-in              make a buffer the master over another buffer
+  md4                1.0          built-in              MD4 Message Digest Algorithm.
+  meta-mode          1.0          built-in              major mode for editing Metafont or MetaPost sources
+  mh-e               8.6          built-in              GNU Emacs interface to the MH mail system
+  mixal-mode         0.1          built-in              Major mode for the mix asm language.
+  newsticker         1.99         built-in              A Newsticker for Emacs.
+  ntlm               1.0          built-in              NTLM (NT LanManager) authentication support
+  package            1.0.1        built-in              Simple package system for Emacs
+  printing           6.9.3        built-in              printing utilities
+  ps-mode            1.1.9        built-in              PostScript mode for GNU Emacs
+  ps-print           7.3.5        built-in              print text from the buffer as PostScript
+  pulse              1.0          built-in              Pulsing Overlays
+  python             0.24.4       built-in              Python's flying circus support for Emacs
+  regi               1.8          built-in              REGular expression Interpreting engine
+  remember           2.0          built-in              a mode for quickly jotting down things to remember
+  repeat             0.51         built-in              convenient way to repeat the previous command
+  ruby-mode          1.2          built-in              Major mode for editing Ruby files
+  ruler-mode         1.6          built-in              display a ruler in the header line
+  savehist           24           built-in              Save minibuffer history
+  semantic           2.2          built-in              Semantic buffer evaluator.
+  sh-script          2.0.6        built-in              shell-script editing commands for Emacs
+  sql                3.4          built-in              specialized comint.el for SQL interpreters
+  srecode            1.2          built-in              Semantic buffer evaluator.
+  tabulated-list     1.0          built-in              generic major mode for tabulated lists
+  tetris             2.1          built-in              implementation of Tetris for Emacs
+  tildify            4.5          built-in              adding hard spaces into texts
+  timeclock          2.6.1        built-in              mode for keeping track of how much you work
+  tpu-edt            4.5          built-in              Emacs emulating TPU emulating EDT
+  vera-mode          2.28         built-in              major mode for editing Vera files
+  viper              3.14.1       built-in              A full-featured Vi emulator for Emacs and XEmacs,
+  wdired             2.0          built-in              Rename files editing their names in dired buffers
+  whitespace         13.2.2       built-in              minor mode to visualize TAB, (HARD) SPACE, NEWLINE
+  woman              0.551        built-in              browse UN*X manual pages `wo (without) man'
+  ws-mode            0.7          built-in              WordStar emulation mode for GNU Emacs

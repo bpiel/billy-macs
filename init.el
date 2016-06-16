@@ -1,7 +1,7 @@
 (require 'package)
 
 (add-to-list 'package-archives
-             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+             '("melpa" . "http://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives
              '("billpiel" . "http://billpiel.com/emacs-packages/") t)
 
@@ -196,6 +196,8 @@ current buffer is not visiting a file."
   '(add-hook 'clojure-mode-hook 'bpiel/add-compojure-forms-to-clojure-dedenting))
 
 ;; END Bill's stuff
+
+(load-file "/home/bill/.emacs.d/ido-conf.el")
 
 (message "\n\n init.el done loading  \n\n")
 
