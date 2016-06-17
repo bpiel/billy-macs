@@ -24,7 +24,7 @@
 
 ;; ========== emacs-live stuff
 
-
+(load-file (concat billy-conf-dir "util-fns.el"))
 (load-file (concat billy-conf-dir "auto-complete-conf.el"))
 (load-file (concat billy-conf-dir "browse-kill-ring-conf.el"))
 (load-file (concat billy-conf-dir "color-theme-conf.el"))
