@@ -91,6 +91,9 @@
 ;; comment region
 (global-set-key (kbd "M-/") 'comment-or-uncomment-region)
 
+;; Jump to a definition in the current file.
+(global-set-key (kbd "C-x C-i") 'idomenu)
+
 ;; File
 (global-set-key (kbd "C-x f")     'live-recentf-ido-find-file)
 (global-set-key (kbd "C-x C-r")   'ido-recentf-open)
