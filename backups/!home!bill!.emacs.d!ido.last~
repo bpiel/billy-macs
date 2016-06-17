@@ -2,9 +2,15 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/bill/repos/emacs-live/packs/dev/bindings-pack/" . "config/")
+ ("/home/bill/repos/emacs-live/packs/dev/" . "bindings-pack/")
+ ("/home/" . "bill/")
+ ("/home/bill/repos/billy-macs/" . "conf/")
+ ("/home/bill/repos/emacs-live/packs/stable/clojure-pack/" . "config/")
+ ("/home/bill/repos/emacs-live/packs/stable/clojure-pack/lib/" . "fuzzy-el/")
  ("/home/bill/repos/emacs-live/packs/stable/foundation-pack/" . "config/")
  ("/home/bill/repos/emacs-live/packs/stable/" . "foundation-pack/")
- ("/home/bill/repos/emacs-live/packs/" . "stable/")
+ ("/home/bill/repos/emacs-live/packs/" . "dev/")
  ("/home/bill/repos/emacs-live/" . "packs/")
  ("/home/bill/repos/dotfiles/work-desktop/" . ".xmonad/")
  ("/home/bill/repos/sayid/" . "doc/")
@@ -18,15 +24,22 @@
  ("/opt/code/sourcerer/" . "sourcerer/")
  ("/" . "opt/")
  ("/home/bill/repos/dotfiles/" . "work-desktop/")
- ("/home/bill/repos/" . "billy-macs/")
+ ("/home/bill/repos/" . "emacs-live/")
  ("/home/bill/" . ".xmonad/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/bill/.emacs.d/"
+ "/home/bill/repos/billy-macs/conf/"
+ "/home/bill/repos/emacs-live/packs/dev/bindings-pack/config/"
+ "/home/bill/repos/emacs-live/"
  "/home/bill/repos/billy-macs/"
  "/home/bill/repos/emacs-live/packs/stable/foundation-pack/config/"
+ "/home/bill/repos/emacs-live/packs/stable/clojure-pack/config/"
+ "/home/bill/repos/emacs-live/packs/stable/clojure-pack/lib/fuzzy-el/"
+ "/home/bill/repos/emacs-live/packs/stable/clojure-pack/lib/ac-cider/"
+ "/home/bill/repos/emacs-live/packs/stable/clojure-pack/"
+ "/home/bill/.emacs.d/"
  "/opt/code/sourcerer/sourcerer/src/clojure/sourcerer/engine/"
  "/opt/code/sourcerer/sourcerer/"
  "/opt/code/"
@@ -56,35 +69,67 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "paredit-conf.el"
+ "default-bindings.el"
+ "emacs-live-packs"
+ "color-theme-conf.el"
+ "popwin-conf.el"
  "init.el"
- "ido-conf.el"
- "protocols.clj"
- "test_env.sh"
- "routing-table-generated.json"
- "spells.clj"
- "sayid.el"
- "xmonad.hs"
- "use-billy-macs"
- "use-emacs-live"
+ "browse-kill-ring-conf.el"
+ "ace-jump-mode-conf.el"
+ "lisp-conf.el"
+ "smex-conf.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/bill/.emacs.d/" (22369 63931 295976 379000) "ido-conf.el" "ido.last" "smex-items" "lib/" "backups/" "README.md" ".git/" "elpa/" "init.el" "./" "auto-save-list/" "tmp/" "../" "places")
+ ("/home/bill/repos/billy-macs/conf/" (22371 18861 311033 914000) "ido-conf.el" "paredit-conf.el" "browse-kill-ring-conf.el" "cider-conf.el" "popwin-conf.el" "smex-conf.el" "clojure-conf.el" "./" "lisp-conf.el" "startup-buffer.el" "recentf-conf.el" "auto-complete-conf.el" "color-theme-conf.el" "../")
 
- ("/home/bill/repos/billy-macs/" (22369 63879 590665 112000) "ido-conf.el" "ido.last" "smex-items" "lib/" "backups/" "README.md" ".git/" "elpa/" "init.el" "./" "auto-save-list/" "tmp/" "../" "places")
+ ("/home/bill/repos/billy-macs/" (22371 18749 168123 975000) "ido.last" "smex-items" "conf/" "recentf" "lib/" "backups/" "README.md" ".git/" "elpa/" "init.el" "./" "auto-save-list/" "tmp/" "ac-comphist.dat" "../" "places")
 
- ("/home/bill/repos/emacs-live/packs/stable/foundation-pack/config/" (22369 63808 314371 556000) "ido-conf.el" "cosmetic.el" "popwin-conf.el" "live.el" "built-in.el" "smex-conf.el" "#ido-conf.el#" "mouse-conf.el" "shell-conf.el" "win-switch-conf.el" "auto-compile-conf.el" "key-chord-conf.el" "monkey-patch.el" "backup-dir-conf.el" "window-number-conf.el" "./" "lisp-conf.el" ".#ido-conf.el" "zone-conf.el" "recentf-conf.el" "elisp-slime-nav-conf.el" "util-fns.el" "../" "tramp-conf.el" "ibuffer-git-conf.el" "spelling-conf.el" "osx.el")
+ ("/home/bill/repos/emacs-live/packs/dev/bindings-pack/config/" (22369 59621 250952 26000) "default-bindings.el" "./" "../")
+
+ ("/home/bill/repos/emacs-live/packs/dev/bindings-pack/" (22190 26716 392240 297000) "info.el" "init.el" "./" "config/" "../")
+
+ ("/home/bill/repos/emacs-live/packs/dev/" (22190 26716 408240 220000) "git-pack/" "org-pack/" "colour-pack/" "power-pack/" "bindings-pack/" "foundation-pack/" "lang-pack/" "./" "clojure-pack/" "../")
+
+ ("/tmp/" (22371 17090 647299 623000) "lein-standalone244537960841541852.jar" "gpg-eTzM8g/" "systemd-private-0717022329154b4cb51f389904605da9-colord.service-G0LAUU/" "config-err-OskM2P" ".Test-unix/" ".X0-lock" ".ICE-unix/" "systemd-private-0717022329154b4cb51f389904605da9-rtkit-daemon.service-xTRzS3/" "form-init4552030694537637443.clj" ".com.google.Chrome.B3qePz" ".leiningen-cmdline907695728080092496.tmp" "form-init4102715828866799377.clj" ".com.google.Chrome.cWq1uY" ".font-unix/" "lein-trampoline-SgnO9HeaS7jXX" "hsperfdata_bill/" "./" "systemd-private-0717022329154b4cb51f389904605da9-systemd-timesyncd.service-Ner3Qy/" "sayid-0.0.2/" "lein-trampoline-iwn4U7ia9HtuQ" "ssh-snKip0AJnfhG/" ".com.google.Chrome.sH2Ffx/" ".leiningen-cmdline5508615595288665851.tmp" ".XIM-unix/" "ssh-689bg4IjVfMQ/" "../" ".X11-unix/" "babel-20207uI0/")
+
+ ("/home/bill/" (22371 16940 641672 477000) "examples.desktop" ".emacs.d/" ".bashrc" "temp" "sayid001-d1-2.mp4" "sayid001-d1.mp4" "test1" ".install4j" "emacs-package-list-new" ".config/" "Default Project.mp4" "demo1-3.mkv" ".macromedia/" ".m2/" "mouse1" ".sudo_as_admin_successful" "demo1-2.mkv" "sample.el" "Documents/" "dev4" ".fehbg" "pbid2" ".lesshst" "repos/" ".lein/" ".dbus/" ".ssh/" ".gimp-2.8/" ".gitconfig" ".xmonad/" "demo1-1.mkv" ".smex-items" ".xmonad-startup" "emacs-package-list" ".xsession-errors.old" ".profile" "tensorflow/" "log-snapshots/" "dev2" "Downloads/" ".dmrc" "secret-keys.tgz.gpg" "sayid001-d1-1080-h264-libx264-15.h264" "pbid1" "test4.mkv" "test2.mkv" "dev3" ".pip/" ".drip/" "test.mkv" ".openshot/" ".mozilla/" "Music/" "test3.mkv" ".xmobarcc" ".xbacklight-get" ".java/" "demo1-4.mkv.COPY" "init.el" "#emacs-package-list#" "./" "output.mkv" ".pki/" "demo1-4.mkv" "Public/" "test5.mkv" "bin/" ".adobe/" ".Xauthority" "remotes/" ".cache/" "Pictures/" "emacs-package-list-billy" "Desktop/" "sayid001-d1-3.mp4" "Templates/" "Videos/" ".gnupg/" ".xsession-errors" "../" ".bash_history" ".local/" ".nano/" "dev1" ".bash_logout" ".gnome/" "temp-secrets/" "Default Project.matroska" ".ICEauthority" ".gconf/" ".npm/" ".bashrc.original")
+
+ ("/home/bill/repos/sayid/src/el/" (22371 15888 323012 833000) "sayid-traced-mode.el" "sayid-pkg.el" "sayid-traced-mode.elc" "./" "sayid-mode.elc" "sayid.elc" "sayid-mode.el" "../" "sayid.el")
+
+ ("/home/bill/.emacs.d/" (22371 16940 689674 670000) "ido.last" "smex-items" "conf/" "recentf" "lib/" "backups/" "README.md" ".git/" "elpa/" "init.el" "./" "auto-save-list/" "tmp/" "ac-comphist.dat" "../" "places")
+
+ ("/home/bill/repos/emacs-live/packs/stable/clojure-pack/config/" (22371 15085 521780 177000) "paredit-conf.el" "cider-conf.el" "overtone-conf.el" "clojure-conf.el" "./" "auto-complete-conf.el" "../" "highlight-flash-conf.el" "mic-paren-conf.el")
+
+ ("/home/bill/repos/emacs-live/packs/stable/foundation-pack/config/" (22371 16584 991307 189000) "ido-conf.el" "cosmetic.el" "popwin-conf.el" "live.el" "built-in.el" "smex-conf.el" "mouse-conf.el" "shell-conf.el" "win-switch-conf.el" "auto-compile-conf.el" "key-chord-conf.el" "monkey-patch.el" "backup-dir-conf.el" "window-number-conf.el" "./" "lisp-conf.el" "zone-conf.el" "recentf-conf.el" "elisp-slime-nav-conf.el" "util-fns.el" "../" "tramp-conf.el" "ibuffer-git-conf.el" "spelling-conf.el" "osx.el")
+
+ ("/home/bill/repos/sayid/src/com/billpiel/sayid/" (22371 16688 901154 416000) "inner_trace2.clj" "profiling.clj" "string_output.clj" "shelf.clj" "nrepl_middleware.clj" "util/" "core.clj" "./" "trace.clj" "recording.clj" "test1.html" "../" "query2.clj" "view.clj" "workspace.clj")
+
+ ("/home/bill/repos/emacs/" (22193 31038 750660 687000) "aclocal.m4" "autom4te.cache/" "oldXMenu/" ".gitignore" "INSTALL" "nt/" "configure.ac" "ChangeLog" "msdos/" "m4/" "info/" "lib-src/" "config.status" "lib/" "config.bat" "make-dist" ".dir-locals.el" "README" "src/" "nextstep/" ".git/" "COPYING" "INSTALL.REPO" "test/" "./" "BUGS" "GNUmakefile" "build-aux/" "etc/" "configure" "lisp/" "autogen.sh" "Makefile" "../" "admin/" "leim/" "config.log" "doc/" "Makefile.in" "lwlib/" "config.log~")
+
+ ("/home/bill/repos/sayid/src/com/billpiel/sayid/util/" (22371 13682 534159 763000) "find_ns.clj" "#find_ns.clj#" "./" "../" "tree_query.clj" "other.clj")
+
+ ("/home/bill/repos/sayid/" (22371 304 848142 571000) "INSTRUCTIONS.md" ".nrepl-port" ".gitignore" "script.txt" "target/" ".lein-repl-history" "makefile" "demo/" "src/" "README.md" ".git/" "pom.xml.asc" "test/" "./" "pom.xml" "LICENSE" "index.html" "../" "TODO.md" "project.clj")
+
+ ("/opt/code/" (22251 36624 136356 842000) "./" "../")
+
+ ("/home/bill/repos/emacs-live/" (22371 13107 705705 574000) "ido.last" ".gitignore" ".gitmodules" "smex-items" "CHANGELOG.md" "manifest.el" "emacs-live-packs" "installer/" "LICENSE.txt" "lib/" "README.md" ".git/" "elpa/" "init.el" "./" "etc/" "tramp" "auto-save-list/" "tmp/" "../" "locatedbs/" "packs/")
+
+ ("/home/bill/repos/emacs-live/packs/stable/clojure-pack/lib/fuzzy-el/" (22190 26716 440240 66000) "fuzzy.el" "README.md" "./" "../")
+
+ ("/home/bill/repos/emacs-live/packs/stable/clojure-pack/lib/ac-cider/" (22190 26716 408240 220000) "README.org" "./" "ac-cider.el" "../")
+
+ ("/home/bill/repos/emacs-live/packs/stable/clojure-pack/lib/" (22190 26716 440240 66000) "cider-eval-sexp-fu/" "edn/" "eval-sexp-fu/" "cider/" "paredit.el" "clj-refactor/" "ac-cider/" "uuid/" "highlight.el" "align-cljlet/" "clojure-mode/" "./" "rainbow-delimiters.el" "auto-complete/" "popup-el/" "../" "mic-paren.el" "fuzzy-el/")
+
+ ("/home/bill/repos/emacs-live/packs/stable/clojure-pack/" (22190 26716 408240 220000) "lib/" "info.el" "README.md" "init.el" "./" "config/" "../")
 
  ("/home/bill/repos/emacs-live/packs/stable/foundation-pack/" (22190 26716 448240 28000) "lib/" "info.el" "init.el" "./" "config/" "../")
 
  ("/home/bill/repos/emacs-live/packs/stable/" (22190 26716 552239 528000) "git-pack/" "org-pack/" "colour-pack/" "power-pack/" "bindings-pack/" "foundation-pack/" "lang-pack/" "./" "clojure-pack/" "../")
 
  ("/home/bill/repos/emacs-live/packs/" (22190 26716 576239 413000) "dev/" "update-live-packs" "./" "template/" "stable/" "../")
-
- ("/home/bill/repos/emacs-live/" (22369 57825 572583 4000) "ido.last" ".gitignore" ".gitmodules" "smex-items" "CHANGELOG.md" "manifest.el" "installer/" "LICENSE.txt" "lib/" "README.md" ".git/" "elpa/" "init.el" "./" "etc/" "tramp" "auto-save-list/" "tmp/" "../" "locatedbs/" "packs/")
-
- ("/home/bill/" (22369 63056 777452 286000) "examples.desktop" ".emacs.d/" ".bashrc" "temp" "sayid001-d1-2.mp4" "sayid001-d1.mp4" "test1" ".install4j" "emacs-package-list-new" ".config/" "Default Project.mp4" "demo1-3.mkv" ".macromedia/" ".m2/" "mouse1" ".sudo_as_admin_successful" "demo1-2.mkv" "sample.el" "Documents/" "dev4" ".fehbg" "pbid2" ".lesshst" "repos/" ".lein/" ".dbus/" ".ssh/" ".gimp-2.8/" ".gitconfig" ".xmonad/" "demo1-1.mkv" ".xmonad-startup" "emacs-package-list" ".xsession-errors.old" ".profile" "tensorflow/" "log-snapshots/" "dev2" "Downloads/" ".dmrc" "secret-keys.tgz.gpg" "sayid001-d1-1080-h264-libx264-15.h264" "pbid1" "test4.mkv" "test2.mkv" "dev3" ".pip/" ".drip/" "test.mkv" ".openshot/" ".mozilla/" "Music/" "test3.mkv" ".xmobarcc" ".xbacklight-get" ".java/" "demo1-4.mkv.COPY" "#emacs-package-list#" "./" "output.mkv" ".pki/" "demo1-4.mkv" "Public/" "test5.mkv" "bin/" ".adobe/" ".Xauthority" "remotes/" ".cache/" "Pictures/" "emacs-package-list-billy" "Desktop/" "sayid001-d1-3.mp4" "Templates/" "Videos/" ".gnupg/" ".xsession-errors" "../" ".bash_history" ".local/" ".nano/" "dev1" ".bash_logout" ".gnome/" "temp-secrets/" "Default Project.matroska" ".ICEauthority" ".gconf/" ".npm/" ".bashrc.original")
 
  ("/opt/code/sourcerer/sourcerer/" (22367 50448 0 0) "../" "dev-resources/" "project.clj" "dev/" "migrations/" "test_env.sh" "target/" ".lein-env" "examples/" "build.sh" "Makefile" "bin/" ".gitignore" "config/" "compare-mongo-collections-as-csv.sh" "README.md" ".nrepl-port" "routing-table.json.erb" "test/" "src/" "./" ".lein-repl-history")
 
@@ -102,23 +147,15 @@
 
  ("/opt/code/sourcerer/sourcerer/src/clojure/sourcerer/engine/" (22366 56521 0 0) "../" "memory.clj" "throttler.clj" "constants.clj" "core.clj" "exceptions/" "hooks/" "alerts.clj" "utils.clj" "webservice.clj" "protocols.clj" "config.clj" "query_generator.clj" "db/" "greylist.clj" "./" "pagination.clj")
 
- ("/opt/code/" (22366 59442 0 0) "pipeline-sandbox/" "../" "pipeline-manager/" "db-replicators/" "rjm-aws-clj/" "webhooks-service/" "db-replicators-manager/" "schema-service/" "dispatcheetah/" "data-warehouse-service/" "pipeline-streamery/" "rjm-common-clj/" "sayid/" "pipeline-batchery/" "rjm-service-utils/" "rjm/" "pipeline-gate/" "stats-service/" "rjm-service-template/" "connections-service/" "flyswatter/" "janino-service/" "pipeline-common/" "RJMetrics/" "sweet-liberty/" "replicators-utils/" "import-api/" "core-services/" "notification-service/" "service-broker/" "clojure-style-guide/" "sourcerer/" "batcheetah/" "RJMetrics-clj/" "./" "cloudcutter/")
-
- ("/home/bill/repos/sayid/" (22366 62394 287971 41000) ".nrepl-port" ".gitignore" "script.txt" "target/" ".lein-repl-history" "makefile" "demo/" "src/" "README.md" ".git/" "pom.xml.asc" "test/" "./" "pom.xml" "LICENSE" "index.html" "../" "TODO.md" "project.clj")
-
  ("/home/bill/repos/sayid/src/" (22348 5562 66024 12000) "com/" "el/" "./" "../")
 
  ("/home/bill/repos/sayid/src/com/" (22348 5562 62023 999000) "./" "billpiel/" "../")
 
  ("/home/bill/repos/sayid/src/com/billpiel/" (22348 5562 62023 999000) "sayid/" "./" "../")
 
- ("/home/bill/repos/sayid/src/com/billpiel/sayid/" (22367 5872 337114 438000) "inner_trace2.clj" "profiling.clj" "string_output.clj" "shelf.clj" "nrepl_middleware.clj" "util/" "core.clj" "./" "trace.clj" "recording.clj" "test1.html" "../" "query2.clj" "view.clj" "workspace.clj")
-
  ("/opt/code/sourcerer/sourcerer/src/clojure/sourcerer/engine/db/" (22357 55984 0 0) "../" "jobs.clj" "validations.clj" "status.clj" "all.clj" "./")
 
  ("/home/bill/repos/" (22366 4664 137214 5000) "sayid-0.0.2.tar" "sweet-liberty/" "clj-refactor.el/" "scripter-clj/" "sourcerer/" "trace-w-recordeds.clj" "OpenAPI-Specification/" "emacs-live/" "contrived-example/" "test-backdoor.py" "tensorflow/" "sayid/" "scripter2/" "sweet-liberty-example/" "albert/" "./" "rjm-service-utils/" "scheduler/" "mem-tracer/" "emacs/" "billy-macs/" "rjm-service-template/" "test1.html" "../" "py-clj/" "refactor-nrepl/" "xpojure/" "dotfiles/" "drip/")
-
- ("/tmp/" (22366 54548 811657 962000) "gpg-eTzM8g/" "systemd-private-0717022329154b4cb51f389904605da9-colord.service-G0LAUU/" "config-err-OskM2P" ".Test-unix/" ".X0-lock" ".ICE-unix/" "systemd-private-0717022329154b4cb51f389904605da9-rtkit-daemon.service-xTRzS3/" ".com.google.Chrome.B3qePz" ".leiningen-cmdline907695728080092496.tmp" "form-init4102715828866799377.clj" ".com.google.Chrome.cWq1uY" ".font-unix/" "lein-trampoline-SgnO9HeaS7jXX" "hsperfdata_bill/" "./" "systemd-private-0717022329154b4cb51f389904605da9-systemd-timesyncd.service-Ner3Qy/" "sayid-0.0.2/" "ssh-snKip0AJnfhG/" ".com.google.Chrome.sH2Ffx/" ".XIM-unix/" "ssh-689bg4IjVfMQ/" "../" ".X11-unix/" "babel-6422UUt/")
 
  ("/home/bill/.ssh/" (22366 53888 599451 182000) "home_desktop_vm_private_key" "./" "known_hosts" "config" "environment" "office_vm_private_key" "../" "id_rsa" "id_rsa.pub")
 
@@ -143,8 +180,6 @@
  ("/opt/code/sourcerer/sourcerer/src/clojure/sourcerer/" (22357 55984 0 0) "../" "apis/" "help.clj" "main.clj" "manage_replicate.clj" "service_clients/" "http/" "persistence/" "replicate.clj" "engine/" "./" "migrate.clj" "manager/")
 
  ("/opt/code/sourcerer/sourcerer/src/clojure/sourcerer/apis/" (22357 55984 0 0) "../" "salesforce.clj" "quickbooks.clj" "jira.clj" "trello.clj" "netsuite.clj" "datatype/" "facebook.clj" "mixpanel.clj" "square.clj" "recurly.clj" "hubspot.clj" "zuora.clj" "shopify.clj" "utils/" "pardot.clj" "googleanalytics.clj" "intercom.clj" "marketo.clj" "deskdotcom.clj" "mailchimp.clj" "datatype_support/" "zendesk.clj" "stripe.clj" "google_analytics_reporting.clj" "twitter.clj" "zopim.clj" "./")
-
- ("/home/bill/repos/sayid/src/el/" (22366 4131 314707 750000) "sayid-traced-mode.el" "sayid-pkg.el" "sayid-traced-mode.elc" "./" "sayid-mode.elc" "sayid.elc" "sayid-mode.el" "../" "sayid.el")
 
  ("/home/bill/.m2/repository/com/billpiel/sayid/0.0.1/" (22358 5818 583239 478000) "_maven.repositories" "sayid-0.0.1.jar" "sayid-0.0.1.pom.sha1" "./" "sayid-0.0.1.pom" "../" "sayid-0.0.1.jar.sha1")
 

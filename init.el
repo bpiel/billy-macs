@@ -1,9 +1,15 @@
 (require 'package)
 
+(defvar billy-conf-dir "/home/bill/.emacs.d/conf/")
+(defvar billy-lib-dir "/home/bill/.emacs.d/lib/")
+
 (add-to-list 'package-archives
-             '("melpa" . "http://stable.melpa.org/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives
              '("billpiel" . "http://billpiel.com/emacs-packages/") t)
+
 
 (package-initialize)
 
@@ -17,6 +23,19 @@
     (package-install 'better-defaults)))
 
 ;; ========== emacs-live stuff
+
+
+(load-file (concat billy-conf-dir "auto-complete-conf.el"))
+(load-file (concat billy-conf-dir "browse-kill-ring-conf.el"))
+(load-file (concat billy-conf-dir "color-theme-conf.el"))
+(load-file (concat billy-conf-dir "cider-conf.el"))
+(load-file (concat billy-conf-dir "clojure-conf.el"))
+(load-file (concat billy-conf-dir "ido-conf.el"))
+(load-file (concat billy-conf-dir "lisp-conf.el"))
+(load-file (concat billy-conf-dir "paredit-conf.el"))
+(load-file (concat billy-conf-dir "popwin-conf.el"))
+(load-file (concat billy-conf-dir "recentf-conf.el"))
+(load-file (concat billy-conf-dir "smex-conf.el"))
 
 ;; clojure
 
@@ -34,10 +53,21 @@
 (define-key paredit-mode-map (kbd "C-M-p")   'paredit-backward-down)
 (define-key paredit-mode-map (kbd "C-M-u")   'paredit-backward-up)
 (define-key paredit-mode-map (kbd "M-T")     'transpose-sexps)
-(define-key paredit-mode-map (kbd "C-M-k")   'live-paredit-copy-sexp-at-point)
+;; (define-key paredit-mode-map (kbd "C-M-k")   'live-paredit-copy-sexp-at-point)
 
 ;;browse kill ring (visual paste)
 (global-set-key (kbd "M-y") 'browse-kill-ring)
+
+;;emacs-lisp shortcuts
+(global-set-key (kbd "C-c m s") 'eval-and-replace) ;swap
+(global-set-key (kbd "C-c m b") 'eval-buffer)
+(global-set-key (kbd "C-c m e") 'eval-last-sexp)
+(global-set-key (kbd "C-c m i") 'eval-expression)
+(global-set-key (kbd "C-c m d") 'eval-defun)
+(global-set-key (kbd "C-c m n") 'eval-print-last-sexp)
+(global-set-key (kbd "C-c m r") 'eval-region)
+
+(global-set-key (kbd "C-c n e b") 'cider-eval-buffer)
 
 ;;use delete-horizontal-space to completely nuke all whitespace
 (global-set-key (kbd "M-SPC ") 'live-delete-whitespace-except-one)
@@ -66,13 +96,19 @@
 (global-set-key (kbd "C-x C-r")   'ido-recentf-open)
 (global-set-key (kbd "C-x C-b")   'ibuffer)
 
+;; Activate occur easily inside isearch
+(define-key isearch-mode-map (kbd "C-o")
+  (lambda () (interactive)
+    (let ((case-fold-search isearch-case-fold-search))
+      (occur (if isearch-regexp isearch-string (regexp-quote isearch-string))))))
+
 ;; Ace jump mode
 (global-set-key (kbd "C-o") 'ace-jump-mode)
 
 (require 'cider-repl)
 (require 'cider-mode)
 ;; Show documentation/information with M-RET
-(define-key lisp-mode-shared-map (kbd "M-RET") 'live-lisp-describe-thing-at-point)
+; (define-key lisp-mode-shared-map (kbd "M-RET") 'live-lisp-describe-thing-at-point)
 (define-key cider-repl-mode-map (kbd "M-RET") 'cider-doc)
 (define-key cider-mode-map (kbd "M-RET") 'cider-doc)
 
@@ -87,7 +123,7 @@
 
 (global-set-key (kbd  "C-,") 'beginning-of-line-text)
 
-(load-file "/home/bill/.emacs.d/lib/fzy-locate/fzy-locate.el")
+(load-file (concat billy-lib-dir "fzy-locate/fzy-locate.el"))
 (fzloc-load-dbs-from-path "/home/bill/repos/emacs-live/locatedbs/*.locatedb")
 (setq fzloc-filter-regexps '("/target/" "/.git/"))
 
@@ -111,10 +147,12 @@
 
 ;; Finds the auto-highlight-symbol file and loads it
 ;; I have no idea why the next line is necessary, but 'require' wasn't working
-; (load-file (first (file-expand-wildcards "/home/bill/.emacs.d/elpa/auto-highlight-symbol-*/auto-highlight-symbol.el" )))
-; (add-to-list 'ahs-modes 'clojure-mode)
-; (setq ahs-default-range 'ahs-range-whole-buffer)
-; (global-auto-highlight-symbol-mode t)
+;; (load-file (first (file-expand-wildcards "/home/bill/.emacs.d/elpa/auto-highlight-symbol-*/auto-highlight-symbol.el" )))
+(require 'auto-highlight-symbol)
+(global-auto-highlight-symbol-mode t)
+(add-to-list 'ahs-modes 'clojure-mode)
+(setq ahs-default-range 'ahs-range-whole-buffer)
+
 
 (defun switch-to-most-recent-buffer ()
       (interactive)
@@ -127,6 +165,7 @@
 ;; https://github.com/clojure-emacs/cider#basic-configuration
 (setq cider-auto-select-error-buffer nil)
 
+;; turn on rainbow-mode to see the rainbow!
 (require 'rainbow-delimiters)
 (set-face-attribute 'rainbow-delimiters-depth-1-face nil :foreground "#BB2222")
 (set-face-attribute 'rainbow-delimiters-depth-2-face nil :foreground "#BB7700")
@@ -197,8 +236,15 @@ current buffer is not visiting a file."
 
 ;; END Bill's stuff
 
-(load-file "/home/bill/.emacs.d/ido-conf.el")
 
 (message "\n\n init.el done loading  \n\n")
 
 
+;; TODO
+;; lisp
+;; - autocomplete
+;; - paredit on load
+
+;; color scheme
+
+;; test cider
