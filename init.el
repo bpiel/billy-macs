@@ -145,14 +145,27 @@
                 (abbreviate-file-name (buffer-file-name))
                   "%b"))))
 
-;; Finds the auto-highlight-symbol file and loads it
-;; I have no idea why the next line is necessary, but 'require' wasn't working
-;; (load-file (first (file-expand-wildcards "/home/bill/.emacs.d/elpa/auto-highlight-symbol-*/auto-highlight-symbol.el" )))
+
+;; auto-highlight-symbol config
+
+;; customize keybindings
+(defvar auto-highlight-symbol-mode-map
+      (let ((map (make-sparse-keymap)))
+        (define-key map (kbd "M-J") 'ahs-backward)
+        (define-key map (kbd "M-K"   ) 'ahs-forward)
+        (define-key map (kbd "M-S-<left>"  ) 'ahs-backward-definition )
+        (define-key map (kbd "M-S-<right>" ) 'ahs-forward-definition  )
+        (define-key map (kbd "M--"         ) 'ahs-back-to-start       )
+        (define-key map (kbd "C-x C-'"     ) 'ahs-change-range        )
+        (define-key map (kbd "C-x C-a"     ) 'ahs-edit-mode           )
+        map))
+
 (require 'auto-highlight-symbol)
 (global-auto-highlight-symbol-mode t)
 (add-to-list 'ahs-modes 'clojure-mode)
 (setq ahs-default-range 'ahs-range-whole-buffer)
 
+;; ------
 
 (defun switch-to-most-recent-buffer ()
       (interactive)
@@ -238,13 +251,3 @@ current buffer is not visiting a file."
 
 
 (message "\n\n init.el done loading  \n\n")
-
-
-;; TODO
-;; lisp
-;; - autocomplete
-;; - paredit on load
-
-;; color scheme
-
-;; test cider
