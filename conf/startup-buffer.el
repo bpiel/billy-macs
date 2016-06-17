@@ -1,4 +1,4 @@
-(setq live-ascii-art-logo ";;
+(setq initial-scratch-message ";;
 ;;                               ╥▓█▒
 ;;                             ╓╬███▓─
 ;;                  ╣█▌╥      ╓▓█╩╚█▓┐           ╥
@@ -37,4 +37,4 @@
 ;;             ╙╫▓▓▓╩         ╥╥    ╫█▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓┐
 ")
 
-(switch-to-buffer "*scratch*")
+(setq inhibit-startup-screen t)
