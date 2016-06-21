@@ -111,7 +111,7 @@
 (require 'cider-repl)
 (require 'cider-mode)
 ;; Show documentation/information with M-RET
-; (define-key lisp-mode-shared-map (kbd "M-RET") 'live-lisp-describe-thing-at-point)
+(define-key lisp-mode-shared-map (kbd "M-RET") 'live-lisp-describe-thing-at-point)
 (define-key cider-repl-mode-map (kbd "M-RET") 'cider-doc)
 (define-key cider-mode-map (kbd "M-RET") 'cider-doc)
 
