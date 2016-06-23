@@ -115,6 +115,8 @@
 (define-key cider-repl-mode-map (kbd "M-RET") 'cider-doc)
 (define-key cider-mode-map (kbd "M-RET") 'cider-doc)
 
+(define-key cider-repl-mode-map (kbd "C-c C-l") 'cider-repl-clear-buffer)
+
 ;; ====== Bill Stuff
 
 (message "\n\n Doing Bill's stuff \n\n")
