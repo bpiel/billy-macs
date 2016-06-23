@@ -127,7 +127,7 @@
 (global-set-key (kbd  "C-,") 'beginning-of-line-text)
 
 (load-file (concat billy-lib-dir "fzy-locate/fzy-locate.el"))
-(fzloc-load-dbs-from-path "/home/bill/repos/.emacs.d/locatedbs/*.locatedb")
+(fzloc-load-dbs-from-path "/home/bill/.emacs.d/locatedbs/*.locatedb")
 (setq fzloc-filter-regexps '("/target/" "/.git/"))
 
 (global-set-key (kbd "C-x SPC") 'fzy-locate)
