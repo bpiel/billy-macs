@@ -1,4 +1,4 @@
-(setq initial-scratch-message ";;
+(setq initial-scratch-message ";; billy-macs
 ;;                               ╥▓█▒
 ;;                             ╓╬███▓─
 ;;                  ╣█▌╥      ╓▓█╩╚█▓┐           ╥
