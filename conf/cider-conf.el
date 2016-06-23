@@ -11,15 +11,15 @@
 (when (eq system-type 'windows-nt)
   (add-hook 'nrepl-mode-hook 'live-windows-hide-eol ))
 
-;; (add-hook 'cider-repl-mode-hook
-;;           (lambda ()
-;;             (cider-turn-on-eldoc-mode)
-;;             (paredit-mode 1)))
+(add-hook 'cider-repl-mode-hook
+          (lambda ()
+            (eldoc-mode 1)
+            (paredit-mode 1)))
 
-;; (add-hook 'cider-mode-hook
-;;            (lambda ()
-;;              (cider-turn-on-eldoc-mode)
-;;              (paredit-mode 1)))
+(add-hook 'cider-mode-hook
+           (lambda ()
+             (eldoc-mode 1)
+             (paredit-mode 1)))
 
 (setq cider-popup-stacktraces t)
 (setq cider-popup-stacktraces-in-repl t)
