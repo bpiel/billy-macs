@@ -255,6 +255,9 @@ current buffer is not visiting a file."
 ;; show keystrokes in mini-buffer instantly
 (setq echo-keystrokes 0.01)
 
+(require 'undo-tree)
+(global-undo-tree-mode)
+
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
 ;; END Bill's stuff
