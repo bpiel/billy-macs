@@ -250,10 +250,11 @@ current buffer is not visiting a file."
 (eval-after-load 'clojure-mode
   '(add-hook 'clojure-mode-hook 'bpiel/add-compojure-forms-to-clojure-dedenting))
 
+;; show keystrokes in mini-buffer instantly
+(setq echo-keystrokes 0.01)
+
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
 ;; END Bill's stuff
-
-
 
 (message "\n\n init.el done loading  \n\n")
