@@ -270,6 +270,8 @@ current buffer is not visiting a file."
 (dolist (hook '(emacs-lisp-mode-hook ielm-mode-hook))
   (add-hook hook 'turn-on-elisp-slime-nav-mode))
 
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
 ;; END Bill's stuff
