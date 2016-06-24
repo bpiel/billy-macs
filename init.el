@@ -258,6 +258,15 @@ current buffer is not visiting a file."
 (require 'undo-tree)
 (global-undo-tree-mode)
 
+
+(defun gentle-visible-bell ()
+   (invert-face 'mode-line)
+   (run-with-timer 0.1 nil 'invert-face 'mode-line))
+
+(setq visible-bell nil
+      ring-bell-function #'my-terminal-visible-bell)
+
+
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
 ;; END Bill's stuff
