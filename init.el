@@ -266,6 +266,9 @@ current buffer is not visiting a file."
 (setq visible-bell nil
       ring-bell-function #'gentle-visible-bell)
 
+(require 'elisp-slime-nav)
+(dolist (hook '(emacs-lisp-mode-hook ielm-mode-hook))
+  (add-hook hook 'turn-on-elisp-slime-nav-mode))
 
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
