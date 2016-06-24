@@ -264,7 +264,7 @@ current buffer is not visiting a file."
    (run-with-timer 0.1 nil 'invert-face 'mode-line))
 
 (setq visible-bell nil
-      ring-bell-function #'my-terminal-visible-bell)
+      ring-bell-function #'gentle-visible-bell)
 
 
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
