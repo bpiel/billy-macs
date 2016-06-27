@@ -36,6 +36,7 @@
 (load-file (concat billy-conf-dir "popwin-conf.el"))
 (load-file (concat billy-conf-dir "recentf-conf.el"))
 (load-file (concat billy-conf-dir "smex-conf.el"))
+(load-file (concat billy-conf-dir "backup-dir-conf.el"))
 
 ;; clojure
 
