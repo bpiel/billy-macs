@@ -171,6 +171,9 @@
 (add-to-list 'ahs-modes 'clojure-mode)
 (setq ahs-default-range 'ahs-range-whole-buffer)
 
+;; add support for matching '<' and '>' in clojure mode
+(setq ahs-include '((clojure-mode . "^[<>0-9A-Za-z/_.,:;*+=&%|$#@!^?-]+$")))
+
 ;; ------
 
 (defun switch-to-most-recent-buffer ()
