@@ -214,12 +214,18 @@ current buffer is not visiting a file."
   (insert "#spy/d")
   (live-delete-whitespace-except-one))
 
+(defun insert-pprint ()
+  (interactive)
+  (insert "clojure.pprint/pprint")
+  (live-delete-whitespace-except-one))
+
 (defun repl-clear-and-prev ()
   (interactive)
   (cider-repl-clear-buffer)
   (cider-repl-previous-input))
 
 (global-set-key (kbd "C-c s d") 'insert-spyd)
+(global-set-key (kbd "C-c s p") 'insert-pprint)
 (global-set-key (kbd "C-S-c C-S-p") 'repl-clear-and-prev)
 
 (put 'erase-buffer 'disabled nil)
