@@ -136,6 +136,7 @@
 
 (global-set-key (kbd "C-x SPC") 'fzy-locate)
 (global-set-key (kbd  "C-x p") 'ace-jump-mode-pop-mark)
+(global-set-key (kbd  "C-x C-p") 'ace-jump-mode-pop-mark)
 (global-set-key (kbd  "C-x x") 'rgrep)
 (setq ag-highlight-search t)
 
