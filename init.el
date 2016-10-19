@@ -211,11 +211,6 @@ current buffer is not visiting a file."
                          (ido-read-file-name "Find file(as root): ")))
     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
-(defun insert-spyd ()
-  (interactive)
-  (insert "#spy/d")
-  (live-delete-whitespace-except-one))
-
 (defun insert-pprint ()
   (interactive)
   (insert "clojure.pprint/pprint")
@@ -226,9 +221,16 @@ current buffer is not visiting a file."
   (cider-repl-clear-buffer)
   (cider-repl-previous-input))
 
-(global-set-key (kbd "C-c s d") 'insert-spyd)
 (global-set-key (kbd "C-c s p") 'insert-pprint)
 (global-set-key (kbd "C-S-c C-S-p") 'repl-clear-and-prev)
+
+(defun go-big-font-size ()
+  (interactive)
+  (set-face-attribute 'default nil :height 260))
+
+(defun go-normal-font-size ()
+  (interactive)
+  (set-face-attribute 'default nil :height 130))
 
 (put 'erase-buffer 'disabled nil)
 (put 'downcase-region 'disabled nil)
