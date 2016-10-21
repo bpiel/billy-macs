@@ -288,7 +288,7 @@ current buffer is not visiting a file."
 (setq column-number-mode t)
 
 (defun conf-php-mode ()
-  (setq indent-tabs-mode nil
+  (setq indent-tabs-mode t
         tab-width 2
         c-basic-offset 2))
 (add-hook 'php-mode-hook 'conf-php-mode)
