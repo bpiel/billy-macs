@@ -293,6 +293,10 @@ current buffer is not visiting a file."
         c-basic-offset 2))
 (add-hook 'php-mode-hook 'conf-php-mode)
 
+(winner-mode t)
+(global-set-key (kbd "C-c C-<backspace>") 'winner-undo)
+(global-set-key (kbd "C-S-c C-S-<backspace>") 'winner-redo)
+
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
 ;; END Bill's stuff
