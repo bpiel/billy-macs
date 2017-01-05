@@ -297,6 +297,8 @@ current buffer is not visiting a file."
 (global-set-key (kbd "C-c C-<backspace>") 'winner-undo)
 (global-set-key (kbd "C-S-c C-S-<backspace>") 'winner-redo)
 
+(setq markdown-command "pandoc -f markdown_github -s")
+
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
 ;; END Bill's stuff
