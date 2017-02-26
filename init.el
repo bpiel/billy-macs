@@ -245,6 +245,10 @@ current buffer is not visiting a file."
   (interactive)
   (insert "(require '[com.billpiel.sayid.core :as sd])"))
 
+(defun insert-sayid-pro ()
+  (interactive)
+  (insert "(require '[com.billpiel.sayid-pro.core :as sd])"))
+
 (defun bpiel/add-midje-forms-to-clojure-dedenting ()
   (put-clojure-indent 'fact-group 1)
   (put-clojure-indent 'facts 1)
