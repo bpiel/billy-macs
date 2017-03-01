@@ -1,6 +1,8 @@
 (require 'cider)
 (require 'cider-apropos)
 (require 'cider-macroexpansion)
+(require 'cider-repl)
+(require 'cider-mode)
 
 (defun live-windows-hide-eol ()
  "Do not show ^M in files containing mixed UNIX and DOS line endings."
@@ -45,11 +47,12 @@
 (setq nrepl-port "4555")
 
 
-;; Pull in the awesome clj-refactor lib by magnars
-;; (require 'clj-refactor)
-;; (add-hook 'clojure-mode-hook (lambda ()
-;;                                (clj-refactor-mode 1)
-;;                                (cljr-add-keybindings-with-prefix "C-c C-m")))
+;; Show documentation/information with M-RET
+(define-key cider-repl-mode-map (kbd "M-RET") 'cider-doc)
+(define-key cider-mode-map (kbd "M-RET") 'cider-doc)
 
-;; (define-key clojure-mode-map (kbd "C-:") 'cljr-cycle-stringlike)
-;; (define-key clojure-mode-map (kbd "C->") 'cljr-cycle-coll)
+(define-key cider-repl-mode-map (kbd "C-c C-l") 'cider-repl-clear-buffer)
+(define-key cider-repl-mode-map (kbd "C-x C-x C-x") 'cider-make-connection-default)
+
+;; https://github.com/clojure-emacs/cider#basic-configuration
+(setq cider-auto-select-error-buffer nil)

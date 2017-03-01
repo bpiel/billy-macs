@@ -44,3 +44,16 @@
 (defun live-whitespace-at-point-p ()
   "Returns true if the char at point is whitespace"
   (string-match "[ \n\t]" (buffer-substring (point) (+ 1 (point)))))
+
+(require 'elisp-slime-nav)
+(dolist (hook '(emacs-lisp-mode-hook ielm-mode-hook))
+  (add-hook hook 'turn-on-elisp-slime-nav-mode))
+
+(global-set-key (kbd "C-c m s") 'eval-and-replace) ;swap
+(global-set-key (kbd "C-c m b") 'eval-buffer)
+(global-set-key (kbd "C-c m e") 'eval-last-sexp)
+(global-set-key (kbd "C-c m i") 'eval-expression)
+(global-set-key (kbd "C-c m d") 'eval-defun)
+(global-set-key (kbd "C-c m n") 'eval-print-last-sexp)
+(global-set-key (kbd "C-c m r") 'eval-region)
+(define-key lisp-mode-shared-map (kbd "M-RET") 'live-lisp-describe-thing-at-point)

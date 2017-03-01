@@ -69,4 +69,9 @@
               (add-to-list 'live-symbol-names name)
               (add-to-list 'live-name-and-pos (cons name position))))))))
 
-(message "ido-conf.el loaded")
+
+
+;; Jump to a definition in the current file.
+(global-set-key (kbd "C-x C-i") 'live-ido-goto-symbol)
+
+(global-set-key (kbd "C-x f") 'live-recentf-ido-find-file)

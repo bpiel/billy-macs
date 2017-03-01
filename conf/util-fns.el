@@ -79,3 +79,6 @@
     (let* ((result (buffer-substring-no-properties begin (point))))
       (delete-region begin (point))
       result)))
+
+
+(global-set-key (kbd "M-SPC ") 'live-delete-whitespace-except-one)

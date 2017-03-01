@@ -5,4 +5,4 @@
 (setq browse-kill-ring-display-duplicates nil)
 (setq browse-kill-ring-highlight-inserted-item nil)
 
-
+(global-set-key (kbd "M-y") 'browse-kill-ring)
