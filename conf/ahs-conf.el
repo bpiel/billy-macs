@@ -1,5 +1,3 @@
-(require 'auto-highlight-symbol)
-(require 'clojure-mode)
 
 (defvar auto-highlight-symbol-mode-map
   (let ((map (make-sparse-keymap)))
@@ -11,6 +9,9 @@
     (define-key map (kbd "C-x C-'"     ) 'ahs-change-range        )
     (define-key map (kbd "C-x C-a"     ) 'ahs-edit-mode           )
     map))
+
+(require 'auto-highlight-symbol)
+(require 'clojure-mode)
 
 (global-auto-highlight-symbol-mode t)
 (add-to-list 'ahs-modes 'clojure-mode)
