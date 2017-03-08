@@ -1,4 +1,0 @@
-(1
- (sayid .
-        [(0 0 11)
-         nil "An nrepl middleware client for sayid, a clojure debugger." tar nil]))
