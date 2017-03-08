@@ -154,6 +154,8 @@ current buffer is not visiting a file."
 
 (setq markdown-command "pandoc -f markdown_github -s")
 
+(elpy-enable)
+
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
 ;; END Bill's stuff
