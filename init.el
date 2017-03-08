@@ -151,6 +151,9 @@ current buffer is not visiting a file."
 
 (setq markdown-command "pandoc -f markdown_github -s")
 
+(eval-after-load 'clojure-mode
+  '(sayid-setup-package))
+
 (elpy-enable)
 
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
