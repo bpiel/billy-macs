@@ -7,9 +7,6 @@
              '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
-(add-to-list 'package-archives
-             '("billpiel" . "http://billpiel.com/emacs-packages/") t)
-
 
 (package-initialize)
 
