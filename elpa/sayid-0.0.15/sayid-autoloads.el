@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "sayid" "sayid.el" (22719 60258 240565 432000))
+;;;### (autoloads nil "sayid" "sayid.el" (22821 45819 643347 703000))
 ;;; Generated autoloads from sayid.el
 
 (autoload 'sayid-version "sayid" "\
