@@ -40,6 +40,7 @@
 (load-file (concat billy-conf-dir "winner-conf.el"))
 (load-file (concat billy-conf-dir "rainbow-conf.el"))
 (load-file (concat billy-conf-dir "php-conf.el"))
+(load-file (concat billy-conf-dir "org-conf.el"))
 
 (global-set-key (kbd "C-c n e b") 'cider-eval-buffer)
 
