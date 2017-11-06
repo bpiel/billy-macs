@@ -36,7 +36,7 @@
 (load-file (concat billy-conf-dir "smex-conf.el"))
 (load-file (concat billy-conf-dir "backup-dir-conf.el"))
 (load-file (concat billy-conf-dir "ahs-conf.el"))
-(load-file (concat billy-conf-dir "fzy-locate-conf.el"))
+(load-file (concat billy-conf-dir "fzf-conf.el"))
 (load-file (concat billy-conf-dir "winner-conf.el"))
 (load-file (concat billy-conf-dir "rainbow-conf.el"))
 (load-file (concat billy-conf-dir "php-conf.el"))
@@ -157,8 +157,18 @@ current buffer is not visiting a file."
 
 (elpy-enable)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(fzf/directory-start "/home/bill")
+ '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
+ '(fzf/args ""))
+
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
 ;; END Bill's stuff
 
 (message "\n\n init.el done loading  \n\n")
+
