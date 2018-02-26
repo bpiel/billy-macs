@@ -162,9 +162,9 @@ current buffer is not visiting a file."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(fzf/args "")
  '(fzf/directory-start "/home/bill")
- '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
- '(fzf/args ""))
+ '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh"))
 
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
@@ -172,3 +172,18 @@ current buffer is not visiting a file."
 
 (message "\n\n init.el done loading  \n\n")
 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(diff-added ((t (:foreground "Green"))))
+ '(diff-removed ((t (:foreground "Red"))))
+ '(ediff-even-diff-A ((((class color) (background dark)) (:background "dark green"))))
+ '(ediff-even-diff-B ((((class color) (background dark)) (:background "dark red"))))
+ '(ediff-odd-diff-A ((((class color) (background dark)) (:background "dark green"))))
+ '(ediff-odd-diff-B ((((class color) (background dark)) (:background "dark red"))))
+ '(markup-meta-face ((t (:stipple nil :foreground "gray50" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 110 :width normal :foundry "unknown" :family "Monospace"))))
+ '(markup-meta-hide-face ((t (:inherit markup-meta-face :foreground "gray80" :height 1.1))))
+ '(mumamo-background-chunk-major ((((class color) (background dark)) (:background "black"))))
+ '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black")))))
