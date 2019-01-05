@@ -39,7 +39,7 @@
 (load-file (concat billy-conf-dir "fzf-conf.el"))
 (load-file (concat billy-conf-dir "winner-conf.el"))
 (load-file (concat billy-conf-dir "rainbow-conf.el"))
-(load-file (concat billy-conf-dir "php-conf.el"))
+;;(load-file (concat billy-conf-dir "php-conf.el"))
 (load-file (concat billy-conf-dir "org-conf.el"))
 
 (global-set-key (kbd "C-c n e b") 'cider-eval-buffer)
@@ -164,7 +164,10 @@ current buffer is not visiting a file."
  ;; If there is more than one, they won't work right.
  '(fzf/args "")
  '(fzf/directory-start "/home/bill")
- '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh"))
+ '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
+ '(package-selected-packages
+   (quote
+    (yaml-mode vlf undo-tree smex sayid rainbow-mode rainbow-delimiters popwin php-mode paredit packed mic-paren markdown-mode idomenu fzf fuzzy flx-ido eval-sexp-fu elpy elisp-slime-nav edn color-theme coffee-mode browse-kill-ring better-defaults auto-highlight-symbol align-cljlet adoc-mode ace-jump-mode ac-cider))))
 
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
