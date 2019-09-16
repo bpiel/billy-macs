@@ -51,7 +51,11 @@
 (define-key cider-repl-mode-map (kbd "M-RET") 'cider-doc)
 (define-key cider-mode-map (kbd "M-RET") 'cider-doc)
 
-(define-key cider-repl-mode-map (kbd "C-c C-l") 'cider-repl-clear-buffer)
+(define-key cider-repl-mode-map (kbd "C-c C-l")
+  '(lambda ()
+     (interactive)
+     (cider-repl-clear-buffer)
+     (setq-local scroll-conservatively 101)))
 (define-key cider-repl-mode-map (kbd "C-x C-x C-x") 'cider-make-connection-default)
 
 ;; https://github.com/clojure-emacs/cider#basic-configuration
