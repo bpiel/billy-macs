@@ -1,21 +1,25 @@
-;; (require 'rust-mode)
-;; (require 'cargo)
-;; (require 'racer)
-;; (require 'company)
-;; (require 'eldoc)
+(use-package company)
+(require 'company-lsp)
+(push 'company-lsp company-backends)
 
-;; (add-hook 'rust-mode-hook 'cargo-minor-mode)
+(use-package lsp-mode
+  :commands lsp
+  :config (require 'lsp-clients))
 
-;; (add-hook 'rust-mode-hook
-;;           (lambda ()
-;;             (local-set-key (kbd "M-q") #'rust-format-buffer)
-;;             (local-set-key (kbd "M-RET") #'racer-describe)))
+(use-package lsp-ui)
 
+(use-package toml-mode)
 
-;; (setq racer-cmd "~/.cargo/bin/racer") ;; Rustup binaries PATH
-;; (setq racer-rust-src-path "/home/bill/repos/rust/src") ;; Rust source code PATH
+(use-package cargo)
 
-;; (add-hook 'rust-mode-hook #'racer-mode)
-;; (add-hook 'racer-mode-hook #'eldoc-mode)
-;; (add-hook 'racer-mode-hook #'company-mode)
+(use-package rust-mode
+  :hook (rust-mode . lsp))
+
+(use-package rust-mode
+  :hook (rust-mode . cargo-minor-mode))
+
+(add-hook 'rust-mode-hook
+          (lambda ()
+            (local-set-key (kbd "M-q") #'rust-format-buffer)
+            (local-set-key (kbd "M-RET") #'lsp-describe-thing-at-point)))
 

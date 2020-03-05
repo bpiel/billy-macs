@@ -170,9 +170,10 @@ current buffer is not visiting a file."
  '(fzf/args "")
  '(fzf/directory-start "/home/bill")
  '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
+ '(lsp-ui-doc-enable nil)
  '(package-selected-packages
    (quote
-    (lsp-mode use-package dash racer company cargo flycheck-rust cider yaml-mode vlf undo-tree smex sayid rainbow-mode rainbow-delimiters popwin php-mode paredit packed mic-paren markdown-mode idomenu fzf fuzzy flx-ido eval-sexp-fu elpy elisp-slime-nav edn color-theme coffee-mode browse-kill-ring better-defaults auto-highlight-symbol align-cljlet adoc-mode ace-jump-mode ac-cider))))
+    (company-lsp s lsp-ui toml-mode lsp-mode use-package dash racer cargo flycheck-rust cider yaml-mode vlf undo-tree smex sayid rainbow-mode rainbow-delimiters popwin php-mode paredit packed mic-paren markdown-mode idomenu fzf fuzzy flx-ido eval-sexp-fu elpy elisp-slime-nav edn color-theme coffee-mode browse-kill-ring better-defaults auto-highlight-symbol align-cljlet adoc-mode ace-jump-mode ac-cider))))
 
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
