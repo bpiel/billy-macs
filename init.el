@@ -172,7 +172,7 @@ current buffer is not visiting a file."
  '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
  '(package-selected-packages
    (quote
-    (racer company cargo flycheck-rust rust-mode cider yaml-mode vlf undo-tree smex sayid rainbow-mode rainbow-delimiters popwin php-mode paredit packed mic-paren markdown-mode idomenu fzf fuzzy flx-ido eval-sexp-fu elpy elisp-slime-nav edn color-theme coffee-mode browse-kill-ring better-defaults auto-highlight-symbol align-cljlet adoc-mode ace-jump-mode ac-cider))))
+    (dash racer company cargo flycheck-rust rust-mode cider yaml-mode vlf undo-tree smex sayid rainbow-mode rainbow-delimiters popwin php-mode paredit packed mic-paren markdown-mode idomenu fzf fuzzy flx-ido eval-sexp-fu elpy elisp-slime-nav edn color-theme coffee-mode browse-kill-ring better-defaults auto-highlight-symbol align-cljlet adoc-mode ace-jump-mode ac-cider))))
 
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 
