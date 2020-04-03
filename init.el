@@ -86,8 +86,11 @@
                   "%b"))))
 
 (defun switch-to-most-recent-buffer ()
-      (interactive)
-      (switch-to-buffer (other-buffer (current-buffer) 1)))
+  (interactive)
+  ;;(switch-to-buffer  (other-buffer (current-buffer) 2 ))
+  (switch-to-buffer
+   (first (first (window-prev-buffers)))))
+
 (global-set-key (kbd  "C-M-<return>") 'switch-to-most-recent-buffer)
 (global-set-key (kbd  "C-M-<backspace>") 'revert-buffer)
 (global-set-key (kbd  "C-S-a") 'mark-whole-buffer)

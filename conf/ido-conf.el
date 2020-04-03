@@ -21,6 +21,7 @@
     (when file
       (find-file file))))
 
+
 (defun live-ido-goto-symbol (&optional symbol-list)
       "Refresh imenu and jump to a place in the buffer using Ido."
       (interactive)
@@ -75,3 +76,5 @@
 (global-set-key (kbd "C-x C-i") 'live-ido-goto-symbol)
 
 (global-set-key (kbd "C-x f") 'live-recentf-ido-find-file)
+
+(global-set-key (kbd "C-x k") 'kill-current-buffer)
