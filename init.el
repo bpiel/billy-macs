@@ -184,7 +184,7 @@ current buffer is not visiting a file."
  '(lsp-ui-doc-enable nil)
  '(package-selected-packages
    (quote
-    (auto-highlight-symbol company-lsp toml-mode use-package racer cargo flycheck-rust vlf smex rainbow-mode rainbow-delimiters php-mode paredit packed mic-paren idomenu fuzzy flx-ido eval-sexp-fu elisp-slime-nav edn browse-kill-ring better-defaults align-cljlet ace-jump-mode ac-cider))))
+    (company-lsp toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider))))
 
 
 
