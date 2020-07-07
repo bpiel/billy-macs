@@ -23,3 +23,4 @@
             (local-set-key (kbd "M-q") #'rust-format-buffer)
             (local-set-key (kbd "M-RET") #'lsp-describe-thing-at-point)))
 
+(add-hook 'rust-mode-hook 'rainbow-delimiters-mode)
