@@ -1,145 +1,173 @@
-;; Gandalf Colour Theme
-;;
-;; "I will not say do not weep, for not all tears are an evil."
-;;                              Gandalf.
+;;; gandalf-theme.el --- Gandalf color theme
 
-(require 'color-theme)
+;; Copyright (C) 2013 Peter Vasil
+
+;; Author: Peter Vasil <mail@petervasil.net>
+;; Keywords: color theme
+;; Version: 0.1
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; This theme is a port of the overtone/emacs-live theme of the same
+;; name (https://github.com/overtone/emacs-live) by Sam Aaron. The
+;; original theme was designed for use with the color-theme package.
+;; This theme adopts the new built-in theme support deftheme.
+
+;;; Code:
+
+(deftheme gandalf
+  "Gandalf color theme by Sam Aaron, modified by ptrv")
+
+(let ((class '((class color) (min-colors 89)))
+      ;; gandalf color palette
+      (gandalf-bg "#f2f2f2")
+      (gandalf-fg "#000000")
+      (gandalf-red-1 "#8b0000")
+      (gandalf-red-2 "red1")
+      (gandalf-blue-1 "dark blue")
+      (gandalf-blue-2 "blue")
+      (gandalf-blue-3 "#758BC6")
+      (gandalf-blue-4 "#96CBFE")
+      (gandalf-blue-5 "#27408b")
+      (gandalf-blue-6 "slate blue")
+      (gandalf-green-1 "dark green")
+      (gandalf-green-2 "SeaGreen")
+      (gandalf-green-3 "chartreuse3")
+      (gandalf-green-4 "#00A000")
+      (gandalf-cyan-1 "dark cyan")
+      (gandalf-black-1 "#000000")
+      (gandalf-pink-1 "violet red")
+      (gandalf-pink-2 "deep pink")
+      (gandalf-pink-3 "pink")
+      (gandalf-brown-1 "brown")
+      (gandalf-orange-1 "dark orange")
+      (gandalf-orange-2 "orange")
+      (gandalf-white-1 "white")
+      (gandalf-yellow-1 "#FBDE2D")
+      (gandalf-yellow-2 "yellow")
+      (gandalf-gold-1 "#b8860b")
+      (gandalf-gray-1 "gray10")
+      (gandalf-gray-2 "#333333")
+      (gandalf-gray-3 "gray25")
+      (gandalf-gray-4 "grey30")
+      (gandalf-gray-5 "gray40")
+      (gandalf-gray-6 "gray50")
+      (gandalf-gray-7 "gray60")
+      (gandalf-gray-8 "gray70")
+      (gandalf-gray-9 "gray80")
+      (gandalf-gray-10 "gray85"))
+
+  (custom-theme-set-faces
+   'gandalf
+   `(default ((,class (:background ,gandalf-bg :foreground ,gandalf-fg))))
+   `(cursor ((,class (:background ,gandalf-red-1))))
+   `(bold ((,class (:bold t))))
+   `(bold-italic ((,class (:bold t))))
+   `(border-glyph ((,class (nil))))
+   `(buffers-tab ((,class (:background ,gandalf-white-1 :foreground ,gandalf-fg))))
+   `(font-lock-builtin-face ((,class (:foreground ,gandalf-blue-1))))
+   `(font-lock-comment-face ((,class (:italic t :foreground ,gandalf-green-1 :italic t))))
+   `(font-lock-constant-face ((,class (:foreground ,gandalf-blue-1))))
+   `(font-lock-doc-string-face ((,class (:foreground ,gandalf-fg))))
+   `(font-lock-function-name-face ((,class (:foreground ,gandalf-blue-1 :bold t))))
+   `(font-lock-keyword-face ((,class (:foreground ,gandalf-fg :bold t))))
+   `(font-lock-preprocessor-face ((,class (:foreground ,gandalf-fg))))
+   `(font-lock-reference-face ((,class (:foreground ,gandalf-cyan-1))))
+
+   `(font-lock-regexp-grouping-backslash ((,class (:foreground ,gandalf-fg))))
+   `(font-lock-regexp-grouping-construct ((,class (:foreground ,gandalf-fg))))
+
+   `(font-lock-string-face ((,class (:foreground ,gandalf-green-1  :bold t))))
+
+   `(font-lock-type-face ((,class (:foreground ,gandalf-blue-2))))
+   `(font-lock-variable-name-face ((,class (:foreground ,gandalf-cyan-1))))
+   `(font-lock-warning-face ((,class (:bold t :foreground ,gandalf-fg))))
+   `(gui-element ((,class (:background ,gandalf-gray-5 :foreground ,gandalf-blue-4))))
+   `(region ((,class (:background ,gandalf-blue-3))))
+   `(mode-line ((,class (:background ,gandalf-gray-6 :foreground ,gandalf-white-1))))
+   `(mode-line-inactive ((,class (:background ,gandalf-gray-6 :foreground ,gandalf-fg))))
+   `(highlight ((,class (:background ,gandalf-gray-8))))
+   `(isearch ((,class (:background ,gandalf-pink-2 :foreground ,gandalf-fg))))
+   `(isearch-fail ((,class (:background ,gandalf-red-2))))
+   `(query-replace ((,class (:background ,gandalf-gray-5))))
+   `(hl-line ((,class (:background ,gandalf-gray-9))))
+   `(Highline-face ((,class (:background ,gandalf-green-2))))
+   `(italic ((,class (nil))))
+   `(left-margin ((,class (nil))))
+   `(text-cursor ((,class (:background ,gandalf-yellow-2 :foreground ,gandalf-fg))))
+   `(toolbar ((,class (nil))))
+   `(underline ((nil (:underline nil))))
+   `(vertical-border ((,class (:background ,gandalf-black-1 :foreground ,gandalf-gray-2))))
+   `(erc-default-face ((,class (:foreground ,gandalf-green-1))))
+
+   `(ido-first-match ((,class (:foreground ,gandalf-fg :background ,gandalf-gray-8 :bold t))))
+   `(ido-only-match ((,class (:foreground ,gandalf-green-1 :background ,gandalf-bg))))
+   `(ido-subdir ((,class (:foreground ,gandalf-white-1 :background ,gandalf-blue-5 :bold t))))
+   `(ido-indicator ((,class (:foreground ,gandalf-fg :background ,gandalf-pink-2))))
+   `(minibuffer-prompt ((,class (:foreground ,gandalf-blue-1 :background ,gandalf-gray-10))))
+
+   `(magit-item-highlight ((,class (:background ,gandalf-gray-3))))
+   `(magit-diff-add ((,class (:foreground ,gandalf-green-3))))
+   `(magit-diff-del ((,class (:foreground ,gandalf-pink-1))))
+   `(magit-section-type ((,class (:foreground ,gandalf-pink-2))))
+   `(magit-diff-hunk-header ((,class (:foreground ,gandalf-orange-2))))
+   `(magit-branch ((,class (:foreground ,gandalf-gold-1))))
+
+   `(rainbow-delimiters-depth-1-face ((,class (:foreground ,gandalf-red-1))))
+   `(rainbow-delimiters-depth-2-face ((,class (:foreground ,gandalf-green-1))))
+   `(rainbow-delimiters-depth-3-face ((,class (:foreground ,gandalf-pink-2))))
+   `(rainbow-delimiters-depth-4-face ((,class (:foreground ,gandalf-brown-1))))
+   `(rainbow-delimiters-depth-5-face ((,class (:foreground ,gandalf-green-1))))
+   `(rainbow-delimiters-depth-6-face ((,class (:foreground ,gandalf-blue-1))))
+   `(rainbow-delimiters-depth-7-face ((,class (:foreground ,gandalf-orange-1))))
+   `(rainbow-delimiters-depth-8-face ((,class (:foreground ,gandalf-blue-6))))
+   `(rainbow-delimiters-depth-9-face ((,class (:foreground ,gandalf-gray-1))))
+   `(rainbow-delimiters-unmatched-face ((,class (:foreground ,gandalf-white-1))))
+
+   `(vhl/default-face ((,class (:background ,gandalf-gray-7))))
+
+   `(undo-tree-visualizer-default-face ((,class (:foreground ,gandalf-gray-4))))
+   `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,gandalf-pink-2 :background ,gandalf-gray-5))))
+
+   `(markdown-link-face ((,class (:background ,gandalf-yellow-1))))
+
+   ;; `(flycheck-error ((,class (:background ,gandalf-pink-3))))
+   ;; `(flycheck-warning ((,class (:background ,gandalf-orange-2))))
+
+   `(flymake-errline ((,class (:background ,gandalf-pink-3))))
+   `(flymake-warnline ((,class (:background ,gandalf-orange-2))))
+
+   `(eshell-prompt ((,class (:foreground ,gandalf-green-1 :bold t))))
+
+   `(diff-added ((,class (:foreground ,gandalf-green-4))))
+   `(diff-removed ((,class (:foreground ,gandalf-red-2))))
+   )
+
+  ;; (custom-theme-set-variables
+  ;;  'gandalf
+  ;;  )
+  )
 
 ;;;###autoload
-(defun color-theme-gandalf ()
-  "Gandalf colour theme by Sam Aaron"
-  (interactive)
-  (color-theme-install
-   '(color-theme-gandalf
-     ((background-color . "grey90")
-      (background-mode . light)
-      (border-color . "grey95")
-      (cursor-color . "darkred")
-      (foreground-color . "black")
-      (mouse-color . "sienna1"))
-     (default ((t (:background "white" :foreground "black"))))
-     (blue ((t (:foreground "blue"))))
-     (bold ((t (:bold t))))
-     (bold-italic ((t (:bold t))))
-     (border-glyph ((t (nil))))
-     (buffers-tab ((t (:background "white" :foreground "black"))))
-     (font-lock-builtin-face ((t (:foreground "blue" :bold t))))
-     (font-lock-comment-face ((t (:italic t :foreground "grey50" ))))
-     (font-lock-constant-face ((t (:foreground "dark blue"))))
-     (font-lock-doc-string-face ((t (:foreground "black"))))
-     (font-lock-function-name-face ((t (:foreground "deep pink" :bold t))))
-     (font-lock-keyword-face ((t (:foreground "black" :bold t))))
-     (font-lock-preprocessor-face ((t (:foreground "black"))))
-     (font-lock-reference-face ((t (:foreground "dark cyan"))))
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory
+                   (file-name-directory load-file-name))))
 
-     (font-lock-regexp-grouping-backslash ((t (:foreground "black"))))
-     (font-lock-regexp-grouping-construct ((t (:foreground "black"))))
+(provide-theme 'gandalf)
 
-     (font-lock-string-face ((t (:foreground "dark green"  :bold t))))
-
-     (window-number-face ((t (:background "deep pink" :foreground "black"))))
-
-     (font-lock-type-face ((t (:foreground "blue"))))
-     (font-lock-variable-name-face ((t (:foreground "deep pink" :bold t))))
-     (font-lock-warning-face ((t (:bold t :foreground "black"))))
-     (gui-element ((t (:background "grey40" :foreground "#96CBFE"))))
-     (region ((t (:background "#758BC6"))))
-     (mode-line ((t (:background "deep pink" :foreground "white"))))
-     (mode-line-inactive ((t (:background "gray50" :foreground "black"))))
-     (highlight ((t (:background "grey70"))))
-     (isearch ((t (:background "deep pink" :foreground "black"))))
-     (isearch-fail ((t (:background "red1"))))
-     (query-replace ((t (:background "grey40"))))
-     (hl-line ((t (:background "grey85"))))
-     (Highline-face ((t (:background "SeaGreen"))))
-     (italic ((t (nil))))
-     (left-margin ((t (nil))))
-     (text-cursor ((t (:background "yellow" :foreground "black"))))
-     (toolbar ((t (nil))))
-     (underline ((nil (:underline nil))))
-     (vertical-border ((t (:background "white" :foreground "#333333"))))
-     (zmacs-region ((t (:background "snow" :foreground "ble"))))
-     (erc-default-face ((t (:foreground "dark green"))))
-
-     (minibuffer-prompt ((t (:foreground "black" :background "grey70"))))
-     (ido-first-match ((t (:foreground "black" :background "grey70"))))
-     (ido-only-match ((t (:foreground "black" :background "grey95"))))
-     (ido-subdir ((t (:foreground "white" :background "#758BC6"))))
-     (ido-indicator ((t (:foreground "black" :background "deep pink"))))
-     (ido-incomplete-regexp ((t (:foreground "black" :background "deep pink"))))
-     (flx-highlight-face ((t (:foreground "black" :background "deep pink"))))
-
-     ;; magit
-     (magit-item-highlight ((t (:background "gray95"))))
-     (diff-file-header ((t (:background "gray90"))))
-     (magit-diff-add ((t (:foreground "chartreuse3"))))
-     (magit-diff-del ((t (:foreground "violet red"))))
-     (magit-section-type ((t (:foreground "deep pink"))))
-     (magit-diff-hunk-header ((t (:foreground "orange"))))
-     (magit-branch ((t (:foreground "DarkGoldenRod"))))
-
-     (git-commit-summary-face ((t (:foreground "black" :background nil))))
-     (git-commit-comment-heading-face ((t (:background nil :foreground "deep pink"))))
-     (git-commit-summary-face ((t (:background nil :foreground "white"))))
-     (git-commit-branch-face ((t (:background nil :foreground "#FF6400"))))
-     (git-commit-nonempty-second-line-face ((t (:background nil :foreground "#FBDE2D"))))
-
-     (eval-sexp-fu-flash ((t (:background "DeepPink3" :foreground "black"))))
-     (cider-error-highlight-face ((t (:background "color-52"))))
-
-     ;;rainbow-delimiters (
-     (rainbow-delimiters-depth-1-face ((t (:foreground "gray50"))))
-     (rainbow-delimiters-depth-2-face ((t (:foreground "black"))))
-     (rainbow-delimiters-depth-3-face ((t (:foreground "deep pink"))))
-     (rainbow-delimiters-depth-4-face ((t (:foreground "#4c83ff"))))
-     (rainbow-delimiters-depth-5-face ((t (:foreground "light green"))))
-     (rainbow-delimiters-depth-6-face ((t (:foreground "dark blue"))))
-     (rainbow-delimiters-depth-7-face ((t (:foreground "dark orange"))))
-     (rainbow-delimiters-depth-8-face ((t (:foreground "slate blue"))))
-     (rainbow-delimiters-depth-9-face ((t (:foreground "grey10"))))
-     (rainbow-delimiters-unmatched-face ((t (:foreground "white"))))
-
-     (vhl/default-face ((t (:background "grey60"))))
-     (undo-tree-visualizer-active-branch-face ((t (:foreground "deep pink" :background "grey40"))))
-
-     (markdown-link-face ((t (:background "#FBDE2D"))))
-
-     (git-gutter:modified ((t (:foreground "#4c83ff" :background "gray60"))) )
-     (git-gutter:deleted ((t (:foreground "gray10" :background "gray60"))) )
-     (git-gutter:added ((t (:foreground "#61CE3C" :background "gray60" ))) )
-     (git-gutter:unchanged ((t (:background "gray60" ))) )
-
-     (term-color-black ((t (:background "white" :foreground "black"))))
-     (term-color-blue ((t (:background "blue2" :foreground "blue2"))))
-     (term-color-cyan ((t (:background "cyan3" :foreground "cyan3"))))
-     (term-color-green ((t (:background "green3" :foreground "green3"))))
-     (term-color-magenta ((t (:background "magenta3" :foreground "magenta3"))))
-     (term-color-red ((t (:background "red3" :foreground "red3"))))
-     (term-color-white ((t (:background "white" :foreground "white"))))
-     (term-color-yellow ((t (:background "yellow3" :foreground "yellow3"))))
-     )
-   ))
-
-(custom-set-faces
- ;;nXhtml colours
- '(mumamo-background-chunk-major ((((class color) (background dark)) (:background "black"))))
- '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black"))))
-
- ;;diff colours
- '(diff-removed ((t (:foreground "Red"))) 'now)
- '(diff-added ((t (:foreground "Green"))) 'now)
-
-
- ;;ediff
- '(ediff-even-diff-A ((((class color) (background dark)) (:background "dark green"))))
- '(ediff-odd-diff-A ((((class color) (background dark)) (:background "dark green"))))
- '(ediff-odd-diff-B ((((class color) (background dark)) (:background "dark red"))))
- '(ediff-even-diff-B ((((class color) (background dark)) (:background "dark red"))))
-                                        ; '(ediff-current-diff-B ((((class color)) (:background "white"))))
-                                        ; '(ediff-even-diff-A ((((class color)) nil)))
-                                        ; '(ediff-even-diff-B ((((class color)) nil)))
-                                        ; '(ediff-fine-diff-A ((((class color)) (:background "cyan"))))
-                                        ; '(ediff-fine-diff-B ((((class color)) (:background "cyan"))))
-                                        ; '(ediff-odd-diff-A ((((class color)) nil)))
-                                        ; '(ediff-odd-diff-B ((((class color)) nil)))
- )
+;;; gandalf-theme.el ends here

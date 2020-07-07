@@ -23,13 +23,16 @@
   (when (not (package-installed-p 'better-defaults))
     (package-install 'better-defaults)))
 
+(setq-default line-spacing 0.2)
+(setq line-spacing 0.2)
 
+(load-theme 'Billy-Theme t)
 
 (load-file (concat billy-conf-dir "ace-jump-conf.el"))
 (load-file (concat billy-conf-dir "util-fns.el"))
 (load-file (concat billy-conf-dir "auto-complete-conf.el"))
 (load-file (concat billy-conf-dir "browse-kill-ring-conf.el"))
-(load-file (concat billy-conf-dir "color-theme-conf.el"))
+;;(load-file (concat billy-conf-dir "color-theme-conf.el"))
 (load-file (concat billy-conf-dir "cider-conf.el"))
 (load-file (concat billy-conf-dir "clojure-conf.el"))
 (load-file (concat billy-conf-dir "ido-conf.el"))
@@ -170,13 +173,22 @@ current buffer is not visiting a file."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(cargo-process--custom-path-to-bin "/home/bill/.cargo/bin/")
+ '(custom-safe-themes
+   (quote
+    ("6b233389ceb3d6699564bf4d95eb1ec5086308d687d0fa03e33af0128a2e067e" "599e6b74c4522a5e735453084c1465e4c69200bf766fa74351c84c4db6b596ce" "c7eb06356fd16a1f552cfc40d900fe7326ae17ae7578f0ef5ba1edd4fdd09e58" default)))
  '(fzf/args "")
  '(fzf/directory-start "/home/bill")
  '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
+ '(lsp-rust-rls-server-command (quote ("/home/bill/.cargo/bin/rls")))
  '(lsp-ui-doc-enable nil)
  '(package-selected-packages
    (quote
-    (company-lsp s lsp-ui toml-mode lsp-mode use-package dash racer cargo flycheck-rust cider yaml-mode vlf undo-tree smex sayid rainbow-mode rainbow-delimiters popwin php-mode paredit packed mic-paren markdown-mode idomenu fzf fuzzy flx-ido eval-sexp-fu elpy elisp-slime-nav edn color-theme coffee-mode browse-kill-ring better-defaults auto-highlight-symbol align-cljlet adoc-mode ace-jump-mode ac-cider))))
+    (auto-highlight-symbol company-lsp toml-mode use-package racer cargo flycheck-rust vlf smex rainbow-mode rainbow-delimiters php-mode paredit packed mic-paren idomenu fuzzy flx-ido eval-sexp-fu elisp-slime-nav edn browse-kill-ring better-defaults align-cljlet ace-jump-mode ac-cider))))
+
+
+
+
 
 (load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
 

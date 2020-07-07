@@ -1,4 +1,4 @@
-(require 'color-theme)
+(require 'color-theme-modern)
 
 ;; use blackbored colour theme
 (load-file (concat "/home/bill/repos/billy-macs/lib/" "cyberpunk.el"))
