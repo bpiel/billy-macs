@@ -1,6 +1,6 @@
 (use-package company)
-(require 'company-lsp)
-(push 'company-lsp company-backends)
+(require 'company-capf)
+(push 'company-capf company-backends)
 
 (use-package lsp-mode
   :commands lsp
