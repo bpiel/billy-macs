@@ -3,9 +3,9 @@
 ;; Copyright (c) 2016-2019 Bill Piel, Bozhidar Batsov
 
 ;; Author: Bill Piel <bill@billpiel.com>
-;; Version: 0.0.18
-;; Package-Version: 20190919.654
-;; Package-Commit: f09c46d30211000b6a9aaf0633d5d9d9b46a55c2
+;; Version: 0.1.0
+;; Package-Version: 20200902.703
+;; Package-Commit: 27f35778de9509067716a7bed14306787334a589
 ;; URL: https://github.com/clojure-emacs/sayid
 ;; Package-Requires: ((cider "0.21.0"))
 
@@ -33,6 +33,7 @@
 
 ;;; Code:
 
+(require 'lisp-mnt)
 (require 'cider)
 
 (defgroup sayid nil
@@ -48,7 +49,11 @@
   :group 'sayid
   :type 'boolean)
 
-(defconst sayid-version "0.0.18")
+(defconst sayid-version
+  (eval-when-compile
+    (lm-version (or load-file-name buffer-file-name)))
+  "The current version of `clojure-mode'.")
+
 
 (defface sayid-int-face '((t :inherit default))
   "Sayid integer face"
