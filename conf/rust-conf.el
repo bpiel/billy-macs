@@ -4,7 +4,8 @@
 
 (use-package lsp-mode
   :commands lsp
-  :config (require 'lsp-clients))
+;;  :config (require 'lsp-clients-)
+  )
 
 (use-package lsp-ui)
 
