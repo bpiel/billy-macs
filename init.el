@@ -189,17 +189,9 @@ current buffer is not visiting a file."
  '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
  '(lsp-ui-doc-enable nil)
  '(package-selected-packages
-   '(company-lsp toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider)))
+   '(company-lsp toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider))
+ '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt"))
 
-
-
-
-
-(load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
-
-;; END Bill's stuff
-
-(message "\n\n init.el done loading  \n\n")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -217,3 +209,9 @@ current buffer is not visiting a file."
  '(markup-meta-hide-face ((t (:inherit markup-meta-face :foreground "gray80" :height 1.1))))
  '(mumamo-background-chunk-major ((((class color) (background dark)) (:background "black"))))
  '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black")))))
+
+(load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
+
+;; END Bill's stuff
+
+(message "\n\n init.el done loading  \n\n")
