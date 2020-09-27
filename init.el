@@ -189,7 +189,7 @@ current buffer is not visiting a file."
  '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
  '(lsp-ui-doc-enable nil)
  '(package-selected-packages
-   '(company-lsp toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider))
+   '(toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt"))
 
 
