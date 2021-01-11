@@ -9,4 +9,4 @@ smex-items
 locatedbs
 fzf-index
 elpa/archives
-**/libvterm
+**/libvterm/**
