@@ -58,6 +58,9 @@
 ;;(load-file (concat billy-conf-dir "php-conf.el"))
 (load-file (concat billy-conf-dir "org-conf.el"))
 
+;; https://github.com/politza/pdf-tools
+(pdf-loader-install)
+
 (global-set-key (kbd "C-c n e b") 'cider-eval-buffer)
 
 ;;set the mark
@@ -190,7 +193,7 @@ current buffer is not visiting a file."
  '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
  '(lsp-ui-doc-enable nil)
  '(package-selected-packages
-   '(vterm toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider))
+   '(vterm pdf-tools toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt"))
 
 
