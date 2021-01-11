@@ -181,6 +181,7 @@ current buffer is not visiting a file."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(cargo-process--enable-rust-backtrace t)
  '(custom-safe-themes
    '("6b233389ceb3d6699564bf4d95eb1ec5086308d687d0fa03e33af0128a2e067e" "599e6b74c4522a5e735453084c1465e4c69200bf766fa74351c84c4db6b596ce" "c7eb06356fd16a1f552cfc40d900fe7326ae17ae7578f0ef5ba1edd4fdd09e58" default))
  '(fzf/args "")
@@ -189,7 +190,7 @@ current buffer is not visiting a file."
  '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
  '(lsp-ui-doc-enable nil)
  '(package-selected-packages
-   '(toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider))
+   '(vterm toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt"))
 
 
