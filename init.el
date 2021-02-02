@@ -162,12 +162,22 @@ current buffer is not visiting a file."
 (require 'undo-tree)
 (global-undo-tree-mode)
 
+(defun set-indent-tabs-mode-nil ()
+  (interactive)
+  (setq indent-tabs-mode nil))
+
+
 (defun gentle-visible-bell ()
    (invert-face 'mode-line)
    (run-with-timer 0.1 nil 'invert-face 'mode-line))
 
 (setq visible-bell nil
       ring-bell-function #'gentle-visible-bell)
+
+(defun indent-buffer ()
+      (interactive)
+      (save-excursion
+        (indent-region (point-min) (point-max) nil)))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq column-number-mode t)
