@@ -36,7 +36,7 @@
 (add-to-list 'default-frame-alist
              '(vertical-scroll-bars . nil))
 
-(load-file (concat billy-conf-dir "ace-jump-conf.el"))
+;;(load-file (concat billy-conf-dir "ace-jump-conf.el"))
 (load-file (concat billy-conf-dir "util-fns.el"))
 (load-file (concat billy-conf-dir "auto-complete-conf.el"))
 (load-file (concat billy-conf-dir "browse-kill-ring-conf.el"))
@@ -203,7 +203,7 @@ current buffer is not visiting a file."
  '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
  '(lsp-ui-doc-enable nil)
  '(package-selected-packages
-   '(vterm pdf-tools toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ace-jump-mode ac-cider))
+   '(avy vterm pdf-tools toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt"))
 
 
