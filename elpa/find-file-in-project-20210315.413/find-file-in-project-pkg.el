@@ -1,0 +1,2 @@
+;;; Generated package description from /home/bill/.emacs.d/elpa/find-file-in-project-20210315.413/find-file-in-project.el  -*- no-byte-compile: t -*-
+(define-package "find-file-in-project" "20210315.413" "Find file/directory and review Diff/Patch/Commit efficiently everywhere" '((emacs "25.1")) :commit "50607615352df980dfe99d464f5fd0b3d70a4381" :authors '(("Phil Hagelberg, Doug Alcorn, and Will Farrington")) :maintainer '("Chen Bin" . "chenbin.sh@gmail.com") :keywords '("project" "convenience") :url "https://github.com/technomancy/find-file-in-project")
