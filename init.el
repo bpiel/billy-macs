@@ -36,7 +36,7 @@
 (add-to-list 'default-frame-alist
              '(vertical-scroll-bars . nil))
 
-;;(load-file (concat billy-conf-dir "ace-jump-conf.el"))
+(load-file (concat billy-conf-dir "avy-conf.el"))
 (load-file (concat billy-conf-dir "util-fns.el"))
 (load-file (concat billy-conf-dir "auto-complete-conf.el"))
 (load-file (concat billy-conf-dir "browse-kill-ring-conf.el"))
