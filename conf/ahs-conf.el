@@ -15,6 +15,7 @@
 
 (global-auto-highlight-symbol-mode t)
 (add-to-list 'ahs-modes 'clojure-mode)
+(add-to-list 'ahs-modes 'clojurescript-mode)
 (add-to-list 'ahs-modes 'rust-mode)
 (setq ahs-default-range 'ahs-range-whole-buffer)
 
