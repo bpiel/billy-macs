@@ -26,7 +26,7 @@
 
 (define-key clojure-mode-map (kbd "M-t") 'live-transpose-words-with-hyphens)
 
-(setq auto-mode-alist (append '(("\\.cljs$" . clojure-mode))
+(setq auto-mode-alist (append '(("\\.cljs$" . clojurescript-mode))
                               auto-mode-alist))
 
 (dolist (x '(scheme emacs-lisp lisp clojure))
