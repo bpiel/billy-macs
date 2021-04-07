@@ -21,3 +21,4 @@
 
 ;; add support for matching '<' and '>' in clojure mode
 (setq ahs-include '((clojure-mode . "^[<>0-9A-Za-z/_.,:;*+=&%|$#@!^?-]+$")))
+(setq ahs-include '((clojurescript-mode . "^[<>0-9A-Za-z/_.,:;*+=&%|$#@!^?-]+$")))
