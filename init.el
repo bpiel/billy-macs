@@ -41,7 +41,7 @@
 (load-file (concat billy-conf-dir "auto-complete-conf.el"))
 (load-file (concat billy-conf-dir "browse-kill-ring-conf.el"))
 ;;(load-file (concat billy-conf-dir "color-theme-conf.el"))
-(load-file (concat billy-conf-dir "cider-conf.el"))
+;; (load-file (concat billy-conf-dir "cider-conf.el"))
 (load-file (concat billy-conf-dir "clojure-conf.el"))
 (load-file (concat billy-conf-dir "ido-conf.el"))
 (load-file (concat billy-conf-dir "lisp-conf.el"))
@@ -61,7 +61,7 @@
 ;; https://github.com/politza/pdf-tools
 (pdf-loader-install)
 
-(global-set-key (kbd "C-c n e b") 'cider-eval-buffer)
+;; (global-set-key (kbd "C-c n e b") 'cider-eval-buffer)
 
 ;;set the mark
 (global-set-key (kbd "C-SPC") 'set-mark-command)
@@ -126,8 +126,9 @@ current buffer is not visiting a file."
 
 (defun repl-clear-and-prev ()
   (interactive)
-  (cider-repl-clear-buffer)
-  (cider-repl-previous-input))
+;;  (cider-repl-clear-buffer)
+;;  (cider-repl-previous-input)
+  )
 
 (global-set-key (kbd "C-c s p") 'insert-pprint)
 (global-set-key (kbd "C-S-c C-S-p") 'repl-clear-and-prev)
@@ -184,8 +185,8 @@ current buffer is not visiting a file."
 
 (setq markdown-command "pandoc -f markdown_github -s")
 
-(eval-after-load 'clojure-mode
-  '(sayid-setup-package))
+;; (eval-after-load 'clojure-mode
+;;   '(sayid-setup-package))
 
 (elpy-enable)
 
@@ -203,7 +204,7 @@ current buffer is not visiting a file."
  '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
  '(lsp-ui-doc-enable nil)
  '(package-selected-packages
-   '(avy pdf-tools toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
+   '(monroe avy pdf-tools toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt"))
 
 
