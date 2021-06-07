@@ -10,3 +10,4 @@ locatedbs
 fzf-index
 elpa/archives
 elpa/**/libvterm
+.lsp-session*

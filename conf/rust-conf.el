@@ -7,6 +7,7 @@
 ;;  :config (require 'lsp-clients-)
   )
 
+
 (use-package lsp-ui)
 
 (use-package toml-mode)
@@ -26,3 +27,4 @@
             (local-set-key (kbd "M-RET") #'lsp-describe-thing-at-point)))
 
 (add-hook 'rust-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'rust-mode-hook 'yas-minor-mode)
