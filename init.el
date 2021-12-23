@@ -189,11 +189,11 @@ current buffer is not visiting a file."
 
 (elpy-enable)
 
-(defun cpp-compile-run()
+(defun make-this()
   (interactive)
   (let* ((src (file-name-nondirectory (buffer-file-name)))
          (exe (file-name-sans-extension src)))
-    (compile (concat "g++ " src " -o " exe " && ./" exe))))
+    (compile (concat "make -B " exe))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
