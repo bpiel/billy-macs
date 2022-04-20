@@ -58,6 +58,13 @@
 ;;(load-file (concat billy-conf-dir "php-conf.el"))
 (load-file (concat billy-conf-dir "org-conf.el"))
 
+(use-package lsp-pyright
+  :ensure t
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp))))  ; or lsp-deferred
+
+
 ;; https://github.com/politza/pdf-tools
 (pdf-loader-install)
 
@@ -207,7 +214,8 @@ current buffer is not visiting a file."
  '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
  '(lsp-ui-doc-enable nil)
  '(package-selected-packages
-   '(lsp-java ccls json-mode avy pdf-tools toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
+   '(lsp-pyright lsp-java ccls json-mode avy pdf-tools toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
+ '(python-shell-interpreter "python3")
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt"))
 
 
