@@ -187,8 +187,6 @@ current buffer is not visiting a file."
 (eval-after-load 'clojure-mode
   '(sayid-setup-package))
 
-(elpy-enable)
-
 (defun make-this()
   (interactive)
   (let* ((src (file-name-nondirectory (buffer-file-name)))
