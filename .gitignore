@@ -12,3 +12,4 @@ elpa/archives
 elpa/**/libvterm
 .lsp-session*
 .cache
+eln-cache
