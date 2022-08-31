@@ -58,6 +58,12 @@
 ;;(load-file (concat billy-conf-dir "php-conf.el"))
 (load-file (concat billy-conf-dir "org-conf.el"))
 
+(add-hook 'ibuffer-mode-hook
+	  (lambda ()
+	    (define-key ibuffer-mode-map
+	      (kbd "C-o")
+	      'avy-goto-word-1)))
+
 ;; https://github.com/politza/pdf-tools
 (pdf-loader-install)
 
