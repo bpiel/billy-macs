@@ -72,6 +72,9 @@
 ;;set the mark
 (global-set-key (kbd "C-SPC") 'set-mark-command)
 
+;;override C-x C-o
+(global-set-key (kbd "C-x C-o") 'other-window)
+
 ;;fast vertical naviation
 (global-set-key  (kbd "M-U") (lambda () (interactive) (forward-line -10)))
 (global-set-key  (kbd "M-D") (lambda () (interactive) (forward-line 10)))
