@@ -48,7 +48,7 @@
 (load-file (concat billy-conf-dir "paredit-conf.el"))
 (load-file (concat billy-conf-dir "popwin-conf.el"))
 (load-file (concat billy-conf-dir "recentf-conf.el"))
-(load-file (concat billy-conf-dir "rust-conf.el"))
+;;(load-file (concat billy-conf-dir "rust-conf.el"))
 (load-file (concat billy-conf-dir "smex-conf.el"))
 (load-file (concat billy-conf-dir "backup-dir-conf.el"))
 (load-file (concat billy-conf-dir "ahs-conf.el"))
@@ -215,10 +215,10 @@ current buffer is not visiting a file."
  '(fzf/args "")
  '(fzf/directory-start "/home/bill")
  '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
- '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
- '(lsp-ui-doc-enable nil)
+;; '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
+;; '(lsp-ui-doc-enable nil)
  '(package-selected-packages
-   '(lsp-java ccls json-mode avy pdf-tools toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
+   '(lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt"))
 
 
