@@ -10,12 +10,13 @@
               ("C-c C-c r" . lsp-rename)
               ("C-c C-c q" . lsp-workspace-restart)
               ("C-c C-c Q" . lsp-workspace-shutdown)
-              ("C-c C-c s" . lsp-rust-analyzer-status))
+              ("C-c C-c s" . lsp-rust-analyzer-status)
+	      ("M-RET". lsp-ui-doc-show))
   :config
   ;; uncomment for less flashiness
-   ;; (setq lsp-eldoc-hook nil)
-   ;; (setq lsp-enable-symbol-highlighting nil)
-   ;; (setq lsp-signature-auto-activate nil)
+  ;; (setq lsp-eldoc-hook nil)
+  ;; (setq lsp-enable-symbol-highlighting nil)
+  ;; (setq lsp-signature-auto-activate nil)
 
 
   ;; comment to disable rustfmt on save
@@ -57,7 +58,7 @@
   :custom
   ;; what to use when checking on-save. "check" is default, I prefer clippy
   (lsp-rust-analyzer-cargo-watch-command "clippy")
-  (lsp-eldoc-render-all t)
+  (lsp-eldoc-render-all nil)
   (lsp-idle-delay 0.6)
   ;; enable / disable the hints as you prefer:
   (lsp-rust-analyzer-server-display-inlay-hints t)
@@ -78,3 +79,4 @@
   (lsp-ui-sideline-show-hover nil)
   (lsp-ui-sideline-enable nil)
   (lsp-ui-doc-enable nil))
+
