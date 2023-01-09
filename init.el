@@ -48,7 +48,8 @@
 (load-file (concat billy-conf-dir "paredit-conf.el"))
 (load-file (concat billy-conf-dir "popwin-conf.el"))
 (load-file (concat billy-conf-dir "recentf-conf.el"))
-(load-file (concat billy-conf-dir "rust-conf.el"))
+;;(load-file (concat billy-conf-dir "rust-conf.el"))
+(load-file (concat billy-conf-dir "rustic-conf.el"))
 (load-file (concat billy-conf-dir "smex-conf.el"))
 (load-file (concat billy-conf-dir "backup-dir-conf.el"))
 (load-file (concat billy-conf-dir "ahs-conf.el"))
@@ -58,12 +59,21 @@
 ;;(load-file (concat billy-conf-dir "php-conf.el"))
 (load-file (concat billy-conf-dir "org-conf.el"))
 
+<<<<<<< HEAD
 (use-package lsp-pyright
   :ensure t
   :hook (python-mode . (lambda ()
                           (require 'lsp-pyright)
                           (lsp))))  ; or lsp-deferred
 
+=======
+
+(add-hook 'ibuffer-mode-hook
+	  (lambda ()
+	    (define-key ibuffer-mode-map
+	      (kbd "C-o")
+	      'avy-goto-word-1)))
+>>>>>>> master
 
 ;; https://github.com/politza/pdf-tools
 (pdf-loader-install)
@@ -72,6 +82,9 @@
 
 ;;set the mark
 (global-set-key (kbd "C-SPC") 'set-mark-command)
+
+;;override C-x C-o
+(global-set-key (kbd "C-x C-o") 'other-window)
 
 ;;fast vertical naviation
 (global-set-key  (kbd "M-U") (lambda () (interactive) (forward-line -10)))
@@ -208,16 +221,15 @@ current buffer is not visiting a file."
  '(cargo-process--enable-rust-backtrace t)
  '(custom-safe-themes
    '("6b233389ceb3d6699564bf4d95eb1ec5086308d687d0fa03e33af0128a2e067e" "599e6b74c4522a5e735453084c1465e4c69200bf766fa74351c84c4db6b596ce" "c7eb06356fd16a1f552cfc40d900fe7326ae17ae7578f0ef5ba1edd4fdd09e58" default))
+ '(exec-path
+   '("/home/bill/.local/bin" "/home/bill/bin" "/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/snap/bin" "/usr/local/libexec/emacs/28.2/x86_64-pc-linux-gnu" "/home/bill/.cargo/bin"))
  '(fzf/args "")
  '(fzf/directory-start "/home/bill")
  '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
- '(lsp-rust-rls-server-command '("/home/bill/.cargo/bin/rls"))
- '(lsp-ui-doc-enable nil)
  '(package-selected-packages
-   '(lsp-pyright lsp-java ccls json-mode avy pdf-tools toml-mode use-package racer cargo flycheck-rust vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
+   '(lsp-pyright company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(python-shell-interpreter "python3")
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt"))
-
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -241,3 +253,4 @@ current buffer is not visiting a file."
 ;; END Bill's stuff
 
 (message "\n\n init.el done loading  \n\n")
+
