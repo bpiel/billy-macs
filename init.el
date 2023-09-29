@@ -223,6 +223,15 @@ current buffer is not visiting a file."
  '(fzf/args "")
  '(fzf/directory-start "/home/bill")
  '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
+ '(ibuffer-formats
+   '((mark modified read-only locked " "
+	   (name 30 30 :left :elide)
+	   " "
+	   (mode 16 16 :left :elide)
+	   " " filename-and-process)
+     (mark " "
+	   (name 16 -1)
+	   " " filename)))
  '(package-selected-packages
    '(cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt")
@@ -268,7 +277,8 @@ current buffer is not visiting a file."
      (cljr-clojure-test-declaration . "[clojure.test :as test :refer [are deftest is testing]]")
      (cljr-warn-on-eval)
      (cider-ns-refresh-after-fn . "integrant.repl/resume")
-     (cider-ns-refresh-before-fn . "integrant.repl/suspend"))))
+     (cider-ns-refresh-before-fn . "integrant.repl/suspend")))
+ '(smerge-command-prefix (kbd "C-S-c")))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
