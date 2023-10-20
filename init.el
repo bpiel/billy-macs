@@ -76,6 +76,8 @@
 (add-hook 'go-mode-hook #'lsp-deferred)
 ;;(add-hook 'go-mode-hook #'yas-minor-mode)
 
+(add-hook 'go-mode-hook (lambda () (auto-complete-mode -1)))
+
 ;; END GO =============
 
 
