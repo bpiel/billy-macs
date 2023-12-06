@@ -253,6 +253,7 @@ current buffer is not visiting a file."
      (mark " "
 	   (name 16 -1)
 	   " " filename)))
+ '(ido-default-buffer-method 'selected-window)
  '(package-selected-packages
    '(go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt")
