@@ -119,6 +119,9 @@
 (global-unset-key (kbd "C-z")) ;; get rid of "suspend frame"
 (cua-mode 0) ;; kill CUA
 
+;; https://www.emacswiki.org/emacs/LinumMode
+;; TODO migrate to Nlinum or the built-in line-numbers-mode
+(require 'linum)
 (global-linum-mode t)
 
 (global-set-key (kbd  "C-,") 'beginning-of-line-text)
@@ -231,6 +234,19 @@ current buffer is not visiting a file."
          (exe (file-name-sans-extension src)))
     (compile (concat "make -B " exe))))
 
+(add-to-list 'auto-mode-alist '("\\.mts$" . typescript-mode))
+
+;; Ruby lsp
+;; (with-eval-after-load 'lsp-mode
+;;   (lsp-register-client
+;;    (make-lsp-client :new-connection (lsp-stdio-connection lsp-solargraph-server-command)
+;;                     :activation-fn (lsp-activate-on "ruby")
+;; 		    :priority 0
+;;                     :server-id 'solargraph-ls)))
+
+
+;;(require 'lsp-solargraph)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -240,7 +256,7 @@ current buffer is not visiting a file."
  '(custom-safe-themes
    '("6b233389ceb3d6699564bf4d95eb1ec5086308d687d0fa03e33af0128a2e067e" "599e6b74c4522a5e735453084c1465e4c69200bf766fa74351c84c4db6b596ce" "c7eb06356fd16a1f552cfc40d900fe7326ae17ae7578f0ef5ba1edd4fdd09e58" default))
  '(exec-path
-   '("/home/bill/.local/bin" "/home/bill/bin" "/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/snap/bin" "/usr/local/libexec/emacs/28.2/x86_64-pc-linux-gnu" "/home/bill/.cargo/bin" "/home/bill/go/bin" "/usr/local/go/bin"))
+   '("/home/bill/.local/bin" "/home/bill/bin" "/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/snap/bin" "/usr/local/libexec/emacs/28.2/x86_64-pc-linux-gnu" "/home/bill/.cargo/bin" "/home/bill/go/bin" "/usr/local/go/bin" "/home/bill/.rbenv/shims" "/home/bill/.rbenv/bin"))
  '(fzf/args "")
  '(fzf/directory-start "/home/bill")
  '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
@@ -254,8 +270,9 @@ current buffer is not visiting a file."
 	   (name 16 -1)
 	   " " filename)))
  '(ido-default-buffer-method 'selected-window)
+ '(lsp-disabled-clients '(rubocop-ls))
  '(package-selected-packages
-   '(zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
+   '(clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt")
  '(safe-local-variable-values
    '((cljr-magic-require-namespaces
@@ -300,7 +317,8 @@ current buffer is not visiting a file."
      (cljr-warn-on-eval)
      (cider-ns-refresh-after-fn . "integrant.repl/resume")
      (cider-ns-refresh-before-fn . "integrant.repl/suspend")))
- '(smerge-command-prefix (kbd "C-S-c")))
+ '(smerge-command-prefix (kbd "C-S-c"))
+ '(typescript-indent-level 2))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -324,4 +342,5 @@ current buffer is not visiting a file."
 ;; END Bill's stuff
 
 (message "\n\n init.el done loading  \n\n")
+
 
