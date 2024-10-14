@@ -236,6 +236,25 @@ current buffer is not visiting a file."
 
 (add-to-list 'auto-mode-alist '("\\.mts$" . typescript-mode))
 
+(global-set-key (kbd "C-<return>") 'company-complete)
+
+
+;; https://github.com/typescript-language-server/typescript-language-server/issues/559
+;; same definition as mentioned earlier
+(advice-add 'json-parse-string :around
+            (lambda (orig string &rest rest)
+              (apply orig (s-replace "\\u0000" "" string)
+                     rest)))
+
+;; https://github.com/typescript-language-server/typescript-language-server/issues/559
+;; minor changes: saves excursion and uses search-forward instead of re-search-forward
+(advice-add 'json-parse-buffer :around
+            (lambda (oldfn &rest args)
+	      (save-excursion 
+                (while (search-forward "\\u0000" nil t)
+                  (replace-match "" nil t)))
+		(apply oldfn args)))
+
 ;; Ruby lsp
 ;; (with-eval-after-load 'lsp-mode
 ;;   (lsp-register-client
@@ -272,7 +291,7 @@ current buffer is not visiting a file."
  '(ido-default-buffer-method 'selected-window)
  '(lsp-disabled-clients '(rubocop-ls))
  '(package-selected-packages
-   '(clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
+   '(gnu-elpa-keyring-update clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt")
  '(safe-local-variable-values
    '((cljr-magic-require-namespaces
