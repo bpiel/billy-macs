@@ -238,6 +238,8 @@ current buffer is not visiting a file."
 
 (global-set-key (kbd "C-<return>") 'company-complete)
 
+(add-hook 'typescript-mode-hook #'lsp)
+
 
 ;; https://github.com/typescript-language-server/typescript-language-server/issues/559
 ;; same definition as mentioned earlier
