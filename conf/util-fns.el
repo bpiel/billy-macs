@@ -81,4 +81,4 @@
       result)))
 
 
-(global-set-key (kbd "M-SPC ") 'live-delete-whitespace-except-one)
+(global-set-key (kbd "M-SPC") 'live-delete-whitespace-except-one)
