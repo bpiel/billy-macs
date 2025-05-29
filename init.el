@@ -177,7 +177,7 @@ current buffer is not visiting a file."
 
 (defun go-normal-font-size ()
   (interactive)
-  (set-face-attribute 'default nil :height 130))
+  (set-face-attribute 'default nil :height 110))
 
 (put 'erase-buffer 'disabled nil)
 (put 'downcase-region 'disabled nil)
@@ -283,6 +283,7 @@ current buffer is not visiting a file."
  '(cargo-process--enable-rust-backtrace t)
  '(custom-safe-themes
    '("6b233389ceb3d6699564bf4d95eb1ec5086308d687d0fa03e33af0128a2e067e" "599e6b74c4522a5e735453084c1465e4c69200bf766fa74351c84c4db6b596ce" "c7eb06356fd16a1f552cfc40d900fe7326ae17ae7578f0ef5ba1edd4fdd09e58" default))
+ '(elpy-rpc-python-command "python3")
  '(exec-path
    '("/home/bill/.local/bin" "/home/bill/bin" "/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/snap/bin" "/usr/local/libexec/emacs/28.2/x86_64-pc-linux-gnu" "/home/bill/.cargo/bin" "/home/bill/go/bin" "/usr/local/go/bin" "/home/bill/.rbenv/shims" "/home/bill/.rbenv/bin"))
  '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
@@ -298,7 +299,7 @@ current buffer is not visiting a file."
  '(ido-default-buffer-method 'selected-window)
  '(lsp-disabled-clients '(rubocop-ls))
  '(package-selected-packages
-   '(gnu-elpa-keyring-update clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
+   '(flycheck-clang-tidy clang-format gnu-elpa-keyring-update clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt")
  '(safe-local-variable-values
    '((cljr-magic-require-namespaces
