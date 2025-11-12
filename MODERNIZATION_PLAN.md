@@ -2,6 +2,7 @@
 
 **Date Started:** 2025-10-26
 **Phase 1 Completed:** 2025-11-12
+**Phase 2 Completed:** 2025-11-12
 **Purpose:** Comprehensive plan to modernize billy-macs Emacs configuration to align with current best practices
 
 ## Table of Contents
@@ -78,16 +79,72 @@
 
 ---
 
-### What's Next: Phase 2 - Core UI/UX (NOT STARTED)
+### Phase 2: Core UI/UX - ✅ COMPLETED (2025-11-12)
+
+**Status:** Fully tested and committed (commit `bb2d150`)
+
+**What Was Completed:**
+
+1. ✅ **Replaced linum-mode with display-line-numbers-mode**
+   - Uses built-in display-line-numbers-mode (Emacs 26+)
+   - Much better performance than deprecated linum-mode
+   - Enabled only in prog-mode buffers
+   - Uses relative line numbering for easier navigation
+
+2. ✅ **Replaced ido/smex with vertico/consult/orderless/marginalia**
+   - Created new `conf/completion.el` with modern completion stack
+   - **vertico:** Clean vertical completion UI
+   - **consult:** Enhanced minibuffer commands with live preview
+   - **orderless:** Flexible fuzzy matching (space-separated components)
+   - **marginalia:** Rich annotations with keybindings and documentation
+   - Preserved all original keybindings (M-x, C-x f, C-x C-i, C-x b)
+   - Added new keybindings: M-s l (consult-line), C-c C-g (consult-ripgrep)
+   - Disabled old configs: ido-conf.el, smex-conf.el
+
+3. ✅ **Replaced auto-complete with corfu/cape**
+   - **corfu:** Modern in-buffer completion popup
+   - **cape:** Additional completion backends (file paths, dabbrev)
+   - Lighter weight than auto-complete
+   - Better integration with native Emacs completion
+   - Works automatically with CIDER (no ac-cider needed)
+   - Updated cider-conf.el to remove ac-cider setup
+   - Disabled auto-complete-conf.el
+
+**Performance:**
+- Configuration loads without errors
+- Cleaner, more responsive completion UI
+- Better fuzzy matching with orderless
+- Live preview in minibuffer commands
+
+**Packages Added:**
+- vertico, consult, orderless, marginalia (minibuffer)
+- corfu, cape (in-buffer)
+
+**Packages Disabled:**
+- ido, smex, flx-ido, idomenu
+- auto-complete, popup, fuzzy, ac-cider
+
+**Files:**
+- New: `conf/completion.el`
+- Modified: `init.el`, `conf/cider-conf.el`
+- Commented out: ido-conf.el, smex-conf.el, auto-complete-conf.el
+
+**Branch:** `rebuild-nov-2025`
+**Commit:** `bb2d150`
+
+---
+
+### What's Next: Phase 3 - Development Tools (NOT STARTED)
 
 **Ready to begin when you are!**
 
 The following are ready to implement:
-- Replace linum-mode → display-line-numbers-mode (fixes deprecation warning)
-- Replace ido/smex → vertico/consult (modern completion)
-- Replace auto-complete → corfu (modern in-buffer completion)
+- Standardize on eglot for all LSP (remove lsp-mode)
+- Modernize CIDER configuration (already using corfu)
+- Add modern git integration enhancements (diff-hl)
+- Add helpful for better help buffers
 
-**To resume Phase 2:** See the detailed instructions in the sections below. All foundational work is complete.
+**To resume Phase 3:** See the detailed instructions in the sections below.
 
 ---
 
