@@ -47,6 +47,11 @@
 ;; Install use-package via straight.el
 (straight-use-package 'use-package)
 
+;;; Built-in Package Overrides
+;; Tell straight.el to use built-in versions of these packages
+;; This prevents conflicts between built-in and straight.el versions
+(use-package project :straight (:type built-in))
+
 ;;; Directory Configuration
 ;; Define config and library directories using portable paths
 (defvar billy-conf-dir (expand-file-name "conf/" user-emacs-directory)
@@ -135,6 +140,13 @@
 
 ;; Automatic saving (Phase 4)
 (use-package super-save)  ; Auto-save files when switching buffers/windows
+
+;; Advanced features (Phase 5)
+(use-package treesit-auto)  ; Automatic tree-sitter grammar installation
+(use-package pulsar)        ; Visual feedback for cursor position
+(use-package popper)        ; Better popup window management
+(use-package embark)        ; Contextual actions on targets
+(use-package embark-consult) ; Embark integration with consult
 
 ;; Window management
 (use-package popwin :demand t)
@@ -409,6 +421,126 @@
          (css-mode . rainbow-mode)
          (html-mode . rainbow-mode)
          (web-mode . rainbow-mode)))
+
+;;; Advanced Features (Phase 5)
+
+;; Tree-sitter automatic grammar installation
+;; Tree-sitter provides better syntax highlighting and code understanding
+;; treesit-auto automatically downloads and installs grammars as needed
+;; NOTE: Currently disabled due to version mismatch issues
+;; To use: M-x treesit-auto-apply-remap to enable for specific languages
+(use-package treesit-auto
+  :custom
+  ;; Prompt before installing grammars (set to t to install automatically)
+  (treesit-auto-install 'prompt)
+  :config
+  ;; Don't automatically enable for all languages (causes version mismatch errors)
+  ;; Instead, tree-sitter modes can be enabled manually when needed
+  ;; (treesit-auto-add-to-auto-mode-alist 'all)
+  ;; (global-treesit-auto-mode)
+  )
+
+;; Visual feedback for cursor position (pulsar)
+;; Briefly highlights the current line when jumping around
+;; Makes it easier to track cursor position after large movements
+(use-package pulsar
+  :demand t
+  :config
+  (pulsar-global-mode 1)
+  :custom
+  ;; Pulse after these common navigation commands
+  (pulsar-pulse-functions
+   '(recenter-top-bottom
+     move-to-window-line-top-bottom
+     reposition-window
+     bookmark-jump
+     other-window
+     delete-window
+     delete-other-windows
+     forward-page
+     backward-page
+     scroll-up-command
+     scroll-down-command
+     windmove-right
+     windmove-left
+     windmove-up
+     windmove-down
+     windmove-swap-states-right
+     windmove-swap-states-left
+     windmove-swap-states-up
+     windmove-swap-states-down
+     tab-new
+     tab-close
+     tab-next
+     org-next-visible-heading
+     org-previous-visible-heading
+     org-forward-heading-same-level
+     org-backward-heading-same-level
+     outline-backward-same-level
+     outline-forward-same-level
+     outline-next-visible-heading
+     outline-previous-visible-heading
+     outline-up-heading))
+  ;; Pulse duration in seconds
+  (pulsar-delay 0.055)
+  ;; Pulse iterations
+  (pulsar-iterations 10)
+  ;; Pulse on these modes
+  (pulsar-pulse t))
+
+;; Better popup window management (popper)
+;; Manages popup windows (like help, compilation, etc.) more intelligently
+;; Allows quick toggling and cycling through popups
+(use-package popper
+  :demand t
+  :bind (("C-`"   . popper-toggle)
+         ("M-`"   . popper-cycle)
+         ("C-M-`" . popper-toggle-type))
+  :custom
+  ;; Define which buffers should be treated as popups
+  (popper-reference-buffers
+   '("\\*Messages\\*"
+     "Output\\*$"
+     "\\*Async Shell Command\\*"
+     "\\*Warnings\\*"
+     "\\*Compile-Log\\*"
+     "\\*Completions\\*"
+     "\\*Backtrace\\*"
+     help-mode
+     compilation-mode
+     flycheck-error-list-mode))
+  ;; Show popper buffers at the bottom
+  (popper-display-control t)
+  :config
+  (popper-mode +1)
+  ;; Show visual indicator for popup buffers
+  (popper-echo-mode +1))
+
+;; Contextual actions with embark
+;; Provides contextual actions on targets in the minibuffer
+;; Works great with consult and vertico
+(use-package embark
+  :bind
+  (("C-." . embark-act)         ;; Pick an action using completion
+   ("C-;" . embark-dwim)        ;; "Do What I Mean" - smart default action
+   ("C-h B" . embark-bindings)) ;; Alternative to describe-bindings
+  :init
+  ;; Show the Embark target at point via Eldoc
+  ;; You may adjust the Eldoc strategy if you want to see the documentation
+  ;; from multiple providers at once
+  (setq eldoc-documentation-strategy #'eldoc-documentation-compose-eagerly)
+  :config
+  ;; Hide the mode line of the Embark live/completions buffers
+  (add-to-list 'display-buffer-alist
+               '("\\`\\*Embark Collect \\(Live\\|Completions\\)\\*"
+                 nil
+                 (window-parameters (mode-line-format . none)))))
+
+;; Embark integration with Consult
+;; Adds consult-specific actions to embark
+(use-package embark-consult
+  :hook
+  (embark-collect-mode . consult-preview-at-point-mode))
 
 (global-set-key (kbd  "C-,") 'beginning-of-line-text)
 
