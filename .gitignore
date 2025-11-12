@@ -18,6 +18,9 @@ smex-items
 # no-littering directories (Phase 1: Foundation)
 .local/
 
+# Session/state files (auto-generated)
+var/
+
 # straight.el - keep repos (package sources), ignore builds
 straight/build/
 straight/build-cache.el
