@@ -299,10 +299,10 @@ current buffer is not visiting a file."
  '(ido-default-buffer-method 'selected-window)
  '(lsp-disabled-clients '(rubocop-ls))
  '(package-selected-packages
-   '(flycheck-clang-tidy clang-format gnu-elpa-keyring-update clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider)
+   '(flycheck-clang-tidy clang-format gnu-elpa-keyring-update clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt")
  '(safe-local-variable-values
-   '((cljr-magic-require-namespaces
+   ((cljr-magic-require-namespaces
       ("io" . "clojure.java.io")
       ("as" . "clojure.core.async")
       ("csv" . "clojure.data.csv")
