@@ -115,9 +115,12 @@
 
 ;; Editing enhancements
 (use-package paredit :demand t)
-(use-package undo-tree :demand t)
+;; Modern undo system - replacing undo-tree (Phase 4)
+(use-package undo-fu)  ; Simpler, more reliable undo/redo
+(use-package vundo)    ; Visual undo tree when needed
 (use-package browse-kill-ring :demand t)
 (use-package rainbow-delimiters :demand t)
+(use-package rainbow-mode)  ; Highlight color codes with their actual colors
 (use-package auto-highlight-symbol)
 (use-package winner :straight (:type built-in) :demand t)
 
@@ -126,6 +129,12 @@
 
 ;; Better help buffers (Phase 3)
 (use-package helpful)  ; Enhanced help buffers with more information
+
+;; Keybinding discovery (Phase 4)
+(use-package which-key)  ; Show available keybindings in popup
+
+;; Automatic saving (Phase 4)
+(use-package super-save)  ; Auto-save files when switching buffers/windows
 
 ;; Window management
 (use-package popwin :demand t)
@@ -161,7 +170,12 @@
 ;; It will be loaded on-demand when eglot-ensure is called
 (use-package s)  ; String manipulation library
 (use-package elisp-slime-nav)
-(use-package recentf :straight (:type built-in) :demand t)
+
+;; Session persistence (Phase 4)
+(use-package recentf :straight (:type built-in))    ; Recent files
+(use-package savehist :straight (:type built-in))   ; Command history
+(use-package saveplace :straight (:type built-in))  ; Cursor position in files
+
 (use-package org :straight (:type built-in))
 
 ;; Python support
@@ -189,7 +203,7 @@
 (load-file (concat billy-conf-dir "lisp-conf.el"))
 (load-file (concat billy-conf-dir "paredit-conf.el"))
 (load-file (concat billy-conf-dir "popwin-conf.el"))
-(load-file (concat billy-conf-dir "recentf-conf.el"))
+;; (load-file (concat billy-conf-dir "recentf-conf.el"))  ; REPLACED by modern config in Phase 4
 ;;(load-file (concat billy-conf-dir "rust-conf.el"))
 (load-file (concat billy-conf-dir "rustic-conf.el"))
 ;; (load-file (concat billy-conf-dir "smex-conf.el"))  ; REPLACED by completion.el
@@ -313,6 +327,89 @@
   ([remap describe-key] . helpful-key)
   ([remap describe-command] . helpful-command))
 
+;;; Keybinding Discovery - which-key (Phase 4)
+;; Displays available keybindings in a popup when you pause typing
+;; Makes discovering and learning keybindings much easier
+(use-package which-key
+  :demand t
+  :config
+  (which-key-mode)
+  :custom
+  ;; Show popup on the side to avoid covering buffer content
+  (which-key-popup-type 'side-window)
+  ;; Show popup after a short delay
+  (which-key-idle-delay 1.0)
+  ;; Max width for descriptions
+  (which-key-max-description-length 50))
+
+;;; Session Persistence (Phase 4)
+;; Remember various state between Emacs sessions for better continuity
+
+;; Save minibuffer history (commands, search strings, etc.)
+(use-package savehist
+  :demand t
+  :config
+  (savehist-mode 1)
+  :custom
+  ;; Save additional useful information
+  (savehist-additional-variables
+   '(search-ring regexp-search-ring kill-ring))
+  ;; Save history every minute (default is only on exit)
+  (savehist-autosave-interval 60))
+
+;; Remember cursor position in files
+(use-package saveplace
+  :demand t
+  :config
+  (save-place-mode 1)
+  :custom
+  ;; Save positions for all file types (default is file-visiting buffers)
+  (save-place-forget-unreadable-files t))
+
+;; Track recently opened files
+(use-package recentf
+  :demand t
+  :config
+  (recentf-mode 1)
+  :custom
+  ;; Increase the number of saved recent files (default is 20)
+  (recentf-max-saved-items 100)
+  ;; Increase menu size for easier access
+  (recentf-max-menu-items 15)
+  ;; Exclude some paths from recent files
+  (recentf-exclude
+   '("\\.?cache" ".tmp" "recentf" "COMMIT_EDITMSG" "bookmarks"
+     "\\.gif\\'" "\\.png\\'" "\\.jpg\\'" "\\.jpeg\\'"
+     "^/tmp/" "^/ssh:" "^/sudo:" "\\.log\\'"
+     "/\\.local/share/Trash/"))
+  ;; Cleanup recent list periodically
+  (recentf-auto-cleanup 300))
+
+;; Automatic file saving (optional quality of life feature)
+(use-package super-save
+  :demand t
+  :config
+  (super-save-mode +1)
+  :custom
+  ;; Auto-save when idle for a few seconds
+  (super-save-auto-save-when-idle t)
+  (super-save-idle-duration 5)
+  ;; Disable Emacs' built-in auto-save (super-save replaces it)
+  (auto-save-default nil)
+  ;; Save on find-file (when opening a file)
+  (super-save-hook-triggers
+   '(find-file-hook
+     focus-out-hook)))
+
+;;; Color Code Highlighting - rainbow-mode (Phase 4)
+;; Highlights color codes (hex, rgb, etc.) with their actual colors
+;; Very useful when editing themes and CSS files
+(use-package rainbow-mode
+  :hook ((emacs-lisp-mode . rainbow-mode)
+         (css-mode . rainbow-mode)
+         (html-mode . rainbow-mode)
+         (web-mode . rainbow-mode)))
+
 (global-set-key (kbd  "C-,") 'beginning-of-line-text)
 
 (global-set-key (kbd  "C-x x") 'rgrep)
@@ -387,8 +484,27 @@ current buffer is not visiting a file."
 ;; show keystrokes in mini-buffer instantly
 (setq echo-keystrokes 0.01)
 
-(require 'undo-tree)
-(global-undo-tree-mode)
+;;; Undo System - undo-fu + vundo (Phase 4)
+;; undo-fu provides simple, reliable linear undo/redo
+;; vundo provides a visual undo tree interface when needed
+(use-package undo-fu
+  :demand t
+  :bind (;; Use M-z for undo (familiar to many)
+         ("M-z" . undo-fu-only-undo)
+         ;; Use M-Z (shift) for redo
+         ("M-Z" . undo-fu-only-redo))
+  :config
+  ;; Increase undo limits for larger undo history
+  (setq undo-limit 67108864)        ; 64MB
+  (setq undo-strong-limit 100663296) ; 96MB
+  (setq undo-outer-limit 1006632960)) ; 960MB
+
+(use-package vundo
+  :commands vundo
+  :bind ("C-x u" . vundo)  ; Remap default undo to visual tree
+  :custom
+  ;; Use unicode symbols for better-looking tree
+  (vundo-glyph-alist vundo-unicode-symbols))
 
 (defun set-indent-tabs-mode-nil ()
   (interactive)
