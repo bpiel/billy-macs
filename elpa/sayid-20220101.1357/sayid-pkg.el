@@ -1,2 +1,0 @@
-;;; Generated package description from /home/bill/.emacs.d/elpa/sayid-20220101.1357/sayid.el  -*- no-byte-compile: t -*-
-(define-package "sayid" "20220101.1357" "sayid nREPL middleware client" '((cider "0.21.0")) :commit "879aff586336a0ec4d46c0ed4720fb1de22082bd" :authors '(("Bill Piel" . "bill@billpiel.com")) :maintainer '("Bozhidar Batsov" . "bozhidar@batsov.dev") :keywords '("clojure" "cider" "debugger") :url "https://github.com/clojure-emacs/sayid")

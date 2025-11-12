@@ -1,28 +1,79 @@
-(require 'package)
+;;; init.el --- Billy-macs Emacs configuration  -*- lexical-binding: t; -*-
 
-(defvar billy-conf-dir "/home/bill/.emacs.d/conf/")
-(defvar billy-lib-dir "/home/bill/.emacs.d/lib/")
+;;; Commentary:
+;; Main initialization file for billy-macs.
+;; This file bootstraps straight.el and loads modular configuration files.
+;; See early-init.el for pre-initialization optimizations.
+;; Modernization began November 2025 - Phase 1: Foundation
 
-(setq package-archives
-      '(("GNU ELPA"     . "https://elpa.gnu.org/packages/")
-        ("MELPA Stable" . "https://stable.melpa.org/packages/")
-        ("MELPA"        . "https://melpa.org/packages/"))
-      package-archive-priorities
-      '(("MELPA Stable" . 0)
-        ("GNU ELPA"     . 5)
-        ("MELPA"        . 10)))
+;;; Code:
 
-(package-initialize)
+;;; Startup Performance Restoration
+;; Restore file-name-handler-alist and GC settings after startup
+;; These were optimized in early-init.el for faster startup
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (setq gc-cons-threshold 16777216  ; 16MB (reasonable for interactive use)
+                  gc-cons-percentage 0.1)
+            (setq file-name-handler-alist billy-macs--file-name-handler-alist)
+            (message "Billy-macs loaded in %.3fs with %d GCs"
+                     (float-time (time-subtract after-init-time before-init-time))
+                     gcs-done)))
 
-(when (not package-archive-contents)
-  (package-refresh-contents))
+;;; Package Management - straight.el
+;; We keep straight-base-dir at default (user-emacs-directory)
+;; to keep packages in the repo for reliability and offline access
+(setq straight-repository-branch "develop"
+      straight-use-package-by-default t
+      use-package-always-defer t          ; Lazy load by default (override with :demand)
+      straight-cache-autoloads t
+      straight-check-for-modifications '(check-on-save)  ; Only check when saving, not on startup
+      straight-vc-git-default-clone-depth 1)
 
-(defvar namooh/required-packages '(better-defaults))
+;; Bootstrap straight.el
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 6))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/radian-software/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
 
-(dolist (p namooh/required-packages)
-  (when (not (package-installed-p 'better-defaults))
-    (package-install 'better-defaults)))
+;; Install use-package via straight.el
+(straight-use-package 'use-package)
 
+;;; Directory Configuration
+;; Define config and library directories using portable paths
+(defvar billy-conf-dir (expand-file-name "conf/" user-emacs-directory)
+  "Directory containing modular configuration files.")
+(defvar billy-lib-dir (expand-file-name "lib/" user-emacs-directory)
+  "Directory containing custom libraries and utilities.")
+
+;;; Legacy package.el support (will be removed after full migration)
+;; Keep old package.el code commented for now during transition
+;; (require 'package)
+;; (setq package-archives ...)
+;; (package-initialize)
+
+;;; Directory Organization with no-littering
+;; Organize cache files and data files into .local/ subdirectory
+;; This keeps the main config directory clean and organized
+(use-package no-littering
+  :demand t
+  :config
+  ;; Put auto-save files in a dedicated directory
+  (setq auto-save-file-name-transforms
+        `((".*" ,(no-littering-expand-var-file-name "auto-save/") t)))
+  ;; Put custom-set-variables in a separate file (won't be loaded)
+  ;; This prevents Emacs from modifying init.el directly
+  (setq custom-file (no-littering-expand-etc-file-name "custom.el")))
+
+;;; Core Settings
 (setq-default line-spacing 0.2)
 (setq line-spacing 0.2)
 
@@ -36,6 +87,82 @@
 (add-to-list 'default-frame-alist
              '(vertical-scroll-bars . nil))
 
+;;; Package Declarations
+;; Install packages via straight.el before loading config files
+;; Config files will then be able to require/configure these packages
+
+;; Core utility packages
+(use-package avy :demand t)
+(use-package better-defaults :demand t)
+
+;; Completion and navigation (will be replaced in Phase 2)
+(use-package ido :straight (:type built-in) :demand t)
+(use-package smex :demand t)
+(use-package flx-ido :demand t)
+(use-package idomenu)
+(use-package auto-complete :demand t)
+(use-package popup :demand t)  ; Dependency for auto-complete
+(use-package fuzzy :demand t)  ; Dependency for auto-complete
+(use-package fzf)
+
+;; Editing enhancements
+(use-package paredit :demand t)
+(use-package undo-tree :demand t)
+(use-package browse-kill-ring :demand t)
+(use-package rainbow-delimiters :demand t)
+(use-package auto-highlight-symbol)
+(use-package winner :straight (:type built-in) :demand t)
+
+;; Window management
+(use-package popwin :demand t)
+
+;; Clojure development
+(use-package clojure-mode :demand t)
+(use-package cider :demand t)
+(use-package ac-cider :demand t)
+(use-package clj-refactor)
+(use-package sayid)  ; Clojure debugger/tracer
+(use-package align-cljlet)
+
+;; Language support
+(use-package go-mode)
+(use-package typescript-mode)
+(use-package zig-mode)
+(use-package json-mode)
+(use-package rustic)
+(use-package markdown-mode)
+
+;; LSP support
+(use-package lsp-mode)
+(use-package company)
+(use-package flycheck)
+
+;; Other tools
+(use-package pdf-tools
+  ;; Don't build/load on startup (has C dependencies that may fail)
+  ;; Will build when first opening a PDF file
+  :mode ("\\.pdf\\'" . pdf-view-mode))
+(use-package vlf)
+(use-package edn)
+;; Note: eglot is built-in to Emacs 29+, no need to install via straight.el
+;; It will be loaded on-demand when eglot-ensure is called
+(use-package s)  ; String manipulation library
+(use-package elisp-slime-nav)
+(use-package recentf :straight (:type built-in) :demand t)
+(use-package org :straight (:type built-in))
+
+;; Python support
+(use-package elpy)
+
+;; Additional packages from package-selected-packages
+(use-package gnu-elpa-keyring-update)
+(use-package flycheck-clang-tidy)
+(use-package clang-format)
+(use-package ccls)
+(use-package lsp-java)
+
+;;; Load Configuration Files
+;; Now that packages are installed, load the old config files
 (load-file (concat billy-conf-dir "avy-conf.el"))
 (load-file (concat billy-conf-dir "util-fns.el"))
 (load-file (concat billy-conf-dir "auto-complete-conf.el"))
@@ -269,105 +396,40 @@ current buffer is not visiting a file."
 ;;(require 'lsp-solargraph)
 
 ;; C/C++ lsp
-
-(require 'eglot)
-(add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
+;; eglot is built-in to Emacs 29+, will auto-load when needed
+(with-eval-after-load 'eglot
+  (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd")))
 (add-hook 'c-mode-hook 'eglot-ensure)
 (add-hook 'c++-mode-hook 'eglot-ensure)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(cargo-process--enable-rust-backtrace t)
- '(custom-safe-themes
-   '("6b233389ceb3d6699564bf4d95eb1ec5086308d687d0fa03e33af0128a2e067e" "599e6b74c4522a5e735453084c1465e4c69200bf766fa74351c84c4db6b596ce" "c7eb06356fd16a1f552cfc40d900fe7326ae17ae7578f0ef5ba1edd4fdd09e58" default))
- '(elpy-rpc-python-command "python3")
- '(exec-path
-   '("/home/bill/.local/bin" "/home/bill/bin" "/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/local/games" "/snap/bin" "/usr/local/libexec/emacs/28.2/x86_64-pc-linux-gnu" "/home/bill/.cargo/bin" "/home/bill/go/bin" "/usr/local/go/bin" "/home/bill/.rbenv/shims" "/home/bill/.rbenv/bin"))
- '(fzf/executable "/home/bill/repos/billy-macs/lib/fzf1.sh")
- '(ibuffer-formats
-   '((mark modified read-only locked " "
-	   (name 30 30 :left :elide)
-	   " "
-	   (mode 16 16 :left :elide)
-	   " " filename-and-process)
-     (mark " "
-	   (name 16 -1)
-	   " " filename)))
- '(ido-default-buffer-method 'selected-window)
- '(lsp-disabled-clients '(rubocop-ls))
- '(package-selected-packages
-   '(flycheck-clang-tidy clang-format gnu-elpa-keyring-update clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider)
- '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt")
- '(safe-local-variable-values
-   '((cljr-magic-require-namespaces
-      ("io" . "clojure.java.io")
-      ("as" . "clojure.core.async")
-      ("csv" . "clojure.data.csv")
-      ("edn" . "clojure.edn")
-      ("mat" . "clojure.core.matrix")
-      ("nrepl" . "clojure.nrepl")
-      ("pprint" . "clojure.pprint")
-      ("s" . "clojure.spec.alpha")
-      ("set" . "clojure.set")
-      ("shell" . "clojure.java.shell")
-      ("spec" . "clojure.spec.alpha")
-      ("str" . "clojure.string")
-      ("walk" . "clojure.walk")
-      ("xml" . "clojure.data.xml")
-      ("zip" . "clojure.zip")
-      ("csk" . "camel-snake-kebab.core")
-      ("cske" . "camel-snake-kebab.extras")
-      ("duct" . "duct.core")
-      ("fs" . "babashka.fs")
-      ("ig" . "integrant.core")
-      ("json" . "cheshire.core")
-      ("m" . "malli.core")
-      ("mi" . "malli.instrument")
-      ("mr" . "malli.registry")
-      ("mt" . "malli.transform")
-      ("mu" . "malli.util")
-      ("sql" . "honey.sql")
-      ("sqlh" . "honey.sql.helpers")
-      ("time" . "java-time")
-      ("yaml" . "clj-yaml.core")
-      ("lacinia" . "com.walmartlabs.lacinia")
-      ("lacinia.executor" . "com.walmartlabs.lacinia.executor")
-      ("lacinia.resolve" . "com.walmartlabs.lacinia.resolve")
-      ("lacinia.schema" . "com.walmartlabs.lacinia.schema")
-      ("lacinia.selection" . "com.walmartlabs.lacinia.selection")
-      ("log" . "patch.common-log.interface")
-      ("utils" . "patch.common-utils.interface"))
-     (cljr-clojure-test-declaration . "[clojure.test :as test :refer [are deftest is testing]]")
-     (cljr-warn-on-eval)
-     (cider-ns-refresh-after-fn . "integrant.repl/resume")
-     (cider-ns-refresh-before-fn . "integrant.repl/suspend")))
- '(smerge-command-prefix (kbd "C-S-c"))
- '(typescript-indent-level 2))
+;; Custom variables and faces are now managed by no-littering
+;; They will be stored in .local/etc/custom.el (not loaded)
+;; This keeps init.el clean and prevents Emacs from modifying it
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ahs-face ((t (:background "#997755" :foreground "#333311" :weight ultra-bold))))
- '(diff-added ((t (:foreground "Green"))))
- '(diff-removed ((t (:foreground "Red"))))
- '(ediff-even-diff-A ((((class color) (background dark)) (:background "dark green"))))
- '(ediff-even-diff-B ((((class color) (background dark)) (:background "dark red"))))
- '(ediff-odd-diff-A ((((class color) (background dark)) (:background "dark green"))))
- '(ediff-odd-diff-B ((((class color) (background dark)) (:background "dark red"))))
- '(markup-meta-face ((t (:stipple nil :foreground "gray50" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 110 :width normal :foundry "unknown" :family "Monospace"))))
- '(markup-meta-hide-face ((t (:inherit markup-meta-face :foreground "gray80" :height 1.1))))
- '(mumamo-background-chunk-major ((((class color) (background dark)) (:background "black"))))
- '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black")))))
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(cargo-process--enable-rust-backtrace t)
+;;  '(custom-safe-themes
+;;    '("6b233389ceb3d6699564bf4d95eb1ec5086308d687d0fa03e33af0128a2e067e" "599e6b74c4522a5e735453084c1465e4c69200bf766fa74351c84c4db6b596ce" "c7eb06356fd16a1f552cfc40d900fe7326ae17ae7578f0ef5ba1edd4fdd09e58" default))
+;;  '(elpy-rpc-python-command "python3")
+;;  '(exec-path ...)
+;;  '(fzf/executable ...)
+;;  ... all other custom variables ...
+;; )
 
-(load-file "/home/bill/repos/billy-macs/conf/startup-buffer.el")
+;; (custom-set-faces
+;;  ... all custom faces ...
+;; )
+
+(load-file (expand-file-name "conf/startup-buffer.el" user-emacs-directory))
 
 ;; END Bill's stuff
 
 (message "\n\n init.el done loading  \n\n")
 
+(provide 'init)
+;;; init.el ends here
 

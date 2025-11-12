@@ -1,15 +1,40 @@
+# Emacs backup and auto-save files
 backups
 auto-save-list
 tmp
+*~
+\#*\#
+.\#*
+
+# Old cache files (will be organized by no-littering into .local/)
 ac-comphist.dat
 places
 recentf
 ido.last
 smex-items
-locatedbs
-fzf-index
-elpa/archives
-elpa/**/libvterm
 .lsp-session*
 .cache
-eln-cache
+
+# no-littering directories (Phase 1: Foundation)
+.local/
+
+# straight.el - keep repos (package sources), ignore builds
+straight/build/
+straight/build-cache.el
+straight/modified/
+
+# Native compilation cache (keeping in repo is optional)
+eln-cache/
+
+# Old package.el directory (renamed to elpa.backup-old-package-el)
+elpa/
+elpa.backup-old-package-el/
+
+# Python cache files
+**/__pycache__/
+*.pyc
+
+# Project-specific
+locatedbs
+fzf-index
+projects
