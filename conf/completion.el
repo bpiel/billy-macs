@@ -73,7 +73,7 @@
 ;; Provides powerful search and navigation commands
 ;; Replaces many ido/smex features with better alternatives
 (use-package consult
-  :demand t
+  :demand t  ; Load immediately so keybindings work
   :bind (;; Buffer switching with live preview (replaces ido buffer switching)
          ("C-x b" . consult-buffer)
          ("C-x 4 b" . consult-buffer-other-window)
@@ -89,6 +89,7 @@
          ("M-g g" . consult-goto-line)
          ("M-g M-g" . consult-goto-line)
          ("M-s l" . consult-line)              ; Search lines in current buffer
+         ("C-c l" . consult-line)              ; Alternative: easier to type
          ("M-s L" . consult-line-multi)        ; Search lines in multiple buffers
          ("C-c C-g" . consult-ripgrep)         ; Project-wide search with ripgrep
 

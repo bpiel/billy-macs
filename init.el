@@ -265,7 +265,7 @@
   :straight (:type built-in)
   :hook (prog-mode . display-line-numbers-mode)
   :custom
-  (display-line-numbers-type 'relative))  ; Can be 'relative, 'absolute, or t
+  (display-line-numbers-type t))  ; t = absolute line numbers
 
 (global-set-key (kbd  "C-,") 'beginning-of-line-text)
 
