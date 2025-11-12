@@ -1,49 +1,56 @@
-;; https://robert.kra.hn/posts/rust-emacs-setup/#code-completion-and-snippets
+;;; rustic-conf.el --- Rust development configuration with rustic and eglot
+
+;;; Commentary:
+;; Configures Rust development using rustic-mode with eglot (built-in LSP).
+;; Replaces the previous lsp-mode setup with the lighter-weight eglot.
+;; Based on: https://robert.kra.hn/posts/rust-emacs-setup/
+
+;;; Code:
 
 (use-package rustic
   :ensure
   :bind (:map rustic-mode-map
-              ("M-j" . lsp-ui-imenu)
-              ("M-?" . lsp-find-references)
+              ;; Use eglot's built-in commands instead of lsp-mode
+              ("M-?" . xref-find-references)
               ("C-c C-c l" . flycheck-list-errors)
-              ("C-c C-c a" . lsp-execute-code-action)
-              ("C-c C-c r" . lsp-rename)
-              ("C-c C-c q" . lsp-workspace-restart)
-              ("C-c C-c Q" . lsp-workspace-shutdown)
-              ("C-c C-c s" . lsp-rust-analyzer-status)
-	      ("M-RET". lsp-ui-doc-show))
+              ("C-c C-c a" . eglot-code-actions)
+              ("C-c C-c r" . eglot-rename)
+              ("C-c C-c f" . eglot-format-buffer)
+              ("M-RET" . eldoc-doc-buffer))  ; Show documentation in separate buffer
+  :custom
+  ;; Use eglot instead of lsp-mode
+  (rustic-lsp-client 'eglot)
+  ;; Enable rustfmt on save
+  (rustic-format-on-save t)
+  ;; Prefer rustic's own formatting over eglot's
+  (rustic-format-trigger 'on-save)
   :config
-  ;; uncomment for less flashiness
-  ;; (setq lsp-eldoc-hook nil)
-  ;; (setq lsp-enable-symbol-highlighting nil)
-  ;; (setq lsp-signature-auto-activate nil)
-
-
-  ;; comment to disable rustfmt on save
-  (setq rustic-format-on-save t)
   (add-hook 'rustic-mode-hook 'rk/rustic-mode-hook))
 
 (defun rk/rustic-mode-hook ()
-  ;; so that run C-c C-c C-r works without having to confirm, but don't try to
-  ;; save rust buffers that are not file visiting. Once
-  ;; https://github.com/brotzeit/rustic/issues/253 has been resolved this should
-  ;; no longer be necessary.
+  "Custom rustic-mode hook configuration."
+  ;; Allow running C-c C-c C-r without confirmation
+  ;; Don't try to save rust buffers that are not file visiting
+  ;; See: https://github.com/brotzeit/rustic/issues/253
   (when buffer-file-name
     (setq-local buffer-save-without-query t))
-  (add-hook 'before-save-hook 'lsp-format-buffer nil t))
+  ;; Start eglot for LSP support
+  (eglot-ensure))
 
-(use-package company
-  :ensure
-  :custom
-  (company-idle-delay 0.5) ;; how long to wait until popup
-  ;; (company-begin-commands nil) ;; uncomment to disable popup
-  :bind
-  (:map company-active-map
-	      ("C-n". company-select-next)
-	      ("C-p". company-select-previous)
-	      ("M-<". company-select-first)
-	      ("M->". company-select-last)))
+;;; Completion - handled by corfu (configured in completion.el)
+;; Corfu works automatically with eglot via completion-at-point
+;; No additional configuration needed for Rust
 
+;; Old company-mode setup (disabled - using corfu now):
+;; (use-package company
+;;   :ensure
+;;   :custom
+;;   (company-idle-delay 0.5)
+;;   :bind (:map company-active-map
+;;               ("C-n". company-select-next)
+;;               ("C-p". company-select-previous)))
+
+;;; Snippets support
 (use-package yasnippet
   :ensure
   :config
@@ -51,32 +58,19 @@
   (add-hook 'prog-mode-hook 'yas-minor-mode)
   (add-hook 'text-mode-hook 'yas-minor-mode))
 
+;; Old lsp-mode setup (disabled - using eglot now):
+;; All LSP functionality is now provided by eglot (built-in)
+;; eglot is configured in init.el and started via rustic-lsp-client
+;;
+;; Previous lsp-mode configuration included:
+;; - rust-analyzer with clippy on save
+;; - inlay hints for types and lifetimes
+;; - lsp-ui for documentation and sideline info
+;;
+;; With eglot:
+;; - rust-analyzer is configured in init.el's eglot-server-programs
+;; - Use eldoc-doc-buffer (M-RET) for documentation
+;; - Inlay hints can be configured via eglot settings if needed
 
-(use-package lsp-mode
-  :ensure
-  :commands lsp
-  :custom
-  ;; what to use when checking on-save. "check" is default, I prefer clippy
-  (lsp-rust-analyzer-cargo-watch-command "clippy")
-  (lsp-eldoc-render-all nil)
-  (lsp-idle-delay 0.6)
-  ;; enable / disable the hints as you prefer:
-  (lsp-rust-analyzer-server-display-inlay-hints t)
-  (lsp-rust-analyzer-display-lifetime-elision-hints-enable "skip_trivial")
-  (lsp-rust-analyzer-display-chaining-hints t)
-  (lsp-rust-analyzer-display-lifetime-elision-hints-use-parameter-names nil)
-  (lsp-rust-analyzer-display-closure-return-type-hints t)
-  (lsp-rust-analyzer-display-parameter-hints nil)
-  (lsp-rust-analyzer-display-reborrow-hints nil)
-  :config
-  (add-hook 'lsp-mode-hook 'lsp-ui-mode))
-
-(use-package lsp-ui
-  :ensure
-  :commands lsp-ui-mode
-  :custom
-  (lsp-ui-peek-always-show t)
-  (lsp-ui-sideline-show-hover nil)
-  (lsp-ui-sideline-enable nil)
-  (lsp-ui-doc-enable nil))
-
+(provide 'rustic-conf)
+;;; rustic-conf.el ends here

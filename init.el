@@ -121,6 +121,12 @@
 (use-package auto-highlight-symbol)
 (use-package winner :straight (:type built-in) :demand t)
 
+;; Git integration (Phase 3)
+(use-package diff-hl)  ; Show git diff in fringe
+
+;; Better help buffers (Phase 3)
+(use-package helpful)  ; Enhanced help buffers with more information
+
 ;; Window management
 (use-package popwin :demand t)
 
@@ -140,9 +146,8 @@
 (use-package rustic)
 (use-package markdown-mode)
 
-;; LSP support
-(use-package lsp-mode)
-(use-package company)
+;; LSP and syntax checking
+;; Note: eglot is built-in (Emacs 29+), configured below
 (use-package flycheck)
 
 ;; Other tools
@@ -164,10 +169,7 @@
 
 ;; Additional packages from package-selected-packages
 (use-package gnu-elpa-keyring-update)
-(use-package flycheck-clang-tidy)
-(use-package clang-format)
-(use-package ccls)
-(use-package lsp-java)
+(use-package clang-format)  ; C/C++ code formatting (used with eglot)
 
 ;;; Load Configuration Files
 ;; Now that packages are installed, load the config files
@@ -200,23 +202,19 @@
 (load-file (concat billy-conf-dir "org-conf.el"))
 
 ;; GOLANG =============
+;; Go - eglot (built-in LSP client)
+;; Set up before-save hooks to format buffer and organize imports using eglot
+(defun eglot-go-install-save-hooks ()
+  "Set up before-save hooks for Go files with eglot."
+  (add-hook 'before-save-hook #'eglot-format-buffer -10 t)
+  (add-hook 'before-save-hook
+            (lambda ()
+              (call-interactively 'eglot-code-action-organize-imports))
+            nil t))
+(add-hook 'go-mode-hook #'eglot-go-install-save-hooks)
 
-;; Company mode
-(setq company-idle-delay 0)
-(setq company-minimum-prefix-length 1)
-
-;; Go - lsp-mode
-;; Set up before-save hooks to format buffer and add/delete imports.
-(defun lsp-go-install-save-hooks ()
-  (add-hook 'before-save-hook #'lsp-format-buffer t t)
-  (add-hook 'before-save-hook #'lsp-organize-imports t t))
-(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
-
-;; Start LSP Mode and YASnippet mode
-(add-hook 'go-mode-hook #'lsp-deferred)
-;;(add-hook 'go-mode-hook #'yas-minor-mode)
-
-(add-hook 'go-mode-hook (lambda () (auto-complete-mode -1)))
+;; Start eglot for Go files
+(add-hook 'go-mode-hook #'eglot-ensure)
 
 ;; END GOLANG =============
 
@@ -266,6 +264,54 @@
   :hook (prog-mode . display-line-numbers-mode)
   :custom
   (display-line-numbers-type t))  ; t = absolute line numbers
+
+;;; LSP Configuration - eglot (built-in LSP client, Emacs 29+)
+;; eglot is a lighter-weight alternative to lsp-mode
+;; It's built-in to Emacs 29+ and works seamlessly with native completion
+(use-package eglot
+  :straight (:type built-in)
+  :commands (eglot eglot-ensure)
+  :custom
+  ;; Automatically shutdown language server after closing last file
+  (eglot-autoshutdown t)
+  ;; Don't block on server connection
+  (eglot-sync-connect nil)
+  ;; Allow edits before server is ready
+  (eglot-extend-to-xref t)
+  :config
+  ;; Configure language servers
+  (add-to-list 'eglot-server-programs
+               '(go-mode . ("gopls")))
+  (add-to-list 'eglot-server-programs
+               '(typescript-mode . ("typescript-language-server" "--stdio")))
+  (add-to-list 'eglot-server-programs
+               '((c++-mode c-mode) . ("clangd")))
+  (add-to-list 'eglot-server-programs
+               '((rust-mode rustic-mode) . ("rust-analyzer"))))
+
+;;; Git Integration - diff-hl (Phase 3)
+;; Show git diff indicators in the fringe
+;; Helps visualize which lines have been added/modified/deleted
+(use-package diff-hl
+  :demand t
+  :config
+  ;; Enable diff-hl globally
+  (global-diff-hl-mode)
+  ;; Highlight diffs in Dired
+  (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
+  ;; Update diff-hl after magit operations
+  (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh))
+
+;;; Better Help Buffers - helpful (Phase 3)
+;; Enhanced help buffers with more context and information
+;; Shows source code, references, and better formatting
+(use-package helpful
+  :bind
+  ;; Remap default help commands to use helpful
+  ([remap describe-function] . helpful-callable)
+  ([remap describe-variable] . helpful-variable)
+  ([remap describe-key] . helpful-key)
+  ([remap describe-command] . helpful-command))
 
 (global-set-key (kbd  "C-,") 'beginning-of-line-text)
 
@@ -379,9 +425,8 @@ current buffer is not visiting a file."
 
 (add-to-list 'auto-mode-alist '("\\.mts$" . typescript-mode))
 
-(global-set-key (kbd "C-<return>") 'company-complete)
-
-(add-hook 'typescript-mode-hook #'lsp)
+;; TypeScript - eglot (built-in LSP client)
+(add-hook 'typescript-mode-hook #'eglot-ensure)
 
 
 ;; https://github.com/typescript-language-server/typescript-language-server/issues/559
@@ -411,10 +456,7 @@ current buffer is not visiting a file."
 
 ;;(require 'lsp-solargraph)
 
-;; C/C++ lsp
-;; eglot is built-in to Emacs 29+, will auto-load when needed
-(with-eval-after-load 'eglot
-  (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd")))
+;; C/C++ - eglot (configured in main eglot section above)
 (add-hook 'c-mode-hook 'eglot-ensure)
 (add-hook 'c++-mode-hook 'eglot-ensure)
 
