@@ -5,6 +5,8 @@
 **Phase 2 Completed:** 2025-11-12
 **Phase 3 Completed:** 2025-11-12
 **Phase 4 Completed:** 2025-11-12
+**Phase 5 Completed:** 2025-11-12
+**Status:** All planned phases completed! ✅
 **Purpose:** Comprehensive plan to modernize billy-macs Emacs configuration to align with current best practices
 
 ## Table of Contents
@@ -286,13 +288,68 @@
 
 ---
 
-### What's Next: Phase 5 - Advanced Features (OPTIONAL)
+### Phase 5: Advanced Features - ✅ COMPLETED (2025-11-12)
 
-**Optional enhancements when you're ready:**
-- Add treesit-auto for tree-sitter support
-- Configure pulsar for visual feedback
-- Add popper for popup management
-- Consider adding embark for contextual actions
+**Status:** Fully tested and committed (commit `2398353`)
+
+**What Was Completed:**
+
+1. ✅ **Added pulsar for visual feedback**
+   - Pulses the current line when cursor jumps
+   - Makes it easier to track cursor position after large movements
+   - Configured for common navigation commands (other-window, page up/down, etc.)
+   - Pulse duration: 0.055s, 10 iterations
+   - Subtle, non-intrusive visual feedback
+
+2. ✅ **Added popper for popup window management**
+   - Better management of popup/temporary buffers
+   - Keybindings:
+     - `C-`` - Toggle popup (show/hide)
+     - `M-`` - Cycle through popup buffers
+     - `C-M-`` - Toggle popup type
+   - Configured for common popups: *Messages*, *Warnings*, help-mode, compilation-mode
+   - Shows visual indicator for popup buffers
+   - Displays popups at the bottom of the frame
+
+3. ✅ **Added embark for contextual actions**
+   - Provides context-sensitive actions on targets
+   - Seamless integration with vertico and consult
+   - Keybindings:
+     - `C-.` - embark-act (pick an action using completion)
+     - `C-;` - embark-dwim (smart default action)
+     - `C-h B` - embark-bindings (alternative to describe-bindings)
+   - Includes embark-consult integration for enhanced preview
+   - Works on files, buffers, symbols, and more
+
+4. ✅ **Added treesit-auto (disabled by default)**
+   - Automatic tree-sitter grammar installation
+   - Disabled automatic activation due to version compatibility issues
+   - Can be enabled manually when needed with `M-x treesit-auto-apply-remap`
+   - Tree-sitter provides better syntax highlighting when working
+
+5. ✅ **Fixed project.el conflict**
+   - Resolved conflict between built-in and straight.el versions
+   - Explicitly configured to use built-in project.el
+   - Prevents "Feature provided by different file" errors
+
+**Performance:**
+- Configuration loads without errors
+- No impact on startup time
+- All new features work as expected
+- Smooth visual feedback with pulsar
+
+**Packages Added:**
+- pulsar (visual cursor feedback)
+- popper (popup management)
+- embark (contextual actions)
+- embark-consult (embark + consult integration)
+- treesit-auto (tree-sitter support, opt-in)
+
+**Files Modified:**
+- `init.el` (added Phase 5 packages and configurations)
+
+**Branch:** `rebuild-nov-2025`
+**Commit:** `2398353`
 
 ---
 
