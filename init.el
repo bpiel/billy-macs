@@ -95,14 +95,22 @@
 (use-package avy :demand t)
 (use-package better-defaults :demand t)
 
-;; Completion and navigation (will be replaced in Phase 2)
-(use-package ido :straight (:type built-in) :demand t)
-(use-package smex :demand t)
-(use-package flx-ido :demand t)
-(use-package idomenu)
-(use-package auto-complete :demand t)
-(use-package popup :demand t)  ; Dependency for auto-complete
-(use-package fuzzy :demand t)  ; Dependency for auto-complete
+;; Modern completion framework (Phase 2)
+;; Vertico/Consult/Orderless stack - replaces ido/smex
+(use-package vertico)
+(use-package consult)
+(use-package orderless)
+(use-package marginalia)
+
+;; Corfu - in-buffer completion (replaces auto-complete)
+(use-package corfu)
+(use-package cape)  ; Completion-at-point extensions for corfu
+
+;; Old completion - DISABLED in Phase 2
+;; Replaced by corfu/cape
+;; (use-package auto-complete :demand t)
+;; (use-package popup :demand t)  ; Dependency for auto-complete
+;; (use-package fuzzy :demand t)  ; Dependency for auto-complete
 (use-package fzf)
 
 ;; Editing enhancements
@@ -119,7 +127,7 @@
 ;; Clojure development
 (use-package clojure-mode :demand t)
 (use-package cider :demand t)
-(use-package ac-cider :demand t)
+;; (use-package ac-cider :demand t)  ; DISABLED - using corfu instead
 (use-package clj-refactor)
 (use-package sayid)  ; Clojure debugger/tracer
 (use-package align-cljlet)
@@ -162,22 +170,27 @@
 (use-package lsp-java)
 
 ;;; Load Configuration Files
-;; Now that packages are installed, load the old config files
+;; Now that packages are installed, load the config files
+
+;; Modern completion framework (Phase 2) - replaces ido-conf.el and smex-conf.el
+(load-file (concat billy-conf-dir "completion.el"))
+
+;; Core configuration files
 (load-file (concat billy-conf-dir "avy-conf.el"))
 (load-file (concat billy-conf-dir "util-fns.el"))
-(load-file (concat billy-conf-dir "auto-complete-conf.el"))
+;; (load-file (concat billy-conf-dir "auto-complete-conf.el"))  ; REPLACED by corfu in completion.el
 (load-file (concat billy-conf-dir "browse-kill-ring-conf.el"))
 ;;(load-file (concat billy-conf-dir "color-theme-conf.el"))
 (load-file (concat billy-conf-dir "cider-conf.el"))
 (load-file (concat billy-conf-dir "clojure-conf.el"))
-(load-file (concat billy-conf-dir "ido-conf.el"))
+;; (load-file (concat billy-conf-dir "ido-conf.el"))  ; REPLACED by completion.el
 (load-file (concat billy-conf-dir "lisp-conf.el"))
 (load-file (concat billy-conf-dir "paredit-conf.el"))
 (load-file (concat billy-conf-dir "popwin-conf.el"))
 (load-file (concat billy-conf-dir "recentf-conf.el"))
 ;;(load-file (concat billy-conf-dir "rust-conf.el"))
 (load-file (concat billy-conf-dir "rustic-conf.el"))
-(load-file (concat billy-conf-dir "smex-conf.el"))
+;; (load-file (concat billy-conf-dir "smex-conf.el"))  ; REPLACED by completion.el
 (load-file (concat billy-conf-dir "backup-dir-conf.el"))
 (load-file (concat billy-conf-dir "ahs-conf.el"))
 (load-file (concat billy-conf-dir "fzf-conf.el"))
@@ -246,10 +259,13 @@
 (global-unset-key (kbd "C-z")) ;; get rid of "suspend frame"
 (cua-mode 0) ;; kill CUA
 
-;; https://www.emacswiki.org/emacs/LinumMode
-;; TODO migrate to Nlinum or the built-in line-numbers-mode
-(require 'linum)
-(global-linum-mode t)
+;; Line numbers - using built-in display-line-numbers-mode (Emacs 26+)
+;; More performant than the old linum-mode, especially with large files
+(use-package display-line-numbers
+  :straight (:type built-in)
+  :hook (prog-mode . display-line-numbers-mode)
+  :custom
+  (display-line-numbers-type 'relative))  ; Can be 'relative, 'absolute, or t
 
 (global-set-key (kbd  "C-,") 'beginning-of-line-text)
 

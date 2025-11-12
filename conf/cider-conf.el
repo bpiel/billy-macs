@@ -27,14 +27,16 @@
 (setq cider-popup-stacktraces-in-repl t)
 (add-to-list 'same-window-buffer-names "*cider*")
 
-;;Auto Complete
-(require 'ac-cider )
-
-(add-hook 'cider-mode-hook 'ac-cider-setup)
-(add-hook 'cider-repl-mode-hook 'ac-cider-setup)
-
-(eval-after-load "auto-complete"
-  '(add-to-list 'ac-modes 'cider-mode))
+;;; Completion - handled by corfu (Phase 2)
+;; Corfu works automatically with CIDER via completion-at-point
+;; No additional setup needed!
+;;
+;; Old auto-complete setup (disabled):
+;; (require 'ac-cider)
+;; (add-hook 'cider-mode-hook 'ac-cider-setup)
+;; (add-hook 'cider-repl-mode-hook 'ac-cider-setup)
+;; (eval-after-load "auto-complete"
+;;   '(add-to-list 'ac-modes 'cider-mode))
 
 ;; Specify the print length to be 100 to stop infinite sequences killing
 ;; things. This might be dangerous for some people relying on
