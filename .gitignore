@@ -21,7 +21,8 @@ smex-items
 # Session/state files (auto-generated)
 var/
 
-# straight.el - keep repos (package sources), ignore builds
+# straight.el - use lockfile approach (ignore repos, keep versions/)
+straight/repos/
 straight/build/
 straight/build-cache.el
 straight/modified/
