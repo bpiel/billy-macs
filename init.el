@@ -1,5 +1,12 @@
 ;;; init.el --- Billy-macs Emacs configuration  -*- lexical-binding: t; -*-
 
+;; TEMP: prevent runaway compilation / warning spam
+(setq native-comp-jit-compilation t
+      native-comp-deferred-compilation t
+      native-comp-async-report-warnings-errors 'silent
+      warning-minimum-level :warning)
+
+
 ;;; Commentary:
 ;; Main initialization file for billy-macs.
 ;; This file bootstraps straight.el and loads modular configuration files.
