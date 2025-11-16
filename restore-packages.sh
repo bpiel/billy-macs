@@ -23,19 +23,19 @@ if [ ! -f "$EMACS_DIR/straight/versions/default.el" ]; then
     exit 1
 fi
 
-# Run emacs in batch mode to restore packages
+# Run emacs to restore packages
+# We use --eval instead of --batch so init.el loads normally and can bootstrap straight.el
 echo "Starting package restoration (this may take a few minutes)..."
 echo ""
 
 cd "$EMACS_DIR"
-emacs --batch \
-      --eval "(setq user-emacs-directory \"$EMACS_DIR/\")" \
-      --load "$EMACS_DIR/early-init.el" \
-      --load "$EMACS_DIR/init.el" \
-      --eval "(progn
-                (message \"Thawing versions from lockfile...\")
-                (straight-thaw-versions)
-                (message \"Package restoration complete!\"))"
+emacs --eval "(progn
+                 (message \"Thawing versions from lockfile...\")
+                 (sit-for 1)
+                 (straight-thaw-versions)
+                 (message \"Package restoration complete!\")
+                 (sit-for 2)
+                 (save-buffers-kill-emacs t))" 2>&1 | grep -v "^Loading\|^For information"
 
 echo ""
 echo "================================"
