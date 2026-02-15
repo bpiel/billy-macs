@@ -3,6 +3,23 @@
 (defvar billy-conf-dir "/home/bill/.emacs.d/conf/")
 (defvar billy-lib-dir "/home/bill/.emacs.d/lib/")
 
+;; (defvar bootstrap-version)
+;; (let ((bootstrap-file
+;;        (expand-file-name
+;;         "straight/repos/straight.el/bootstrap.el"
+;;         (or (bound-and-true-p straight-base-dir)
+;;             user-emacs-directory)))
+;;       (bootstrap-version 7))
+;;   (unless (file-exists-p bootstrap-file)
+;;     (with-current-buffer
+;;         (url-retrieve-synchronously
+;;          "https://raw.githubusercontent.com/radian-software/straight.el/develop/install.el"
+;;          'silent 'inhibit-cookies)
+;;       (goto-char (point-max))
+;;       (eval-print-last-sexp)))
+;;   (load bootstrap-file nil 'nomessage))
+
+
 (setq package-archives
       '(("GNU ELPA"     . "https://elpa.gnu.org/packages/")
         ("MELPA Stable" . "https://stable.melpa.org/packages/")
@@ -58,6 +75,7 @@
 (load-file (concat billy-conf-dir "rainbow-conf.el"))
 ;;(load-file (concat billy-conf-dir "php-conf.el"))
 (load-file (concat billy-conf-dir "org-conf.el"))
+(load-file (concat billy-conf-dir "gcmh.el"))
 
 ;; GOLANG =============
 
@@ -179,6 +197,10 @@ current buffer is not visiting a file."
   (interactive)
   (set-face-attribute 'default nil :height 110))
 
+(defun go-small-font-size ()
+  (interactive)
+  (set-face-attribute 'default nil :height 85))
+
 (put 'erase-buffer 'disabled nil)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
@@ -298,8 +320,9 @@ current buffer is not visiting a file."
 	   " " filename)))
  '(ido-default-buffer-method 'selected-window)
  '(lsp-disabled-clients '(rubocop-ls))
+ '(markdown-command "pandoc -f markdown_github -s")
  '(package-selected-packages
-   '(flycheck-clang-tidy clang-format gnu-elpa-keyring-update clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
+   '(gcmh ast-grep magit markdown-preview-mode flycheck-clang-tidy clang-format gnu-elpa-keyring-update clj-refactor zig-mode typescript-mode go-mode cider clojure-mode company flycheck lsp-mode rustic lsp-java ccls json-mode avy pdf-tools use-package vlf smex paredit idomenu flx-ido edn browse-kill-ring better-defaults ac-cider))
  '(rust-rustfmt-bin "/home/bill/.cargo/bin/rustfmt")
  '(safe-local-variable-values
    ((cljr-magic-require-namespaces
@@ -371,3 +394,40 @@ current buffer is not visiting a file."
 (message "\n\n init.el done loading  \n\n")
 
 
+;; (setq markdown-preview-stylesheets (list "http://thomasf.github.io/solarized-css/solarized-light.min.css"))
+
+
+;; ;; 1) Use a Markdown->HTML converter that preserves fenced code blocks with classes.
+;; ;;    Pandoc with GFM works well.
+;; (setq markdown-command "pandoc -f gfm -t html5 -F /home/bill/.asdf/shims/mermaid-filter --standalone")
+
+;; ;; 2) Load Mermaid JS into the preview page…
+;; (add-to-list 'markdown-preview-javascript
+;;              "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js")
+
+;; ;; …and inject a tiny script that:
+;; ;;   - finds code fences like ```mermaid
+;; ;;   - turns them into <pre class="mermaid">...</pre>
+;; ;;   - initializes & runs Mermaid
+;; (let* ((js
+;;         "document.addEventListener('DOMContentLoaded', async () => {
+;;            if (!window.mermaid) return;
+;;            mermaid.initialize({ startOnLoad: false, securityLevel: 'loose' });
+;;            document.querySelectorAll('pre > code.language-mermaid, code.language-mermaid')
+;;              .forEach(code => {
+;;                const pre = code.closest('pre');
+;;                const div = document.createElement('div');
+;;                div.className = 'mermaid';
+;;                div.textContent = code.textContent;
+;;                (pre || code).replaceWith(div);
+;;              });
+;;            try { await mermaid.run(); } catch (_) {}
+;;          });")
+;;        ;; use a data: URL so markdown-preview-mode can include it as a <script src=...>
+;;        (data-url (concat "data:text/javascript;base64,"
+;;                          (base64-encode-string js t))))
+;;   (add-to-list 'markdown-preview-javascript data-url))
+
+;; ;; Optional: nicer fonts in the preview (totally optional)
+;; (add-to-list 'markdown-preview-stylesheets
+;;              "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css")
